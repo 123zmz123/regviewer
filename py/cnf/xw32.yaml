@@ -1,0 +1,26 @@
+MCU: xw32
+version: 0.0.1
+type: u32
+registers:
+  - reg: SPFN
+    fields:
+    - field: f0
+      pos: [0,3]
+    - field: f1
+      pos: [4,5]
+    - field: f2
+      pos: [6,11]
+    - field: reserve
+      pos: [12,31]
+
+  - reg: SPFD
+    fields: 
+    - field: z0
+      pos: [0,7]
+    - field: z1
+      pos: [8,21]
+    - field: z2
+      pos: [22,29]
+    - field: reserve1
+      pos: [30,31] 
+
