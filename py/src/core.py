@@ -5,6 +5,7 @@ from tokenize import String
 from unicodedata import name
 import yaml
 from fuzzywuzzy import fuzz
+from pathlib import Path
 # the abstraction of each register.
 
 class Reg:
@@ -27,7 +28,7 @@ class ParserReg:
         for name in self.registers.keys():
             print(name)
     
-    # parse from file to a dict
+    # parse from yaml file to a dict
     # dict content were {"name": RegObject} 
     def parse_file(self,file_path):
         with open(file_path,'r') as f:
@@ -35,11 +36,11 @@ class ParserReg:
             self.MCU = data["MCU"]
             self.version = data["version"]
             self.type = data['type']
-            for reg in data["registers"]:
+            for r_item in data["registers"]:
                 field_dict={}
-                reg_name = reg['reg']
-                for field in reg["fields"]:
-                    field_dict.update({field['field']:field['pos']})
+                reg_name = r_item['reg']
+                for f_item in r_item["fields"]:
+                    field_dict.update({f_item['field']:f_item['pos']})
                 self.registers.update({reg_name:Reg(reg_name,self.type,field_dict)})
         
                 
@@ -47,7 +48,8 @@ class ParserReg:
     # test func for understand how to use yaml
 
     def test(self):
-        with open("./cnf/xw32.yaml", 'r') as f:
+        prj_dir = Path(__file__).parent.parent
+        with open(str(prj_dir)+"/cnf/xw32.yaml", 'r') as f:
             data = yaml.load(f,yaml.FullLoader)
             self.MCU = data["MCU"]
             self.version = data["version"]
@@ -55,14 +57,15 @@ class ParserReg:
             for reg in data["registers"]:
                 field_dict={}
                 reg_name = reg['reg']
-                for field in reg["fields"]:
-                    field_dict.update({field['field']:field['pos']})
+                for item in reg["fields"]:
+                    field_dict.update({item['field']:item['pos']})
                 self.registers.update({reg_name:Reg(reg_name,self.type,field_dict)})
             
         
-def fuzzy_search(name,regs:dict):
+def fuzzy_search(name, regs:dict):
     print("SEARCH REGISTER | "+name)
     print("--------------------------------")
+    # gen a  map of {reg:similar ratio} in dict
     reg_ratio_dic = {reg:fuzz.ratio(name,reg) for reg in regs.keys() if fuzz.ratio(name,reg)>60}
     # got the potential list of match our reg
     reg_p_list=sorted(reg_ratio_dic.items(),key=lambda x:x[1],reverse=True)
@@ -90,7 +93,7 @@ class Calculator:
 
     def calc(self):
         """generate each field value of each regsister"""
-        bin_list = self.bin_format()
+        bin_list = self.bin_format() # convert the reg value to bin format
         for field_name, pos_def in self.regdef.fields.items():
             begin_pos = pos_def[0]
             end_pos = pos_def[1]+1
