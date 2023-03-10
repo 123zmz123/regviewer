@@ -1,0 +1,22 @@
+MCU: MPC5744
+registers:
+-
+  fields:
+    s1:
+    - 2
+    - 3
+    s2:
+    - 4
+    - 5
+  reg: AA
+-
+  fields:
+    s1:
+    - 2
+    - 3
+    s2:
+    - 4
+    - 5
+  reg: AA
+type: u32
+version: 0.1.1
