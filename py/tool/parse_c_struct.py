@@ -2,6 +2,7 @@ from pkg_resources import fixup_namespace_packages
 import yaml
 from pathlib import Path
 import sys
+import re
 class Reg:
     """ fields were like <name:[begin:end]>"""
     def __init__(self,name,fields:dict):
@@ -41,7 +42,9 @@ def exlude_comments(p):
         content = f.readlines()
     n_content = map(clear_comment_tc27x,content)
     cc = [item for item in list(n_content) if item != ""]
-    return "".join(cc)
+    s = "".join(cc)
+    s = s.replace("\n","")
+    return s
     
 # clear comment for each line
 # only used to exclude tc27x official documents
@@ -67,7 +70,27 @@ def clear_comment_tc27x(line:str):
         return line
     return line.strip()
     
+def match_reg_defs_tc27D(origin_str):
+    import re
+    # in tc27D inf the register structs were like such pattern
+    structs = re.findall('typedef struct.*?Bits;',origin_str) # .*? is the non greedy match
+    if (structs.count==0): return None
+    for struct_item in structs:
+        # print(struct_item)
+        reg = get_reg_tc27D(struct_item)
+        print(reg)
         
+# the function try to get reg name from the splitted strings
+def get_reg_tc27D(_str):
+    res = re.search('[^_]Ifx.*?Bits;',_str)
+    return res.group(0)[5:-6] # delete the Ifx_ and _Bits
+
+
+# the function try to get reg fields from the splitted strings
+def get_fields_tc27D(_str):
+    fields = re.findall('int.*?:\d+',_str)
+    
+    
 
 def test_write():
     prj_dir = str(Path(__file__).parent.parent)
@@ -93,10 +116,9 @@ def test_clear_comment():
     line = "   unsigned int U;                         /**< \brief Unsigned access */"
     clear_comment_tc27x(line)
 def test_exlude_comments():
-    pth= str(Path(__file__).parent)+"/tc27D/IfxAsclin_regdef.h"
+    pth= str(Path(__file__).parent)+"/tc27D/IfxEth_regdef.h"
     content = exlude_comments(pth)
-    print(content)
-        
+    match_reg_defs_tc27D(content)
     # with open(str(Path(__file__).parent)+"/uncomment_file.h",'w') as f:
     #     f.writelines(content)
 if __name__ == '__main__':
