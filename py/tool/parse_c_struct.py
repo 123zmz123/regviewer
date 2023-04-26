@@ -72,23 +72,54 @@ def clear_comment_tc27x(line:str):
     
 def match_reg_defs_tc27D(origin_str):
     import re
+    reg_list=[]
     # in tc27D inf the register structs were like such pattern
     structs = re.findall('typedef struct.*?Bits;',origin_str) # .*? is the non greedy match
     if (structs.count==0): return None
+    # each struct represent a register and related fields define
     for struct_item in structs:
-        # print(struct_item)
         reg = get_reg_tc27D(struct_item)
-        print(reg)
-        
+        fields = get_fields_tc27D(struct_item)
+        reg_list.append(Reg(reg,fields))
+    return reg_list
+   
 # the function try to get reg name from the splitted strings
 def get_reg_tc27D(_str):
-    res = re.search('[^_]Ifx.*?Bits;',_str)
-    return res.group(0)[5:-6] # delete the Ifx_ and _Bits
+    res = re.search('}.*Ifx.*?Bits;',_str)
+    return res.group(0)[6:-6] # delete the Ifx_ and _Bits
 
 
 # the function try to get reg fields from the splitted strings
 def get_fields_tc27D(_str):
+    res={}
+    pos=0
+    if ("Ifx_Strict_32Bit" in _str):
+        # to handle file: IfxSmu_regdef.h
+        _str = _str.replace("Ifx_Strict_32Bit","int")
+        
     fields = re.findall('int.*?:\d+',_str)
+    for field in fields:
+        field_name = re.search('[^int ]\w*:',field).group(0)[0:-1]
+        field_len = int(re.search(':\d*',field).group(0)[1:])
+        res.update({field_name:[pos,pos+field_len-1]})
+        pos=pos+field_len
+    return res
+
+def gen_regs_from_file(file_path):
+    content = exlude_comments(file_path)
+    reg_list = match_reg_defs_tc27D(content)
+    return reg_list
+
+def gen_tc27D_configure_yaml_file(p):
+    import os
+    files=os.listdir(p)
+    regs=[]
+    for fi in files:
+        real_path = p+fi
+        print(real_path)
+        regs+=gen_regs_from_file(real_path)
+    
+    store_yaml("tc27x.yaml","tc27D","0.0.1","u32",regs)
     
     
 
@@ -116,11 +147,16 @@ def test_clear_comment():
     line = "   unsigned int U;                         /**< \brief Unsigned access */"
     clear_comment_tc27x(line)
 def test_exlude_comments():
-    pth= str(Path(__file__).parent)+"/tc27D/IfxEth_regdef.h"
+    pth= str(Path(__file__).parent)+"/tc27D/IfxSmu_regdef.h"
+    # pth= str(Path(__file__).parent)+"/tc27D/IfxCan_regdef.h"
     content = exlude_comments(pth)
-    match_reg_defs_tc27D(content)
-    # with open(str(Path(__file__).parent)+"/uncomment_file.h",'w') as f:
-    #     f.writelines(content)
+    reg_list = match_reg_defs_tc27D(content)
+    # for reg in reg_list:
+    #     print(reg.reg)
+    #     print(reg.fields)
+    
 if __name__ == '__main__':
-    test_exlude_comments()
+    file_path = str(Path(__file__).parent)
+    # test_exlude_comments()
+    gen_tc27D_configure_yaml_file(file_path+"/tc27D/")
     
