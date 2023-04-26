@@ -37,29 +37,28 @@ class ParserReg:
             self.version = data["version"]
             self.type = data['type']
             for r_item in data["registers"]:
-                field_dict={}
                 reg_name = r_item['reg']
-                for f_item in r_item["fields"]:
-                    field_dict.update({f_item['field']:f_item['pos']})
-                self.registers.update({reg_name:Reg(reg_name,self.type,field_dict)})
-        
+                # for f_item in r_item["fields"]:
+                #     field_dict.update({f_item['field']:f_item['pos']})
+                self.registers.update({reg_name:Reg(reg_name,self.type,r_item["fields"])})
+                #print(self.registers)
                 
                     
     # test func for understand how to use yaml
 
-    def test(self):
-        prj_dir = Path(__file__).parent.parent
-        with open(str(prj_dir)+"/cnf/xw32.yaml", 'r') as f:
-            data = yaml.load(f,yaml.FullLoader)
-            self.MCU = data["MCU"]
-            self.version = data["version"]
-            self.type = data['type']
-            for reg in data["registers"]:
-                field_dict={}
-                reg_name = reg['reg']
-                for item in reg["fields"]:
-                    field_dict.update({item['field']:item['pos']})
-                self.registers.update({reg_name:Reg(reg_name,self.type,field_dict)})
+    # def test(self):
+    #     prj_dir = Path(__file__).parent.parent
+    #     with open(str(prj_dir)+"/cnf/xw32.yaml", 'r') as f:
+    #         data = yaml.load(f,yaml.FullLoader)
+    #         self.MCU = data["MCU"]
+    #         self.version = data["version"]
+    #         self.type = data['type']
+    #         for reg in data["registers"]:
+    #             field_dict={}
+    #             reg_name = reg['reg']
+    #             for item in reg["fields"]:
+    #                 field_dict.update({item['field']:item['pos']})
+    #             self.registers.update({reg_name:Reg(reg_name,self.type,field_dict)})
             
         
 def fuzzy_search(name, regs:dict):
@@ -122,10 +121,16 @@ class Calculator:
 
 
 if __name__ == '__main__':
-    # b = ['1','1','0','1'] 
-    # print(b[0:1])
+    file_path = str(Path(__file__).parent)
+    
     p = ParserReg()
-    p.test()
-    fuzzy_search("SP",p.registers)
+    c=Calculator()
+    p.parse_file(file_path+"/../cnf/tc27x.yaml")
+    print(p.registers["VADC_CLC"].fields)
+    c.setup(0x102799,p.registers["VADC_CLC"])
+    c.show()
+    
+    # p.test()
+    # fuzzy_search("SP",p.registers)
     
 
