@@ -126,7 +126,7 @@ if __name__ == '__main__':
     p = ParserReg()
     c=Calculator()
     p.parse_file(file_path+"/../cnf/tc27x.yaml")
-    print(p.registers["VADC_CLC"].fields)
+    # print(p.registers["VADC_CLC"].fields)
     c.setup(0x102799,p.registers["VADC_CLC"])
     c.show()
     
