@@ -1,9 +1,10 @@
 from cmd2 import Cmd
 from cmd2 import style
 from cmd2 import Fg,Bg
-from core import ParserReg,Calculator
+from core import ParserReg,Calculator,fuzzy_search
 from pathlib import Path
 import os
+
 
 class App(Cmd):
     def __init__(self) -> None:
@@ -29,9 +30,9 @@ class App(Cmd):
         self.parser = ParserReg()
         self.calculator = Calculator()
         self.cnf_dir = Path()
+        self.setup_env()
         
-    # list configuration file command
-    def do_lscnf(self,_):
+    def setup_env(self):
         script_path = Path(__file__).parent
         # lev1 and lev2 means we have 2 way to store configuration files
         lev1_path = script_path.joinpath("cnf")
@@ -39,11 +40,13 @@ class App(Cmd):
 
         if(lev1_path.exists()):
             self.cnf_dir = lev1_path
-            for item in os.listdir(lev1_path):
-                print(item)
         elif(lev2_path.exists()):
             self.cnf_dir = lev2_path
-            for item in os.listdir(lev2_path):
+    
+    # list configuration file command
+    def do_lscnf(self,_):
+        if(str(self.cnf_dir)!='.'):
+            for item in os.listdir(self.cnf_dir):
                 print(item)
         else:
             self.poutput(self.cnf_no_exist_msg)
@@ -57,6 +60,7 @@ class App(Cmd):
         else:
             self.poutput(self.cnf_file_no_exist_msg)
     
+    # ls all registers to screen
     def do_lsreg(self,_):
         if(len(self.parser.registers)!=0):
             self.parser.ls_regs()
@@ -65,11 +69,16 @@ class App(Cmd):
     
     # fuzzy search command
     def do_fuzzy(self,arg):
-        pass
+        search_name = arg
+        reg_dict = self.parser.registers
+        fuzzy_search(search_name,reg_dict)
     # calc command 
     def do_calc(self,arg):
         pass
     
+    def do_test(self,_):
+        p=Path()
+        print(str(p))
     
 if __name__ == '__main__':
     app = App()

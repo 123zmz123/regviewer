@@ -66,7 +66,7 @@ def fuzzy_search(name, regs:dict):
     print("SEARCH REGISTER | "+name)
     print("--------------------------------")
     # gen a  map of {reg:similar ratio} in dict
-    reg_ratio_dic = {reg:fuzz.ratio(name,reg) for reg in regs.keys() if fuzz.ratio(name,reg)>60}
+    reg_ratio_dic = {reg:fuzz.ratio(name,reg) for reg in regs.keys() if fuzz.ratio(name.lower(),reg.lower())>55}
     # got the potential list of match our reg
     reg_p_list=sorted(reg_ratio_dic.items(),key=lambda x:x[1],reverse=True)
     print("OPTIONS         | ")
