@@ -1,7 +1,7 @@
 from cmd2 import Cmd
 from cmd2 import style
 from cmd2 import Fg,Bg
-from core import ParserReg,Calculator,fuzzy_search
+from core import ParserReg,Calculator,fuzzy_search,normal_search
 from pathlib import Path
 import os
 
@@ -53,6 +53,9 @@ class App(Cmd):
 
     # load configuration command
     def do_ldcnf(self,arg):
+        if(".yaml" not in arg):
+            arg+=".yaml"
+            
         cnf_file=self.cnf_dir.joinpath(arg)
         if(cnf_file.exists()):
             if(self.parser.parse_file(cnf_file)):
@@ -72,6 +75,12 @@ class App(Cmd):
         search_name = arg
         reg_dict = self.parser.registers
         fuzzy_search(search_name,reg_dict)
+    # normal search
+    def do_search(self, arg):
+        search_name = arg
+        reg_dict = self.parser.registers
+        normal_search(search_name,reg_dict)
+        
     # calc command 
     def do_calc(self,arg):
         pass

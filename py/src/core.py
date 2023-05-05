@@ -73,6 +73,13 @@ def fuzzy_search(name, regs:dict):
     for (reg,_) in reg_p_list:
         print("                |"+reg)
 
+def normal_search(name, regs:dict):
+    print("SEARCH REGISTER | "+name)
+    print("--------------------------------")
+    reg_p_list = [reg for reg in regs.keys() if name in reg ]
+    print("OPTIONS         | ")
+    for reg in reg_p_list:
+        print("                |"+reg)
     
     
            
