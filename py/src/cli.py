@@ -12,7 +12,11 @@ class App(Cmd):
                            fg=Fg.RED,bg=Bg.WHITE,bold=True)
         self.cnf_no_exist_msg = style("cnf folder were not exist ./cnf or ../cnf where is it? pls check you setup",fg=Fg.RED,bold=True)
 
-        self.cnf_no_exist_msg = style("cnf folder were not exist ./cnf or ../cnf where is it? pls check you setup",fg=Fg.RED,bold=True)
+        self.cnf_file_no_exist_msg = style("u specified file were not exist",fg=Fg.RED,bold=True)
+        
+        self.cnf_parse_succeed_msg = style("the cnfiguration file load succeed",fg=Fg.GREEN,bold=True)
+
+        self.regs_empty_msg= style("the the registers were empty pls consider ldcnf file",fg=Fg.RED,bold=True)
 
         self.intro = style("workflow\n \
                            1. list configuration file by lscnf\n \
@@ -24,7 +28,7 @@ class App(Cmd):
         
         self.parser = ParserReg()
         self.calculator = Calculator()
-        self.cnf_dir =None
+        self.cnf_dir = Path()
         
     # list configuration file command
     def do_lscnf(self,_):
@@ -46,8 +50,18 @@ class App(Cmd):
 
     # load configuration command
     def do_ldcnf(self,arg):
-        print(arg)
-        pass
+        cnf_file=self.cnf_dir.joinpath(arg)
+        if(cnf_file.exists()):
+            if(self.parser.parse_file(cnf_file)):
+                self.poutput(self.cnf_parse_succeed_msg)
+        else:
+            self.poutput(self.cnf_file_no_exist_msg)
+    
+    def do_lsreg(self,_):
+        if(len(self.parser.registers)!=0):
+            self.parser.ls_regs()
+        else:
+            self.poutput(self.regs_empty_msg)
     
     # fuzzy search command
     def do_fuzzy(self,arg):
@@ -55,7 +69,7 @@ class App(Cmd):
     # calc command 
     def do_calc(self,arg):
         pass
-        
+    
     
 if __name__ == '__main__':
     app = App()

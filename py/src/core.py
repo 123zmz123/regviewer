@@ -31,6 +31,7 @@ class ParserReg:
     # parse from yaml file to a dict
     # dict content were {"name": RegObject} 
     def parse_file(self,file_path):
+        self.registers = {}
         with open(file_path,'r') as f:
             data = yaml.load(f,yaml.FullLoader)
             self.MCU = data["MCU"]
@@ -42,7 +43,7 @@ class ParserReg:
                 #     field_dict.update({f_item['field']:f_item['pos']})
                 self.registers.update({reg_name:Reg(reg_name,self.type,r_item["fields"])})
                 #print(self.registers)
-                
+        return True        
                     
     # test func for understand how to use yaml
 
