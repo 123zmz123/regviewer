@@ -8,6 +8,12 @@ registers:
     s2:
     - 4
     - 5
+    s4:
+    - 9
+    - 11
+    s3:
+    - 6
+    - 8
   reg: AA
 -
   fields:
@@ -17,6 +23,6 @@ registers:
     s2:
     - 4
     - 5
-  reg: AA
+  reg: BB
 type: u32
 version: 0.1.1

@@ -101,7 +101,9 @@ class Calculator:
     def calc(self):
         """generate each field value of each regsister"""
         bin_list = self.bin_format() # convert the reg value to bin format
-        for field_name, pos_def in self.regdef.fields.items():
+        # in case unsorted serialization
+        sorted_field_dic = dict(sorted(self.regdef.fields.items(),key=lambda item:item[1][0]))
+        for field_name, pos_def in sorted_field_dic.items():#self.regdef.fields.items():
             begin_pos = pos_def[0]
             end_pos = pos_def[1]+1
             bin_val = bin_list[begin_pos:end_pos]
@@ -133,10 +135,12 @@ if __name__ == '__main__':
     
     p = ParserReg()
     c=Calculator()
-    p.parse_file(file_path+"/../cnf/tc27x.yaml")
+    p.parse_file(file_path+"/../cnf/test_cnf.yaml")
+    nd=dict(sorted(p.registers["AA"].fields.items(),key=lambda item: item[1][0]))
+    print(nd)
     # print(p.registers["VADC_CLC"].fields)
-    c.setup(0x102799,p.registers["VADC_CLC"])
-    c.show()
+    # c.setup(0x102799,p.registers["AA"])
+    # c.show()
     
     # p.test()
     # fuzzy_search("SP",p.registers)

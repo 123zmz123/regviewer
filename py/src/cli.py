@@ -1,9 +1,11 @@
 from cmd2 import Cmd
 from cmd2 import style
 from cmd2 import Fg,Bg
+from cmd2 import Cmd2ArgumentParser,with_argparser
 from core import ParserReg,Calculator,fuzzy_search,normal_search
 from pathlib import Path
 import os
+import argparse
 
 
 class App(Cmd):
@@ -80,14 +82,32 @@ class App(Cmd):
         search_name = arg
         reg_dict = self.parser.registers
         normal_search(search_name,reg_dict)
-        
-    # calc command 
-    def do_calc(self,arg):
-        pass
     
+    calc_argu = Cmd2ArgumentParser("generate each field value of a register by provide raw value")
+    calc_argu.add_argument("-r","--reg",help="the register name")
+    calc_argu.add_argument("-v","--value",help="the raw value of specified register")  
+
+    # calc command 
+    @with_argparser(calc_argu)
+    def do_calc(self,args:argparse.Namespace):
+        raw_v = self.handle_raw(args.value)
+        reg_key = args.reg
+        
+        reg_def = self.parser.registers[reg_key]
+        self.calculator.setup(raw_v,reg_def)
+        self.calculator.show()
+        
+    def handle_raw(self,raw):
+        if("0x" in raw):
+            raw_v = int(raw,16)
+        else:
+            raw_v = int(raw)
+        return raw_v
+        
     def do_test(self,_):
         p=Path()
         print(str(p))
+    
     
 if __name__ == '__main__':
     app = App()
