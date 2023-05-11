@@ -126,7 +126,7 @@ expand the yaml file support it's our main job currently.
 - [x] tc27D yaml file
 - [x] tc29B yaml file
 - [x] tc33A yaml file
-- [ ] tc37A yaml file
+- [x] tc37A yaml file
 - [ ] tc39B yaml file
 - [x] tc23A yaml file
 - [ ] stm32 all series yaml file
