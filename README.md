@@ -124,7 +124,7 @@ for engineer configure regster by shift operation. there are some 3rd party repo
 ## project status
 expand the yaml file support it's our main job currently.   
 - [x] tc27D yaml file
-- [ ] tc29B yaml file
+- [x] tc29B yaml file
 - [ ] tc33A yaml file
 - [ ] tc37A yaml file
 - [ ] tc39B yaml file
