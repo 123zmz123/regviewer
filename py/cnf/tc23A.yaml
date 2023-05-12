@@ -19726,34 +19726,187 @@ registers:
     - 31
   reg: LMU_RGNUA7
 -
-  fields: {}
+  fields:
+    ACCSTYPE:
+    - 0
+    - 7
+    NUMACCS:
+    - 12
+    - 15
+    reserved_8:
+    - 8
+    - 11
   reg: MC_CONFIG0
 -
-  fields: {}
+  fields:
+    ACCSPAT:
+    - 0
+    - 7
+    AG_MOD:
+    - 12
+    - 15
+    SELFASTB:
+    - 8
+    - 11
   reg: MC_CONFIG1
 -
-  fields: {}
+  fields:
+    AENE:
+    - 13
+    - 13
+    AERR:
+    - 3
+    - 3
+    CENE:
+    - 11
+    - 11
+    CERR:
+    - 1
+    - 1
+    ECE:
+    - 14
+    - 14
+    EOV:
+    - 15
+    - 15
+    SERR:
+    - 0
+    - 0
+    TRC:
+    - 4
+    - 4
+    UENE:
+    - 12
+    - 12
+    UERR:
+    - 2
+    - 2
+    VAL:
+    - 5
+    - 9
+    reserved_10:
+    - 10
+    - 10
   reg: MC_ECCD
 -
-  fields: {}
+  fields:
+    AENE:
+    - 2
+    - 2
+    BFLE:
+    - 5
+    - 5
+    CENE:
+    - 0
+    - 0
+    ECCMAP:
+    - 8
+    - 9
+    ECE:
+    - 3
+    - 3
+    SFLE:
+    - 6
+    - 7
+    TC_WAY_SEL:
+    - 10
+    - 11
+    TRE:
+    - 4
+    - 4
+    UENE:
+    - 1
+    - 1
+    reserved_12:
+    - 12
+    - 15
   reg: MC_ECCS
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 12
+    MBI:
+    - 13
+    - 15
   reg: MC_ETRR
 -
-  fields: {}
+  fields:
+    BITTOG:
+    - 7
+    - 7
+    DINIT:
+    - 4
+    - 4
+    DIR:
+    - 3
+    - 3
+    ESTF:
+    - 2
+    - 2
+    FAILDMP:
+    - 9
+    - 9
+    GP_BASE:
+    - 8
+    - 8
+    RCADR:
+    - 5
+    - 5
+    RESUME:
+    - 1
+    - 1
+    ROWTOG:
+    - 6
+    - 6
+    Res4:
+    - 10
+    - 14
+    START:
+    - 0
+    - 0
+    reserved_15:
+    - 15
+    - 15
   reg: MC_MCONTROL
 -
-  fields: {}
+  fields:
+    DONE:
+    - 0
+    - 0
+    FAIL:
+    - 1
+    - 1
+    FDA:
+    - 2
+    - 2
+    SFAIL:
+    - 3
+    - 3
+    reserved_4:
+    - 4
+    - 15
   reg: MC_MSTATUS
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 14
+    RAEN:
+    - 15
+    - 15
   reg: MC_RANGE
 -
-  fields: {}
+  fields:
+    WDATA:
+    - 0
+    - 15
   reg: MC_RDBFL
 -
-  fields: {}
+  fields:
+    REV_ID:
+    - 0
+    - 15
   reg: MC_REVID
 -
   fields:

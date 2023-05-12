@@ -1033,7 +1033,10 @@ registers:
     - 31
   reg: CAN_CLC
 -
-  fields: {}
+  fields:
+    DB:
+    - 0
+    - 7
   reg: CAN_DB
 -
   fields:
@@ -3361,7 +3364,10 @@ registers:
     - 15
   reg: CAN_TXEVENT_E1
 -
-  fields: {}
+  fields:
+    DB:
+    - 0
+    - 7
   reg: CAN_TXMSG_DB
 -
   fields:
@@ -19792,16 +19798,28 @@ registers:
     - 31
   reg: FCE_KRSTCLR
 -
-  fields: {}
+  fields:
+    COMM1:
+    - 0
+    - 7
   reg: FSI_COMM_1
 -
-  fields: {}
+  fields:
+    COMM2:
+    - 0
+    - 7
   reg: FSI_COMM_2
 -
-  fields: {}
+  fields:
+    HSMCOMM1:
+    - 0
+    - 7
   reg: FSI_HSMCOMM_1
 -
-  fields: {}
+  fields:
+    HSMCOMM2:
+    - 0
+    - 7
   reg: FSI_HSMCOMM_2
 -
   fields:
@@ -27352,43 +27370,253 @@ registers:
     - 15
   reg: MTU_ID
 -
-  fields: {}
+  fields:
+    ADDRE:
+    - 2
+    - 2
+    DBE:
+    - 1
+    - 1
+    MISCE:
+    - 5
+    - 5
+    OPENE:
+    - 4
+    - 4
+    OVFE:
+    - 3
+    - 3
+    SBE:
+    - 0
+    - 0
+    reserved_6:
+    - 6
+    - 15
   reg: MTU_MC_ALMSRCS
 -
-  fields: {}
+  fields:
+    ACCSTYPE:
+    - 0
+    - 7
+    NUMACCS:
+    - 12
+    - 15
+    reserved_8:
+    - 8
+    - 11
   reg: MTU_MC_CONFIG0
 -
-  fields: {}
+  fields:
+    ACCSPAT:
+    - 0
+    - 7
+    AG_MOD:
+    - 12
+    - 15
+    SELFASTB:
+    - 8
+    - 11
   reg: MTU_MC_CONFIG1
 -
-  fields: {}
+  fields:
+    CERR:
+    - 1
+    - 1
+    EOV:
+    - 15
+    - 15
+    MERR:
+    - 3
+    - 3
+    PERMERR:
+    - 10
+    - 14
+    SERR:
+    - 0
+    - 0
+    TRC:
+    - 4
+    - 4
+    UCERR:
+    - 2
+    - 2
+    VAL:
+    - 5
+    - 9
   reg: MTU_MC_ECCD
 -
-  fields: {}
+  fields:
+    BFLE:
+    - 5
+    - 5
+    CENE:
+    - 0
+    - 0
+    ECCMAP:
+    - 8
+    - 9
+    ECE:
+    - 3
+    - 3
+    MENE:
+    - 2
+    - 2
+    SFFD:
+    - 11
+    - 11
+    SFLE:
+    - 6
+    - 6
+    TC_TWR_SEL:
+    - 10
+    - 10
+    TRE:
+    - 4
+    - 4
+    UCENE:
+    - 1
+    - 1
+    reserved_12:
+    - 12
+    - 15
+    reserved_7:
+    - 7
+    - 7
   reg: MTU_MC_ECCS
 -
-  fields: {}
+  fields:
+    ADDRERR:
+    - 2
+    - 2
+    DBERR:
+    - 1
+    - 1
+    SBERR:
+    - 0
+    - 0
+    reserved_3:
+    - 3
+    - 15
   reg: MTU_MC_ERRINFO
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 12
+    MBI:
+    - 13
+    - 15
   reg: MTU_MC_ETRR
 -
-  fields: {}
+  fields:
+    MISCERR:
+    - 8
+    - 13
+    OPERR:
+    - 0
+    - 5
+    reserved_14:
+    - 14
+    - 15
+    reserved_6:
+    - 6
+    - 7
   reg: MTU_MC_FAULTSTS
 -
-  fields: {}
+  fields:
+    BITTOG:
+    - 7
+    - 7
+    DINIT:
+    - 4
+    - 4
+    DIR:
+    - 3
+    - 3
+    EN_DESCR:
+    - 10
+    - 10
+    ESTF:
+    - 2
+    - 2
+    FAILDMP:
+    - 9
+    - 9
+    RCADR:
+    - 5
+    - 5
+    RESUME:
+    - 1
+    - 1
+    ROWTOG:
+    - 6
+    - 6
+    SRAM_CLR:
+    - 15
+    - 15
+    START:
+    - 0
+    - 0
+    reserved_11:
+    - 11
+    - 11
+    reserved_12:
+    - 12
+    - 12
+    reserved_13:
+    - 13
+    - 13
+    reserved_14:
+    - 14
+    - 14
+    reserved_8:
+    - 8
+    - 8
   reg: MTU_MC_MCONTROL
 -
-  fields: {}
+  fields:
+    DONE:
+    - 0
+    - 0
+    FAIL:
+    - 1
+    - 1
+    FDA:
+    - 2
+    - 2
+    SFAIL:
+    - 3
+    - 3
+    reserved_4:
+    - 4
+    - 4
+    reserved_5:
+    - 5
+    - 15
   reg: MTU_MC_MSTATUS
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 13
+    INJERR:
+    - 14
+    - 14
+    RAEN:
+    - 15
+    - 15
   reg: MTU_MC_RANGE
 -
-  fields: {}
+  fields:
+    WDATA:
+    - 0
+    - 15
   reg: MTU_MC_RDBFL
 -
-  fields: {}
+  fields:
+    REV_ID:
+    - 0
+    - 15
   reg: MTU_MC_REVID
 -
   fields:

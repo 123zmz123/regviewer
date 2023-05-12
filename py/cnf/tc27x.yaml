@@ -1813,124 +1813,1111 @@ registers:
     - 15
   reg: CAN_PANCTR
 -
-  fields: {}
+  fields:
+    DATA:
+    - 0
+    - 31
   reg: CBS_COMDATA
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 31
   reg: CBS_ICTSA
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 31
   reg: CBS_ICTTA
 -
-  fields: {}
+  fields:
+    CHANNEL:
+    - 5
+    - 7
+    CHANNEL_P:
+    - 4
+    - 4
+    CLR_CS:
+    - 3
+    - 3
+    CLR_INT_TRC:
+    - 19
+    - 19
+    INT_MOD:
+    - 24
+    - 24
+    INT_TRC:
+    - 25
+    - 25
+    SET_CRS:
+    - 0
+    - 0
+    SET_CS:
+    - 2
+    - 2
+    SET_CWS:
+    - 1
+    - 1
+    SET_INT_MOD:
+    - 16
+    - 16
+    SET_INT_TRC:
+    - 18
+    - 18
+    TRC_MOD:
+    - 21
+    - 22
+    TRC_MOD_P:
+    - 20
+    - 20
+    reserved_17:
+    - 17
+    - 17
+    reserved_23:
+    - 23
+    - 23
+    reserved_26:
+    - 26
+    - 31
+    reserved_8:
+    - 8
+    - 15
   reg: CBS_INTMOD
 -
-  fields: {}
+  fields:
+    CHANNEL:
+    - 12
+    - 14
+    COM_SYNC:
+    - 7
+    - 7
+    CRSYNC:
+    - 4
+    - 4
+    CWSYNC:
+    - 5
+    - 5
+    CW_ACK:
+    - 6
+    - 6
+    HOSTED:
+    - 8
+    - 8
+    reserved_0:
+    - 0
+    - 3
+    reserved_15:
+    - 15
+    - 31
+    reserved_9:
+    - 9
+    - 11
   reg: CBS_IOSR
 -
-  fields: {}
+  fields:
+    MODNUMBER:
+    - 16
+    - 31
+    MOD_REV:
+    - 0
+    - 7
+    MOD_TYPE:
+    - 8
+    - 15
   reg: CBS_JDPID
 -
-  fields: {}
+  fields:
+    JTAG_ID:
+    - 0
+    - 31
   reg: CBS_JTAGID
 -
-  fields: {}
+  fields:
+    OC0:
+    - 1
+    - 1
+    OC0_P:
+    - 0
+    - 0
+    OC1:
+    - 3
+    - 3
+    OC1_P:
+    - 2
+    - 2
+    OC2:
+    - 5
+    - 5
+    OC2_P:
+    - 4
+    - 4
+    OC3:
+    - 7
+    - 7
+    OC3_P:
+    - 6
+    - 6
+    OC4:
+    - 9
+    - 9
+    OC4_P:
+    - 8
+    - 8
+    OC5:
+    - 11
+    - 11
+    OC5_P:
+    - 10
+    - 10
+    OJC0:
+    - 17
+    - 17
+    OJC0_P:
+    - 16
+    - 16
+    OJC1:
+    - 19
+    - 19
+    OJC1_P:
+    - 18
+    - 18
+    OJC2:
+    - 21
+    - 21
+    OJC2_P:
+    - 20
+    - 20
+    OJC3:
+    - 23
+    - 23
+    OJC3_P:
+    - 22
+    - 22
+    OJC4:
+    - 25
+    - 25
+    OJC4_P:
+    - 24
+    - 24
+    OJC5:
+    - 27
+    - 27
+    OJC5_P:
+    - 26
+    - 26
+    OJC6:
+    - 29
+    - 29
+    OJC6_P:
+    - 28
+    - 28
+    OJC7:
+    - 31
+    - 31
+    OJC7_P:
+    - 30
+    - 30
+    STABLE:
+    - 15
+    - 15
+    STABLE_P:
+    - 14
+    - 14
+    WDTSUS:
+    - 13
+    - 13
+    WDTSUS_P:
+    - 12
+    - 12
   reg: CBS_OCNTRL
 -
-  fields: {}
+  fields:
+    AUT_OK:
+    - 19
+    - 19
+    AUT_OK_P:
+    - 18
+    - 18
+    DS:
+    - 8
+    - 8
+    IF_LCK:
+    - 17
+    - 17
+    IF_LCK_P:
+    - 16
+    - 16
+    OCO:
+    - 9
+    - 9
+    PAT:
+    - 0
+    - 7
+    reserved_10:
+    - 10
+    - 15
+    reserved_20:
+    - 20
+    - 31
   reg: CBS_OEC
 -
-  fields: {}
+  fields:
+    DAPMODE:
+    - 0
+    - 2
+    DAPRST:
+    - 3
+    - 3
+    F_JTAG:
+    - 8
+    - 8
+    N_JTAG:
+    - 9
+    - 9
+    PADCTL:
+    - 12
+    - 15
+    reserved_10:
+    - 10
+    - 11
+    reserved_16:
+    - 16
+    - 31
+    reserved_4:
+    - 4
+    - 7
   reg: CBS_OIFM
 -
-  fields: {}
+  fields:
+    AUT_OK:
+    - 17
+    - 17
+    EECDIS:
+    - 6
+    - 6
+    EECTRC:
+    - 5
+    - 5
+    ENIDIS:
+    - 4
+    - 4
+    HARR:
+    - 8
+    - 8
+    IF_LCK:
+    - 16
+    - 16
+    OC0:
+    - 1
+    - 1
+    OC1:
+    - 2
+    - 2
+    OC2:
+    - 3
+    - 3
+    OCO:
+    - 19
+    - 19
+    OEN:
+    - 0
+    - 0
+    OJC1:
+    - 9
+    - 9
+    OJC2:
+    - 10
+    - 10
+    OJC3:
+    - 11
+    - 11
+    OJC6:
+    - 14
+    - 14
+    RSTCL0:
+    - 12
+    - 12
+    RSTCL1:
+    - 13
+    - 13
+    RSTCL3:
+    - 15
+    - 15
+    STABLE:
+    - 18
+    - 18
+    WDTSUS:
+    - 7
+    - 7
+    reserved_20:
+    - 20
+    - 31
   reg: CBS_OSTATE
 -
-  fields: {}
+  fields:
+    C0:
+    - 0
+    - 0
+    C1:
+    - 1
+    - 1
+    C2:
+    - 2
+    - 2
+    HSM:
+    - 31
+    - 31
+    reserved_3:
+    - 3
+    - 30
   reg: CBS_TCCB
 -
-  fields: {}
+  fields:
+    C0:
+    - 0
+    - 0
+    C1:
+    - 1
+    - 1
+    C2:
+    - 2
+    - 2
+    HSM:
+    - 31
+    - 31
+    reserved_3:
+    - 3
+    - 30
   reg: CBS_TCCH
 -
-  fields: {}
+  fields:
+    P0:
+    - 0
+    - 0
+    P1:
+    - 1
+    - 1
+    P2:
+    - 2
+    - 2
+    P3:
+    - 3
+    - 3
+    P4:
+    - 4
+    - 4
+    P5:
+    - 5
+    - 5
+    P6:
+    - 6
+    - 6
+    P7:
+    - 7
+    - 7
+    reserved_8:
+    - 8
+    - 31
   reg: CBS_TCIP
 -
-  fields: {}
+  fields:
+    BRK:
+    - 0
+    - 0
+    SUS:
+    - 1
+    - 1
+    T0:
+    - 8
+    - 8
+    T1:
+    - 9
+    - 9
+    T2:
+    - 10
+    - 10
+    T3:
+    - 11
+    - 11
+    reserved_12:
+    - 12
+    - 31
+    reserved_2:
+    - 2
+    - 7
   reg: CBS_TCM
 -
-  fields: {}
+  fields:
+    OTGB0:
+    - 0
+    - 15
+    OTGB1:
+    - 16
+    - 31
   reg: CBS_TCTGB
 -
-  fields: {}
+  fields:
+    TL1:
+    - 1
+    - 1
+    TL2:
+    - 2
+    - 2
+    TL3:
+    - 3
+    - 3
+    TL4:
+    - 4
+    - 4
+    TL5:
+    - 5
+    - 5
+    TL6:
+    - 6
+    - 6
+    TL7:
+    - 7
+    - 7
+    reserved_0:
+    - 0
+    - 0
+    reserved_8:
+    - 8
+    - 31
   reg: CBS_TCTL
 -
-  fields: {}
+  fields:
+    PIN0:
+    - 0
+    - 3
+    PIN1:
+    - 4
+    - 7
+    PIN2:
+    - 8
+    - 11
+    PIN3:
+    - 12
+    - 15
+    PIN4:
+    - 16
+    - 19
+    PIN5:
+    - 20
+    - 23
+    PIN6:
+    - 24
+    - 27
+    PIN7:
+    - 28
+    - 31
   reg: CBS_TIPR
 -
-  fields: {}
+  fields:
+    C0:
+    - 0
+    - 0
+    C1:
+    - 1
+    - 1
+    C2:
+    - 2
+    - 2
+    DMA:
+    - 29
+    - 29
+    HSM:
+    - 31
+    - 31
+    HSS:
+    - 28
+    - 28
+    reserved_3:
+    - 3
+    - 27
+    reserved_30:
+    - 30
+    - 30
   reg: CBS_TL1ST
 -
-  fields: {}
+  fields:
+    TLSP1:
+    - 4
+    - 7
+    TLSP2:
+    - 8
+    - 11
+    TLSP3:
+    - 12
+    - 15
+    TLSP4:
+    - 16
+    - 19
+    TLSP5:
+    - 20
+    - 23
+    TLSP6:
+    - 24
+    - 27
+    TLSP7:
+    - 28
+    - 31
+    reserved_0:
+    - 0
+    - 3
   reg: CBS_TLC
 -
-  fields: {}
+  fields:
+    CLR:
+    - 8
+    - 9
+    LE:
+    - 4
+    - 6
+    STOP:
+    - 12
+    - 13
+    TGL:
+    - 0
+    - 3
+    reserved_10:
+    - 10
+    - 11
+    reserved_14:
+    - 14
+    - 31
+    reserved_7:
+    - 7
+    - 7
   reg: CBS_TLCC
 -
-  fields: {}
+  fields:
+    TL1:
+    - 1
+    - 1
+    TL2:
+    - 2
+    - 2
+    TL3:
+    - 3
+    - 3
+    reserved_0:
+    - 0
+    - 0
+    reserved_4:
+    - 4
+    - 31
   reg: CBS_TLCHE
 -
-  fields: {}
+  fields:
+    TL1:
+    - 1
+    - 1
+    TL2:
+    - 2
+    - 2
+    TL3:
+    - 3
+    - 3
+    reserved_0:
+    - 0
+    - 0
+    reserved_4:
+    - 4
+    - 31
   reg: CBS_TLCHS
 -
-  fields: {}
+  fields:
+    CV:
+    - 0
+    - 30
+    SO:
+    - 31
+    - 31
   reg: CBS_TLCV
 -
-  fields: {}
+  fields:
+    TL1:
+    - 1
+    - 1
+    TL2:
+    - 2
+    - 2
+    TL3:
+    - 3
+    - 3
+    TL4:
+    - 4
+    - 4
+    TL5:
+    - 5
+    - 5
+    TL6:
+    - 6
+    - 6
+    TL7:
+    - 7
+    - 7
+    reserved_0:
+    - 0
+    - 0
+    reserved_8:
+    - 8
+    - 31
   reg: CBS_TLS
 -
-  fields: {}
+  fields:
+    TGL:
+    - 0
+    - 3
+    TIM:
+    - 16
+    - 31
+    VTZ:
+    - 4
+    - 4
+    reserved_5:
+    - 5
+    - 15
   reg: CBS_TLT
 -
-  fields: {}
+  fields:
+    TL1:
+    - 2
+    - 3
+    TL2:
+    - 4
+    - 5
+    TL3:
+    - 6
+    - 7
+    TL4:
+    - 8
+    - 9
+    TL5:
+    - 10
+    - 11
+    TL6:
+    - 12
+    - 13
+    TL7:
+    - 14
+    - 15
+    reserved_0:
+    - 0
+    - 1
+    reserved_16:
+    - 16
+    - 31
   reg: CBS_TLTTH
 -
-  fields: {}
+  fields:
+    PIN0:
+    - 0
+    - 1
+    PIN1:
+    - 2
+    - 3
+    PIN2:
+    - 4
+    - 5
+    PIN3:
+    - 6
+    - 7
+    PIN4:
+    - 8
+    - 9
+    PIN5:
+    - 10
+    - 11
+    PIN6:
+    - 12
+    - 13
+    PIN7:
+    - 14
+    - 15
+    reserved_16:
+    - 16
+    - 31
   reg: CBS_TOPPS
 -
-  fields: {}
+  fields:
+    PIN0:
+    - 0
+    - 3
+    PIN1:
+    - 4
+    - 7
+    PIN2:
+    - 8
+    - 11
+    PIN3:
+    - 12
+    - 15
+    PIN4:
+    - 16
+    - 19
+    PIN5:
+    - 20
+    - 23
+    PIN6:
+    - 24
+    - 27
+    PIN7:
+    - 28
+    - 31
   reg: CBS_TOPR
 -
-  fields: {}
+  fields:
+    BRKIN:
+    - 20
+    - 23
+    BRKOUT:
+    - 4
+    - 7
+    BT1:
+    - 8
+    - 8
+    HALT:
+    - 0
+    - 3
+    SUSIN:
+    - 24
+    - 27
+    reserved_28:
+    - 28
+    - 31
+    reserved_9:
+    - 9
+    - 19
   reg: CBS_TRC
 -
-  fields: {}
+  fields:
+    TR0EV:
+    - 0
+    - 3
+    TR2EV:
+    - 8
+    - 11
+    TR4EV:
+    - 16
+    - 19
+    TR6EV:
+    - 24
+    - 27
+    reserved_12:
+    - 12
+    - 15
+    reserved_20:
+    - 20
+    - 23
+    reserved_28:
+    - 28
+    - 31
+    reserved_4:
+    - 4
+    - 7
   reg: CBS_TREC
 -
-  fields: {}
+  fields:
+    BRKIN:
+    - 20
+    - 23
+    BRKOUT:
+    - 4
+    - 7
+    BT1:
+    - 8
+    - 8
+    HALT:
+    - 0
+    - 3
+    SUSIN:
+    - 24
+    - 27
+    reserved_28:
+    - 28
+    - 31
+    reserved_9:
+    - 9
+    - 19
   reg: CBS_TRHSM
 -
-  fields: {}
+  fields:
+    TRGx_0:
+    - 0
+    - 0
+    TRGx_1:
+    - 1
+    - 1
+    TRGx_10:
+    - 10
+    - 10
+    TRGx_11:
+    - 11
+    - 11
+    TRGx_12:
+    - 12
+    - 12
+    TRGx_13:
+    - 13
+    - 13
+    TRGx_14:
+    - 14
+    - 14
+    TRGx_15:
+    - 15
+    - 15
+    TRGx_16:
+    - 16
+    - 16
+    TRGx_17:
+    - 17
+    - 17
+    TRGx_18:
+    - 18
+    - 18
+    TRGx_19:
+    - 19
+    - 19
+    TRGx_2:
+    - 2
+    - 2
+    TRGx_20:
+    - 20
+    - 20
+    TRGx_21:
+    - 21
+    - 21
+    TRGx_22:
+    - 22
+    - 22
+    TRGx_23:
+    - 23
+    - 23
+    TRGx_3:
+    - 3
+    - 3
+    TRGx_4:
+    - 4
+    - 4
+    TRGx_5:
+    - 5
+    - 5
+    TRGx_6:
+    - 6
+    - 6
+    TRGx_7:
+    - 7
+    - 7
+    TRGx_8:
+    - 8
+    - 8
+    TRGx_9:
+    - 9
+    - 9
+    x:
+    - 24
+    - 31
   reg: CBS_TRIG
 -
-  fields: {}
+  fields:
+    TRGx_0:
+    - 0
+    - 0
+    TRGx_1:
+    - 1
+    - 1
+    TRGx_10:
+    - 10
+    - 10
+    TRGx_11:
+    - 11
+    - 11
+    TRGx_12:
+    - 12
+    - 12
+    TRGx_13:
+    - 13
+    - 13
+    TRGx_14:
+    - 14
+    - 14
+    TRGx_15:
+    - 15
+    - 15
+    TRGx_16:
+    - 16
+    - 16
+    TRGx_17:
+    - 17
+    - 17
+    TRGx_18:
+    - 18
+    - 18
+    TRGx_19:
+    - 19
+    - 19
+    TRGx_2:
+    - 2
+    - 2
+    TRGx_20:
+    - 20
+    - 20
+    TRGx_21:
+    - 21
+    - 21
+    TRGx_22:
+    - 22
+    - 22
+    TRGx_23:
+    - 23
+    - 23
+    TRGx_3:
+    - 3
+    - 3
+    TRGx_4:
+    - 4
+    - 4
+    TRGx_5:
+    - 5
+    - 5
+    TRGx_6:
+    - 6
+    - 6
+    TRGx_7:
+    - 7
+    - 7
+    TRGx_8:
+    - 8
+    - 8
+    TRGx_9:
+    - 9
+    - 9
+    x:
+    - 24
+    - 31
   reg: CBS_TRIGC
 -
-  fields: {}
+  fields:
+    BITNUM:
+    - 0
+    - 12
+    reserved_13:
+    - 13
+    - 31
   reg: CBS_TRIGS
 -
-  fields: {}
+  fields:
+    BRKIN:
+    - 20
+    - 23
+    BRKOUT:
+    - 4
+    - 7
+    SUSOUT:
+    - 8
+    - 11
+    reserved_0:
+    - 0
+    - 3
+    reserved_12:
+    - 12
+    - 19
+    reserved_24:
+    - 24
+    - 31
   reg: CBS_TRMC
 -
-  fields: {}
+  fields:
+    TG0:
+    - 0
+    - 3
+    TG1:
+    - 4
+    - 7
+    TG2:
+    - 8
+    - 11
+    TG3:
+    - 12
+    - 15
+    reserved_16:
+    - 16
+    - 31
   reg: CBS_TRMT
 -
-  fields: {}
+  fields:
+    SRC0:
+    - 16
+    - 19
+    SRC1:
+    - 20
+    - 23
+    TT:
+    - 0
+    - 3
+    reserved_24:
+    - 24
+    - 31
+    reserved_4:
+    - 4
+    - 15
   reg: CBS_TRSS
 -
-  fields: {}
+  fields:
+    TG10:
+    - 8
+    - 11
+    TG11:
+    - 12
+    - 15
+    TG12:
+    - 16
+    - 19
+    TG13:
+    - 20
+    - 23
+    TG14:
+    - 24
+    - 27
+    TG15:
+    - 28
+    - 31
+    TG8:
+    - 0
+    - 3
+    TG9:
+    - 4
+    - 7
   reg: CBS_TRTGB_H
 -
-  fields: {}
+  fields:
+    TG0:
+    - 0
+    - 3
+    TG1:
+    - 4
+    - 7
+    TG2:
+    - 8
+    - 11
+    TG3:
+    - 12
+    - 15
+    TG4:
+    - 16
+    - 19
+    TG5:
+    - 20
+    - 23
+    TG6:
+    - 24
+    - 27
+    TG7:
+    - 28
+    - 31
   reg: CBS_TRTGB_L
 -
   fields:
@@ -30259,34 +31246,187 @@ registers:
     - 31
   reg: LMU_RGN_UA
 -
-  fields: {}
+  fields:
+    ACCSTYPE:
+    - 0
+    - 7
+    NUMACCS:
+    - 12
+    - 15
+    reserved_8:
+    - 8
+    - 11
   reg: MC_CONFIG0
 -
-  fields: {}
+  fields:
+    ACCSPAT:
+    - 0
+    - 7
+    AG_MOD:
+    - 12
+    - 15
+    SELFASTB:
+    - 8
+    - 11
   reg: MC_CONFIG1
 -
-  fields: {}
+  fields:
+    AENE:
+    - 13
+    - 13
+    AERR:
+    - 3
+    - 3
+    CENE:
+    - 11
+    - 11
+    CERR:
+    - 1
+    - 1
+    ECE:
+    - 14
+    - 14
+    EOV:
+    - 15
+    - 15
+    SERR:
+    - 0
+    - 0
+    TRC:
+    - 4
+    - 4
+    UENE:
+    - 12
+    - 12
+    UERR:
+    - 2
+    - 2
+    VAL:
+    - 5
+    - 9
+    reserved_10:
+    - 10
+    - 10
   reg: MC_ECCD
 -
-  fields: {}
+  fields:
+    AENE:
+    - 2
+    - 2
+    BFLE:
+    - 5
+    - 5
+    CENE:
+    - 0
+    - 0
+    ECCMAP:
+    - 8
+    - 9
+    ECE:
+    - 3
+    - 3
+    SFLE:
+    - 6
+    - 7
+    TC_WAY_SEL:
+    - 10
+    - 11
+    TRE:
+    - 4
+    - 4
+    UENE:
+    - 1
+    - 1
+    reserved_12:
+    - 12
+    - 15
   reg: MC_ECCS
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 12
+    MBI:
+    - 13
+    - 15
   reg: MC_ETRR
 -
-  fields: {}
+  fields:
+    BITTOG:
+    - 7
+    - 7
+    DINIT:
+    - 4
+    - 4
+    DIR:
+    - 3
+    - 3
+    ESTF:
+    - 2
+    - 2
+    FAILDMP:
+    - 9
+    - 9
+    GP_BASE:
+    - 8
+    - 8
+    RCADR:
+    - 5
+    - 5
+    RESUME:
+    - 1
+    - 1
+    ROWTOG:
+    - 6
+    - 6
+    Res4:
+    - 10
+    - 14
+    START:
+    - 0
+    - 0
+    reserved_15:
+    - 15
+    - 15
   reg: MC_MCONTROL
 -
-  fields: {}
+  fields:
+    DONE:
+    - 0
+    - 0
+    FAIL:
+    - 1
+    - 1
+    FDA:
+    - 2
+    - 2
+    SFAIL:
+    - 3
+    - 3
+    reserved_4:
+    - 4
+    - 15
   reg: MC_MSTATUS
 -
-  fields: {}
+  fields:
+    ADDR:
+    - 0
+    - 14
+    RAEN:
+    - 15
+    - 15
   reg: MC_RANGE
 -
-  fields: {}
+  fields:
+    WDATA:
+    - 0
+    - 15
   reg: MC_RDBFL
 -
-  fields: {}
+  fields:
+    REV_ID:
+    - 0
+    - 15
   reg: MC_REVID
 -
   fields:

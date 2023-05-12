@@ -3,6 +3,8 @@ import yaml
 from pathlib import Path
 import sys
 import re
+
+# this is the script file to extract register and field message from tc27Dx infra .h file to yaml file.
 class Reg:
     """ fields were like <name:[begin:end]>"""
     def __init__(self,name,fields:dict):
@@ -93,10 +95,11 @@ def get_reg_tc27D(_str):
 def get_fields_tc27D(_str):
     res={}
     pos=0
-    if ("Ifx_Strict_32Bit" in _str):
-        # to handle file: IfxSmu_regdef.h
-        _str = _str.replace("Ifx_Strict_32Bit","int")
+    if ("Ifx_Strict_" in _str):
+        r=re.search("Ifx_Strict.*?t",_str).group(0)
+        _str=_str.replace(r,"int")
         
+    _str = _str.replace(" : ",":")    
     fields = re.findall('int.*?:\d+',_str)
     for field in fields:
         field_name = re.search('[^int ]\w*:',field).group(0)[0:-1]
