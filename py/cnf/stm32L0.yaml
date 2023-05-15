@@ -1,0 +1,6484 @@
+MCU: stm32L0
+registers:
+-
+  fields:
+    GIF1:
+    - 0
+    - 0
+    GIF2:
+    - 4
+    - 4
+    GIF3:
+    - 8
+    - 8
+    GIF4:
+    - 12
+    - 12
+    GIF5:
+    - 16
+    - 16
+    GIF6:
+    - 20
+    - 20
+    GIF7:
+    - 24
+    - 24
+    HTIF1:
+    - 2
+    - 2
+    HTIF2:
+    - 6
+    - 6
+    HTIF3:
+    - 10
+    - 10
+    HTIF4:
+    - 14
+    - 14
+    HTIF5:
+    - 18
+    - 18
+    HTIF6:
+    - 22
+    - 22
+    HTIF7:
+    - 26
+    - 26
+    TCIF1:
+    - 1
+    - 1
+    TCIF2:
+    - 5
+    - 5
+    TCIF3:
+    - 9
+    - 9
+    TCIF4:
+    - 13
+    - 13
+    TCIF5:
+    - 17
+    - 17
+    TCIF6:
+    - 21
+    - 21
+    TCIF7:
+    - 25
+    - 25
+    TEIF1:
+    - 3
+    - 3
+    TEIF2:
+    - 7
+    - 7
+    TEIF3:
+    - 11
+    - 11
+    TEIF4:
+    - 15
+    - 15
+    TEIF5:
+    - 19
+    - 19
+    TEIF6:
+    - 23
+    - 23
+    TEIF7:
+    - 27
+    - 27
+  reg: DMA1_ISR
+-
+  fields:
+    CGIF1:
+    - 0
+    - 0
+    CGIF2:
+    - 4
+    - 4
+    CGIF3:
+    - 8
+    - 8
+    CGIF4:
+    - 12
+    - 12
+    CGIF5:
+    - 16
+    - 16
+    CGIF6:
+    - 20
+    - 20
+    CGIF7:
+    - 24
+    - 24
+    CHTIF1:
+    - 2
+    - 2
+    CHTIF2:
+    - 6
+    - 6
+    CHTIF3:
+    - 10
+    - 10
+    CHTIF4:
+    - 14
+    - 14
+    CHTIF5:
+    - 18
+    - 18
+    CHTIF6:
+    - 22
+    - 22
+    CHTIF7:
+    - 26
+    - 26
+    CTCIF1:
+    - 1
+    - 1
+    CTCIF2:
+    - 5
+    - 5
+    CTCIF3:
+    - 9
+    - 9
+    CTCIF4:
+    - 13
+    - 13
+    CTCIF5:
+    - 17
+    - 17
+    CTCIF6:
+    - 21
+    - 21
+    CTCIF7:
+    - 25
+    - 25
+    CTEIF1:
+    - 3
+    - 3
+    CTEIF2:
+    - 7
+    - 7
+    CTEIF3:
+    - 11
+    - 11
+    CTEIF4:
+    - 15
+    - 15
+    CTEIF5:
+    - 19
+    - 19
+    CTEIF6:
+    - 23
+    - 23
+    CTEIF7:
+    - 27
+    - 27
+  reg: DMA1_IFCR
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR1
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR1
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR1
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR1
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR2
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR2
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR2
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR2
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR3
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR3
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR3
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR3
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR4
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR4
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR4
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR4
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR5
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR5
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR5
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR5
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR6
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR6
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR6
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR6
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR7
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR7
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR7
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR7
+-
+  fields:
+    C1S:
+    - 0
+    - 3
+    C2S:
+    - 4
+    - 7
+    C3S:
+    - 8
+    - 11
+    C4S:
+    - 12
+    - 15
+    C5S:
+    - 16
+    - 19
+    C6S:
+    - 20
+    - 23
+    C7S:
+    - 24
+    - 27
+  reg: DMA1_CSELR
+-
+  fields:
+    DR:
+    - 0
+    - 31
+  reg: CRC_DR
+-
+  fields:
+    IDR:
+    - 0
+    - 7
+  reg: CRC_IDR
+-
+  fields:
+    POLYSIZE:
+    - 3
+    - 4
+    RESET:
+    - 0
+    - 0
+    REV_IN:
+    - 5
+    - 6
+    REV_OUT:
+    - 7
+    - 7
+  reg: CRC_CR
+-
+  fields:
+    CRC_INIT:
+    - 0
+    - 31
+  reg: CRC_INIT
+-
+  fields:
+    Polynomialcoefficients:
+    - 0
+    - 31
+  reg: CRC_POL
+-
+  fields:
+    MODE0:
+    - 0
+    - 1
+    MODE1:
+    - 2
+    - 3
+    MODE10:
+    - 20
+    - 21
+    MODE11:
+    - 22
+    - 23
+    MODE12:
+    - 24
+    - 25
+    MODE13:
+    - 26
+    - 27
+    MODE14:
+    - 28
+    - 29
+    MODE15:
+    - 30
+    - 31
+    MODE2:
+    - 4
+    - 5
+    MODE3:
+    - 6
+    - 7
+    MODE4:
+    - 8
+    - 9
+    MODE5:
+    - 10
+    - 11
+    MODE6:
+    - 12
+    - 13
+    MODE7:
+    - 14
+    - 15
+    MODE8:
+    - 16
+    - 17
+    MODE9:
+    - 18
+    - 19
+  reg: GPIOA_MODER
+-
+  fields:
+    OT0:
+    - 0
+    - 0
+    OT1:
+    - 1
+    - 1
+    OT10:
+    - 10
+    - 10
+    OT11:
+    - 11
+    - 11
+    OT12:
+    - 12
+    - 12
+    OT13:
+    - 13
+    - 13
+    OT14:
+    - 14
+    - 14
+    OT15:
+    - 15
+    - 15
+    OT2:
+    - 2
+    - 2
+    OT3:
+    - 3
+    - 3
+    OT4:
+    - 4
+    - 4
+    OT5:
+    - 5
+    - 5
+    OT6:
+    - 6
+    - 6
+    OT7:
+    - 7
+    - 7
+    OT8:
+    - 8
+    - 8
+    OT9:
+    - 9
+    - 9
+  reg: GPIOA_OTYPER
+-
+  fields:
+    OSPEED0:
+    - 0
+    - 1
+    OSPEED1:
+    - 2
+    - 3
+    OSPEED10:
+    - 20
+    - 21
+    OSPEED11:
+    - 22
+    - 23
+    OSPEED12:
+    - 24
+    - 25
+    OSPEED13:
+    - 26
+    - 27
+    OSPEED14:
+    - 28
+    - 29
+    OSPEED15:
+    - 30
+    - 31
+    OSPEED2:
+    - 4
+    - 5
+    OSPEED3:
+    - 6
+    - 7
+    OSPEED4:
+    - 8
+    - 9
+    OSPEED5:
+    - 10
+    - 11
+    OSPEED6:
+    - 12
+    - 13
+    OSPEED7:
+    - 14
+    - 15
+    OSPEED8:
+    - 16
+    - 17
+    OSPEED9:
+    - 18
+    - 19
+  reg: GPIOA_OSPEEDR
+-
+  fields:
+    PUPD0:
+    - 0
+    - 1
+    PUPD1:
+    - 2
+    - 3
+    PUPD10:
+    - 20
+    - 21
+    PUPD11:
+    - 22
+    - 23
+    PUPD12:
+    - 24
+    - 25
+    PUPD13:
+    - 26
+    - 27
+    PUPD14:
+    - 28
+    - 29
+    PUPD15:
+    - 30
+    - 31
+    PUPD2:
+    - 4
+    - 5
+    PUPD3:
+    - 6
+    - 7
+    PUPD4:
+    - 8
+    - 9
+    PUPD5:
+    - 10
+    - 11
+    PUPD6:
+    - 12
+    - 13
+    PUPD7:
+    - 14
+    - 15
+    PUPD8:
+    - 16
+    - 17
+    PUPD9:
+    - 18
+    - 19
+  reg: GPIOA_PUPDR
+-
+  fields:
+    ID0:
+    - 0
+    - 0
+    ID1:
+    - 1
+    - 1
+    ID10:
+    - 10
+    - 10
+    ID11:
+    - 11
+    - 11
+    ID12:
+    - 12
+    - 12
+    ID13:
+    - 13
+    - 13
+    ID14:
+    - 14
+    - 14
+    ID15:
+    - 15
+    - 15
+    ID2:
+    - 2
+    - 2
+    ID3:
+    - 3
+    - 3
+    ID4:
+    - 4
+    - 4
+    ID5:
+    - 5
+    - 5
+    ID6:
+    - 6
+    - 6
+    ID7:
+    - 7
+    - 7
+    ID8:
+    - 8
+    - 8
+    ID9:
+    - 9
+    - 9
+  reg: GPIOA_IDR
+-
+  fields:
+    OD0:
+    - 0
+    - 0
+    OD1:
+    - 1
+    - 1
+    OD10:
+    - 10
+    - 10
+    OD11:
+    - 11
+    - 11
+    OD12:
+    - 12
+    - 12
+    OD13:
+    - 13
+    - 13
+    OD14:
+    - 14
+    - 14
+    OD15:
+    - 15
+    - 15
+    OD2:
+    - 2
+    - 2
+    OD3:
+    - 3
+    - 3
+    OD4:
+    - 4
+    - 4
+    OD5:
+    - 5
+    - 5
+    OD6:
+    - 6
+    - 6
+    OD7:
+    - 7
+    - 7
+    OD8:
+    - 8
+    - 8
+    OD9:
+    - 9
+    - 9
+  reg: GPIOA_ODR
+-
+  fields:
+    BR0:
+    - 16
+    - 16
+    BR1:
+    - 17
+    - 17
+    BR10:
+    - 26
+    - 26
+    BR11:
+    - 27
+    - 27
+    BR12:
+    - 28
+    - 28
+    BR13:
+    - 29
+    - 29
+    BR14:
+    - 30
+    - 30
+    BR15:
+    - 31
+    - 31
+    BR2:
+    - 18
+    - 18
+    BR3:
+    - 19
+    - 19
+    BR4:
+    - 20
+    - 20
+    BR5:
+    - 21
+    - 21
+    BR6:
+    - 22
+    - 22
+    BR7:
+    - 23
+    - 23
+    BR8:
+    - 24
+    - 24
+    BR9:
+    - 25
+    - 25
+    BS0:
+    - 0
+    - 0
+    BS1:
+    - 1
+    - 1
+    BS10:
+    - 10
+    - 10
+    BS11:
+    - 11
+    - 11
+    BS12:
+    - 12
+    - 12
+    BS13:
+    - 13
+    - 13
+    BS14:
+    - 14
+    - 14
+    BS15:
+    - 15
+    - 15
+    BS2:
+    - 2
+    - 2
+    BS3:
+    - 3
+    - 3
+    BS4:
+    - 4
+    - 4
+    BS5:
+    - 5
+    - 5
+    BS6:
+    - 6
+    - 6
+    BS7:
+    - 7
+    - 7
+    BS8:
+    - 8
+    - 8
+    BS9:
+    - 9
+    - 9
+  reg: GPIOA_BSRR
+-
+  fields:
+    LCK0:
+    - 0
+    - 0
+    LCK1:
+    - 1
+    - 1
+    LCK10:
+    - 10
+    - 10
+    LCK11:
+    - 11
+    - 11
+    LCK12:
+    - 12
+    - 12
+    LCK13:
+    - 13
+    - 13
+    LCK14:
+    - 14
+    - 14
+    LCK15:
+    - 15
+    - 15
+    LCK2:
+    - 2
+    - 2
+    LCK3:
+    - 3
+    - 3
+    LCK4:
+    - 4
+    - 4
+    LCK5:
+    - 5
+    - 5
+    LCK6:
+    - 6
+    - 6
+    LCK7:
+    - 7
+    - 7
+    LCK8:
+    - 8
+    - 8
+    LCK9:
+    - 9
+    - 9
+    LCKK:
+    - 16
+    - 16
+  reg: GPIOA_LCKR
+-
+  fields:
+    AFSEL0:
+    - 0
+    - 3
+    AFSEL1:
+    - 4
+    - 7
+    AFSEL2:
+    - 8
+    - 11
+    AFSEL3:
+    - 12
+    - 15
+    AFSEL4:
+    - 16
+    - 19
+    AFSEL5:
+    - 20
+    - 23
+    AFSEL6:
+    - 24
+    - 27
+    AFSEL7:
+    - 28
+    - 31
+  reg: GPIOA_AFRL
+-
+  fields:
+    AFSEL10:
+    - 8
+    - 11
+    AFSEL11:
+    - 12
+    - 15
+    AFSEL12:
+    - 16
+    - 19
+    AFSEL13:
+    - 20
+    - 23
+    AFSEL14:
+    - 24
+    - 27
+    AFSEL15:
+    - 28
+    - 31
+    AFSEL8:
+    - 0
+    - 3
+    AFSEL9:
+    - 4
+    - 7
+  reg: GPIOA_AFRH
+-
+  fields:
+    BR0:
+    - 0
+    - 0
+    BR1:
+    - 1
+    - 1
+    BR10:
+    - 10
+    - 10
+    BR11:
+    - 11
+    - 11
+    BR12:
+    - 12
+    - 12
+    BR13:
+    - 13
+    - 13
+    BR14:
+    - 14
+    - 14
+    BR15:
+    - 15
+    - 15
+    BR2:
+    - 2
+    - 2
+    BR3:
+    - 3
+    - 3
+    BR4:
+    - 4
+    - 4
+    BR5:
+    - 5
+    - 5
+    BR6:
+    - 6
+    - 6
+    BR7:
+    - 7
+    - 7
+    BR8:
+    - 8
+    - 8
+    BR9:
+    - 9
+    - 9
+  reg: GPIOA_BRR
+-
+  fields:
+    MODE0:
+    - 0
+    - 1
+    MODE1:
+    - 2
+    - 3
+    MODE10:
+    - 20
+    - 21
+    MODE11:
+    - 22
+    - 23
+    MODE12:
+    - 24
+    - 25
+    MODE13:
+    - 26
+    - 27
+    MODE14:
+    - 28
+    - 29
+    MODE15:
+    - 30
+    - 31
+    MODE2:
+    - 4
+    - 5
+    MODE3:
+    - 6
+    - 7
+    MODE4:
+    - 8
+    - 9
+    MODE5:
+    - 10
+    - 11
+    MODE6:
+    - 12
+    - 13
+    MODE7:
+    - 14
+    - 15
+    MODE8:
+    - 16
+    - 17
+    MODE9:
+    - 18
+    - 19
+  reg: GPIOB_MODER
+-
+  fields:
+    OT0:
+    - 0
+    - 0
+    OT1:
+    - 1
+    - 1
+    OT10:
+    - 10
+    - 10
+    OT11:
+    - 11
+    - 11
+    OT12:
+    - 12
+    - 12
+    OT13:
+    - 13
+    - 13
+    OT14:
+    - 14
+    - 14
+    OT15:
+    - 15
+    - 15
+    OT2:
+    - 2
+    - 2
+    OT3:
+    - 3
+    - 3
+    OT4:
+    - 4
+    - 4
+    OT5:
+    - 5
+    - 5
+    OT6:
+    - 6
+    - 6
+    OT7:
+    - 7
+    - 7
+    OT8:
+    - 8
+    - 8
+    OT9:
+    - 9
+    - 9
+  reg: GPIOB_OTYPER
+-
+  fields:
+    OSPEED0:
+    - 0
+    - 1
+    OSPEED1:
+    - 2
+    - 3
+    OSPEED10:
+    - 20
+    - 21
+    OSPEED11:
+    - 22
+    - 23
+    OSPEED12:
+    - 24
+    - 25
+    OSPEED13:
+    - 26
+    - 27
+    OSPEED14:
+    - 28
+    - 29
+    OSPEED15:
+    - 30
+    - 31
+    OSPEED2:
+    - 4
+    - 5
+    OSPEED3:
+    - 6
+    - 7
+    OSPEED4:
+    - 8
+    - 9
+    OSPEED5:
+    - 10
+    - 11
+    OSPEED6:
+    - 12
+    - 13
+    OSPEED7:
+    - 14
+    - 15
+    OSPEED8:
+    - 16
+    - 17
+    OSPEED9:
+    - 18
+    - 19
+  reg: GPIOB_OSPEEDR
+-
+  fields:
+    PUPD0:
+    - 0
+    - 1
+    PUPD1:
+    - 2
+    - 3
+    PUPD10:
+    - 20
+    - 21
+    PUPD11:
+    - 22
+    - 23
+    PUPD12:
+    - 24
+    - 25
+    PUPD13:
+    - 26
+    - 27
+    PUPD14:
+    - 28
+    - 29
+    PUPD15:
+    - 30
+    - 31
+    PUPD2:
+    - 4
+    - 5
+    PUPD3:
+    - 6
+    - 7
+    PUPD4:
+    - 8
+    - 9
+    PUPD5:
+    - 10
+    - 11
+    PUPD6:
+    - 12
+    - 13
+    PUPD7:
+    - 14
+    - 15
+    PUPD8:
+    - 16
+    - 17
+    PUPD9:
+    - 18
+    - 19
+  reg: GPIOB_PUPDR
+-
+  fields:
+    ID0:
+    - 0
+    - 0
+    ID1:
+    - 1
+    - 1
+    ID10:
+    - 10
+    - 10
+    ID11:
+    - 11
+    - 11
+    ID12:
+    - 12
+    - 12
+    ID13:
+    - 13
+    - 13
+    ID14:
+    - 14
+    - 14
+    ID15:
+    - 15
+    - 15
+    ID2:
+    - 2
+    - 2
+    ID3:
+    - 3
+    - 3
+    ID4:
+    - 4
+    - 4
+    ID5:
+    - 5
+    - 5
+    ID6:
+    - 6
+    - 6
+    ID7:
+    - 7
+    - 7
+    ID8:
+    - 8
+    - 8
+    ID9:
+    - 9
+    - 9
+  reg: GPIOB_IDR
+-
+  fields:
+    OD0:
+    - 0
+    - 0
+    OD1:
+    - 1
+    - 1
+    OD10:
+    - 10
+    - 10
+    OD11:
+    - 11
+    - 11
+    OD12:
+    - 12
+    - 12
+    OD13:
+    - 13
+    - 13
+    OD14:
+    - 14
+    - 14
+    OD15:
+    - 15
+    - 15
+    OD2:
+    - 2
+    - 2
+    OD3:
+    - 3
+    - 3
+    OD4:
+    - 4
+    - 4
+    OD5:
+    - 5
+    - 5
+    OD6:
+    - 6
+    - 6
+    OD7:
+    - 7
+    - 7
+    OD8:
+    - 8
+    - 8
+    OD9:
+    - 9
+    - 9
+  reg: GPIOB_ODR
+-
+  fields:
+    BR0:
+    - 16
+    - 16
+    BR1:
+    - 17
+    - 17
+    BR10:
+    - 26
+    - 26
+    BR11:
+    - 27
+    - 27
+    BR12:
+    - 28
+    - 28
+    BR13:
+    - 29
+    - 29
+    BR14:
+    - 30
+    - 30
+    BR15:
+    - 31
+    - 31
+    BR2:
+    - 18
+    - 18
+    BR3:
+    - 19
+    - 19
+    BR4:
+    - 20
+    - 20
+    BR5:
+    - 21
+    - 21
+    BR6:
+    - 22
+    - 22
+    BR7:
+    - 23
+    - 23
+    BR8:
+    - 24
+    - 24
+    BR9:
+    - 25
+    - 25
+    BS0:
+    - 0
+    - 0
+    BS1:
+    - 1
+    - 1
+    BS10:
+    - 10
+    - 10
+    BS11:
+    - 11
+    - 11
+    BS12:
+    - 12
+    - 12
+    BS13:
+    - 13
+    - 13
+    BS14:
+    - 14
+    - 14
+    BS15:
+    - 15
+    - 15
+    BS2:
+    - 2
+    - 2
+    BS3:
+    - 3
+    - 3
+    BS4:
+    - 4
+    - 4
+    BS5:
+    - 5
+    - 5
+    BS6:
+    - 6
+    - 6
+    BS7:
+    - 7
+    - 7
+    BS8:
+    - 8
+    - 8
+    BS9:
+    - 9
+    - 9
+  reg: GPIOB_BSRR
+-
+  fields:
+    LCK0:
+    - 0
+    - 0
+    LCK1:
+    - 1
+    - 1
+    LCK10:
+    - 10
+    - 10
+    LCK11:
+    - 11
+    - 11
+    LCK12:
+    - 12
+    - 12
+    LCK13:
+    - 13
+    - 13
+    LCK14:
+    - 14
+    - 14
+    LCK15:
+    - 15
+    - 15
+    LCK2:
+    - 2
+    - 2
+    LCK3:
+    - 3
+    - 3
+    LCK4:
+    - 4
+    - 4
+    LCK5:
+    - 5
+    - 5
+    LCK6:
+    - 6
+    - 6
+    LCK7:
+    - 7
+    - 7
+    LCK8:
+    - 8
+    - 8
+    LCK9:
+    - 9
+    - 9
+    LCKK:
+    - 16
+    - 16
+  reg: GPIOB_LCKR
+-
+  fields:
+    AFSEL0:
+    - 0
+    - 3
+    AFSEL1:
+    - 4
+    - 7
+    AFSEL2:
+    - 8
+    - 11
+    AFSEL3:
+    - 12
+    - 15
+    AFSEL4:
+    - 16
+    - 19
+    AFSEL5:
+    - 20
+    - 23
+    AFSEL6:
+    - 24
+    - 27
+    AFSEL7:
+    - 28
+    - 31
+  reg: GPIOB_AFRL
+-
+  fields:
+    AFSEL10:
+    - 8
+    - 11
+    AFSEL11:
+    - 12
+    - 15
+    AFSEL12:
+    - 16
+    - 19
+    AFSEL13:
+    - 20
+    - 23
+    AFSEL14:
+    - 24
+    - 27
+    AFSEL15:
+    - 28
+    - 31
+    AFSEL8:
+    - 0
+    - 3
+    AFSEL9:
+    - 4
+    - 7
+  reg: GPIOB_AFRH
+-
+  fields:
+    BR0:
+    - 0
+    - 0
+    BR1:
+    - 1
+    - 1
+    BR10:
+    - 10
+    - 10
+    BR11:
+    - 11
+    - 11
+    BR12:
+    - 12
+    - 12
+    BR13:
+    - 13
+    - 13
+    BR14:
+    - 14
+    - 14
+    BR15:
+    - 15
+    - 15
+    BR2:
+    - 2
+    - 2
+    BR3:
+    - 3
+    - 3
+    BR4:
+    - 4
+    - 4
+    BR5:
+    - 5
+    - 5
+    BR6:
+    - 6
+    - 6
+    BR7:
+    - 7
+    - 7
+    BR8:
+    - 8
+    - 8
+    BR9:
+    - 9
+    - 9
+  reg: GPIOB_BRR
+-
+  fields:
+    ARRM:
+    - 1
+    - 1
+    ARROK:
+    - 4
+    - 4
+    CMPM:
+    - 0
+    - 0
+    CMPOK:
+    - 3
+    - 3
+    DOWN:
+    - 6
+    - 6
+    EXTTRIG:
+    - 2
+    - 2
+    UP:
+    - 5
+    - 5
+  reg: LPTIM_ISR
+-
+  fields:
+    ARRMCF:
+    - 1
+    - 1
+    ARROKCF:
+    - 4
+    - 4
+    CMPMCF:
+    - 0
+    - 0
+    CMPOKCF:
+    - 3
+    - 3
+    DOWNCF:
+    - 6
+    - 6
+    EXTTRIGCF:
+    - 2
+    - 2
+    UPCF:
+    - 5
+    - 5
+  reg: LPTIM_ICR
+-
+  fields:
+    ARRMIE:
+    - 1
+    - 1
+    ARROKIE:
+    - 4
+    - 4
+    CMPMIE:
+    - 0
+    - 0
+    CMPOKIE:
+    - 3
+    - 3
+    DOWNIE:
+    - 6
+    - 6
+    EXTTRIGIE:
+    - 2
+    - 2
+    UPIE:
+    - 5
+    - 5
+  reg: LPTIM_IER
+-
+  fields:
+    CKFLT:
+    - 3
+    - 4
+    CKPOL:
+    - 1
+    - 2
+    CKSEL:
+    - 0
+    - 0
+    COUNTMODE:
+    - 23
+    - 23
+    ENC:
+    - 24
+    - 24
+    PRELOAD:
+    - 22
+    - 22
+    PRESC:
+    - 9
+    - 11
+    TIMOUT:
+    - 19
+    - 19
+    TRGFLT:
+    - 6
+    - 7
+    TRIGEN:
+    - 17
+    - 18
+    TRIGSEL:
+    - 13
+    - 15
+    WAVE:
+    - 20
+    - 20
+    WAVPOL:
+    - 21
+    - 21
+  reg: LPTIM_CFGR
+-
+  fields:
+    CNTSTRT:
+    - 2
+    - 2
+    ENABLE:
+    - 0
+    - 0
+    SNGSTRT:
+    - 1
+    - 1
+  reg: LPTIM_CR
+-
+  fields:
+    CMP:
+    - 0
+    - 15
+  reg: LPTIM_CMP
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: LPTIM_ARR
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: LPTIM_CNT
+-
+  fields:
+    HT:
+    - 20
+    - 21
+    HU:
+    - 16
+    - 19
+    MNT:
+    - 12
+    - 14
+    MNU:
+    - 8
+    - 11
+    PM:
+    - 22
+    - 22
+    ST:
+    - 4
+    - 6
+    SU:
+    - 0
+    - 3
+  reg: RTC_TR
+-
+  fields:
+    DT:
+    - 4
+    - 5
+    DU:
+    - 0
+    - 3
+    MT:
+    - 12
+    - 12
+    MU:
+    - 8
+    - 11
+    WDU:
+    - 13
+    - 15
+    YT:
+    - 20
+    - 23
+    YU:
+    - 16
+    - 19
+  reg: RTC_DR
+-
+  fields:
+    ADD1H:
+    - 16
+    - 16
+    ALRAE:
+    - 8
+    - 8
+    ALRAIE:
+    - 12
+    - 12
+    ALRBE:
+    - 9
+    - 9
+    ALRBIE:
+    - 13
+    - 13
+    BKP:
+    - 18
+    - 18
+    BYPSHAD:
+    - 5
+    - 5
+    COE:
+    - 23
+    - 23
+    COSEL:
+    - 19
+    - 19
+    FMT:
+    - 6
+    - 6
+    OSEL:
+    - 21
+    - 22
+    POL:
+    - 20
+    - 20
+    REFCKON:
+    - 4
+    - 4
+    SUB1H:
+    - 17
+    - 17
+    TSE:
+    - 11
+    - 11
+    TSEDGE:
+    - 3
+    - 3
+    TSIE:
+    - 15
+    - 15
+    WUCKSEL:
+    - 0
+    - 2
+    WUTE:
+    - 10
+    - 10
+    WUTIE:
+    - 14
+    - 14
+  reg: RTC_CR
+-
+  fields:
+    ALRAF:
+    - 8
+    - 8
+    ALRAWF:
+    - 0
+    - 0
+    ALRBF:
+    - 9
+    - 9
+    ALRBWF:
+    - 1
+    - 1
+    INIT:
+    - 7
+    - 7
+    INITF:
+    - 6
+    - 6
+    INITS:
+    - 4
+    - 4
+    RSF:
+    - 5
+    - 5
+    SHPF:
+    - 3
+    - 3
+    TAMP1F:
+    - 13
+    - 13
+    TAMP2F:
+    - 14
+    - 14
+    TSF:
+    - 11
+    - 11
+    TSOVF:
+    - 12
+    - 12
+    WUTF:
+    - 10
+    - 10
+    WUTWF:
+    - 2
+    - 2
+  reg: RTC_ISR
+-
+  fields:
+    PREDIV_A:
+    - 16
+    - 22
+    PREDIV_S:
+    - 0
+    - 15
+  reg: RTC_PRER
+-
+  fields:
+    WUT:
+    - 0
+    - 15
+  reg: RTC_WUTR
+-
+  fields:
+    DT:
+    - 28
+    - 29
+    DU:
+    - 24
+    - 27
+    HT:
+    - 20
+    - 21
+    HU:
+    - 16
+    - 19
+    MNT:
+    - 12
+    - 14
+    MNU:
+    - 8
+    - 11
+    MSK1:
+    - 7
+    - 7
+    MSK2:
+    - 15
+    - 15
+    MSK3:
+    - 23
+    - 23
+    MSK4:
+    - 31
+    - 31
+    PM:
+    - 22
+    - 22
+    ST:
+    - 4
+    - 6
+    SU:
+    - 0
+    - 3
+    WDSEL:
+    - 30
+    - 30
+  reg: RTC_ALRMAR
+-
+  fields:
+    DT:
+    - 28
+    - 29
+    DU:
+    - 24
+    - 27
+    HT:
+    - 20
+    - 21
+    HU:
+    - 16
+    - 19
+    MNT:
+    - 12
+    - 14
+    MNU:
+    - 8
+    - 11
+    MSK1:
+    - 7
+    - 7
+    MSK2:
+    - 15
+    - 15
+    MSK3:
+    - 23
+    - 23
+    MSK4:
+    - 31
+    - 31
+    PM:
+    - 22
+    - 22
+    ST:
+    - 4
+    - 6
+    SU:
+    - 0
+    - 3
+    WDSEL:
+    - 30
+    - 30
+  reg: RTC_ALRMBR
+-
+  fields:
+    KEY:
+    - 0
+    - 7
+  reg: RTC_WPR
+-
+  fields:
+    SS:
+    - 0
+    - 15
+  reg: RTC_SSR
+-
+  fields:
+    ADD1S:
+    - 31
+    - 31
+    SUBFS:
+    - 0
+    - 14
+  reg: RTC_SHIFTR
+-
+  fields:
+    HT:
+    - 20
+    - 21
+    HU:
+    - 16
+    - 19
+    MNT:
+    - 12
+    - 14
+    MNU:
+    - 8
+    - 11
+    PM:
+    - 22
+    - 22
+    ST:
+    - 4
+    - 6
+    SU:
+    - 0
+    - 3
+  reg: RTC_TSTR
+-
+  fields:
+    DT:
+    - 4
+    - 5
+    DU:
+    - 0
+    - 3
+    MT:
+    - 12
+    - 12
+    MU:
+    - 8
+    - 11
+    WDU:
+    - 13
+    - 15
+  reg: RTC_TSDR
+-
+  fields:
+    SS:
+    - 0
+    - 15
+  reg: RTC_TSSSR
+-
+  fields:
+    CALM:
+    - 0
+    - 8
+    CALP:
+    - 15
+    - 15
+    CALW16:
+    - 13
+    - 13
+    CALW8:
+    - 14
+    - 14
+  reg: RTC_CALR
+-
+  fields:
+    TAMP1E:
+    - 0
+    - 0
+    TAMP1IE:
+    - 16
+    - 16
+    TAMP1MF:
+    - 18
+    - 18
+    TAMP1NOERASE:
+    - 17
+    - 17
+    TAMP1TRG:
+    - 1
+    - 1
+    TAMP2E:
+    - 3
+    - 3
+    TAMP2IE:
+    - 19
+    - 19
+    TAMP2MF:
+    - 21
+    - 21
+    TAMP2NOERASE:
+    - 20
+    - 20
+    TAMP2_TRG:
+    - 4
+    - 4
+    TAMPFLT:
+    - 11
+    - 12
+    TAMPFREQ:
+    - 8
+    - 10
+    TAMPIE:
+    - 2
+    - 2
+    TAMPPRCH:
+    - 13
+    - 14
+    TAMPPUDIS:
+    - 15
+    - 15
+    TAMPTS:
+    - 7
+    - 7
+  reg: RTC_TAMPCR
+-
+  fields:
+    MASKSS:
+    - 24
+    - 27
+    SS:
+    - 0
+    - 14
+  reg: RTC_ALRMASSR
+-
+  fields:
+    MASKSS:
+    - 24
+    - 27
+    SS:
+    - 0
+    - 14
+  reg: RTC_ALRMBSSR
+-
+  fields:
+    RTC_ALARM_TYPE:
+    - 0
+    - 0
+    RTC_OUT_RMP:
+    - 1
+    - 1
+  reg: RTC_OR
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP0R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP1R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP2R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP3R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP4R
+-
+  fields:
+    CMIE:
+    - 14
+    - 14
+    DEAT0:
+    - 21
+    - 21
+    DEAT1:
+    - 22
+    - 22
+    DEAT2:
+    - 23
+    - 23
+    DEAT3:
+    - 24
+    - 24
+    DEAT4:
+    - 25
+    - 25
+    DEDT0:
+    - 16
+    - 16
+    DEDT1:
+    - 17
+    - 17
+    DEDT2:
+    - 18
+    - 18
+    DEDT3:
+    - 19
+    - 19
+    DEDT4:
+    - 20
+    - 20
+    EOBIE:
+    - 27
+    - 27
+    IDLEIE:
+    - 4
+    - 4
+    M0:
+    - 12
+    - 12
+    M1:
+    - 28
+    - 28
+    MME:
+    - 13
+    - 13
+    OVER8:
+    - 15
+    - 15
+    PCE:
+    - 10
+    - 10
+    PEIE:
+    - 8
+    - 8
+    PS:
+    - 9
+    - 9
+    RE:
+    - 2
+    - 2
+    RTOIE:
+    - 26
+    - 26
+    RXNEIE:
+    - 5
+    - 5
+    TCIE:
+    - 6
+    - 6
+    TE:
+    - 3
+    - 3
+    TXEIE:
+    - 7
+    - 7
+    UE:
+    - 0
+    - 0
+    UESM:
+    - 1
+    - 1
+    WAKE:
+    - 11
+    - 11
+  reg: USART2_CR1
+-
+  fields:
+    ABREN:
+    - 20
+    - 20
+    ABRMOD0:
+    - 21
+    - 21
+    ABRMOD1:
+    - 22
+    - 22
+    ADD0_3:
+    - 24
+    - 27
+    ADD4_7:
+    - 28
+    - 31
+    ADDM7:
+    - 4
+    - 4
+    CLKEN:
+    - 11
+    - 11
+    CPHA:
+    - 9
+    - 9
+    CPOL:
+    - 10
+    - 10
+    LBCL:
+    - 8
+    - 8
+    LBDIE:
+    - 6
+    - 6
+    LBDL:
+    - 5
+    - 5
+    LINEN:
+    - 14
+    - 14
+    MSBFIRST:
+    - 19
+    - 19
+    RTOEN:
+    - 23
+    - 23
+    RXINV:
+    - 16
+    - 16
+    STOP:
+    - 12
+    - 13
+    SWAP:
+    - 15
+    - 15
+    TAINV:
+    - 18
+    - 18
+    TXINV:
+    - 17
+    - 17
+  reg: USART2_CR2
+-
+  fields:
+    CTSE:
+    - 9
+    - 9
+    CTSIE:
+    - 10
+    - 10
+    DDRE:
+    - 13
+    - 13
+    DEM:
+    - 14
+    - 14
+    DEP:
+    - 15
+    - 15
+    DMAR:
+    - 6
+    - 6
+    DMAT:
+    - 7
+    - 7
+    EIE:
+    - 0
+    - 0
+    HDSEL:
+    - 3
+    - 3
+    IREN:
+    - 1
+    - 1
+    IRLP:
+    - 2
+    - 2
+    NACK:
+    - 4
+    - 4
+    ONEBIT:
+    - 11
+    - 11
+    OVRDIS:
+    - 12
+    - 12
+    RTSE:
+    - 8
+    - 8
+    SCARCNT:
+    - 17
+    - 19
+    SCEN:
+    - 5
+    - 5
+    WUFIE:
+    - 22
+    - 22
+    WUS:
+    - 20
+    - 21
+  reg: USART2_CR3
+-
+  fields:
+    DIV_Fraction:
+    - 0
+    - 3
+    DIV_Mantissa:
+    - 4
+    - 15
+  reg: USART2_BRR
+-
+  fields:
+    GT:
+    - 8
+    - 15
+    PSC:
+    - 0
+    - 7
+  reg: USART2_GTPR
+-
+  fields:
+    BLEN:
+    - 24
+    - 31
+    RTO:
+    - 0
+    - 23
+  reg: USART2_RTOR
+-
+  fields:
+    ABRRQ:
+    - 0
+    - 0
+    MMRQ:
+    - 2
+    - 2
+    RXFRQ:
+    - 3
+    - 3
+    SBKRQ:
+    - 1
+    - 1
+    TXFRQ:
+    - 4
+    - 4
+  reg: USART2_RQR
+-
+  fields:
+    ABRE:
+    - 14
+    - 14
+    ABRF:
+    - 15
+    - 15
+    BUSY:
+    - 16
+    - 16
+    CMF:
+    - 17
+    - 17
+    CTS:
+    - 10
+    - 10
+    CTSIF:
+    - 9
+    - 9
+    EOBF:
+    - 12
+    - 12
+    FE:
+    - 1
+    - 1
+    IDLE:
+    - 4
+    - 4
+    LBDF:
+    - 8
+    - 8
+    NF:
+    - 2
+    - 2
+    ORE:
+    - 3
+    - 3
+    PE:
+    - 0
+    - 0
+    REACK:
+    - 22
+    - 22
+    RTOF:
+    - 11
+    - 11
+    RWU:
+    - 19
+    - 19
+    RXNE:
+    - 5
+    - 5
+    SBKF:
+    - 18
+    - 18
+    TC:
+    - 6
+    - 6
+    TEACK:
+    - 21
+    - 21
+    TXE:
+    - 7
+    - 7
+    WUF:
+    - 20
+    - 20
+  reg: USART2_ISR
+-
+  fields:
+    CMCF:
+    - 17
+    - 17
+    CTSCF:
+    - 9
+    - 9
+    EOBCF:
+    - 12
+    - 12
+    FECF:
+    - 1
+    - 1
+    IDLECF:
+    - 4
+    - 4
+    LBDCF:
+    - 8
+    - 8
+    NCF:
+    - 2
+    - 2
+    ORECF:
+    - 3
+    - 3
+    PECF:
+    - 0
+    - 0
+    RTOCF:
+    - 11
+    - 11
+    TCCF:
+    - 6
+    - 6
+    WUCF:
+    - 20
+    - 20
+  reg: USART2_ICR
+-
+  fields:
+    RDR:
+    - 0
+    - 8
+  reg: USART2_RDR
+-
+  fields:
+    TDR:
+    - 0
+    - 8
+  reg: USART2_TDR
+-
+  fields:
+    KEY:
+    - 0
+    - 15
+  reg: IWDG_KR
+-
+  fields:
+    PR:
+    - 0
+    - 2
+  reg: IWDG_PR
+-
+  fields:
+    RL:
+    - 0
+    - 11
+  reg: IWDG_RLR
+-
+  fields:
+    PVU:
+    - 0
+    - 0
+    RVU:
+    - 1
+    - 1
+    WVU:
+    - 2
+    - 2
+  reg: IWDG_SR
+-
+  fields:
+    WIN:
+    - 0
+    - 11
+  reg: IWDG_WINR
+-
+  fields:
+    T:
+    - 0
+    - 6
+    WDGA:
+    - 7
+    - 7
+  reg: WWDG_CR
+-
+  fields:
+    EWI:
+    - 9
+    - 9
+    W:
+    - 0
+    - 6
+    WDGTB0:
+    - 7
+    - 7
+    WDGTB1:
+    - 8
+    - 8
+  reg: WWDG_CFR
+-
+  fields:
+    EWIF:
+    - 0
+    - 0
+  reg: WWDG_SR
+-
+  fields:
+    ADD:
+    - 8
+    - 23
+  reg: Firewall_FIREWALL_CSSA
+-
+  fields:
+    LENG:
+    - 8
+    - 21
+  reg: Firewall_FIREWALL_CSL
+-
+  fields:
+    ADD:
+    - 8
+    - 23
+  reg: Firewall_FIREWALL_NVDSSA
+-
+  fields:
+    LENG:
+    - 8
+    - 21
+  reg: Firewall_FIREWALL_NVDSL
+-
+  fields:
+    ADD:
+    - 6
+    - 15
+  reg: Firewall_FIREWALL_VDSSA
+-
+  fields:
+    LENG:
+    - 6
+    - 15
+  reg: Firewall_FIREWALL_VDSL
+-
+  fields:
+    FPA:
+    - 0
+    - 0
+    VDE:
+    - 2
+    - 2
+    VDS:
+    - 1
+    - 1
+  reg: Firewall_FIREWALL_CR
+-
+  fields:
+    CSSLSEON:
+    - 19
+    - 19
+    HSEBYP:
+    - 18
+    - 18
+    HSEON:
+    - 16
+    - 16
+    HSERDY:
+    - 17
+    - 17
+    HSI16DIVEN:
+    - 3
+    - 3
+    HSI16DIVF:
+    - 4
+    - 4
+    HSI16KERON:
+    - 1
+    - 1
+    HSI16ON:
+    - 0
+    - 0
+    HSI16OUTEN:
+    - 5
+    - 5
+    HSI16RDYF:
+    - 2
+    - 2
+    MSION:
+    - 8
+    - 8
+    MSIRDY:
+    - 9
+    - 9
+    PLLON:
+    - 24
+    - 24
+    PLLRDY:
+    - 25
+    - 25
+    RTCPRE:
+    - 20
+    - 21
+  reg: RCC_CR
+-
+  fields:
+    HSI16CAL:
+    - 0
+    - 7
+    HSI16TRIM:
+    - 8
+    - 12
+    MSICAL:
+    - 16
+    - 23
+    MSIRANGE:
+    - 13
+    - 15
+    MSITRIM:
+    - 24
+    - 31
+  reg: RCC_ICSCR
+-
+  fields:
+    HPRE:
+    - 4
+    - 7
+    MCOPRE:
+    - 28
+    - 30
+    MCOSEL:
+    - 24
+    - 26
+    PLLDIV:
+    - 22
+    - 23
+    PLLMUL:
+    - 18
+    - 21
+    PLLSRC:
+    - 16
+    - 16
+    PPRE1:
+    - 8
+    - 10
+    PPRE2:
+    - 11
+    - 13
+    STOPWUCK:
+    - 15
+    - 15
+    SW:
+    - 0
+    - 1
+    SWS:
+    - 2
+    - 3
+  reg: RCC_CFGR
+-
+  fields:
+    CSSLSE:
+    - 7
+    - 7
+    HSERDYIE:
+    - 3
+    - 3
+    HSI16RDYIE:
+    - 2
+    - 2
+    LSERDYIE:
+    - 1
+    - 1
+    LSIRDYIE:
+    - 0
+    - 0
+    MSIRDYIE:
+    - 5
+    - 5
+    PLLRDYIE:
+    - 4
+    - 4
+  reg: RCC_CIER
+-
+  fields:
+    CSSHSEF:
+    - 8
+    - 8
+    CSSLSEF:
+    - 7
+    - 7
+    HSERDYF:
+    - 3
+    - 3
+    HSI16RDYF:
+    - 2
+    - 2
+    LSERDYF:
+    - 1
+    - 1
+    LSIRDYF:
+    - 0
+    - 0
+    MSIRDYF:
+    - 5
+    - 5
+    PLLRDYF:
+    - 4
+    - 4
+  reg: RCC_CIFR
+-
+  fields:
+    CSSHSEC:
+    - 8
+    - 8
+    CSSLSEC:
+    - 7
+    - 7
+    HSERDYC:
+    - 3
+    - 3
+    HSI16RDYC:
+    - 2
+    - 2
+    LSERDYC:
+    - 1
+    - 1
+    LSIRDYC:
+    - 0
+    - 0
+    MSIRDYC:
+    - 5
+    - 5
+    PLLRDYC:
+    - 4
+    - 4
+  reg: RCC_CICR
+-
+  fields:
+    IOPARST:
+    - 0
+    - 0
+    IOPBRST:
+    - 1
+    - 1
+    IOPCRST:
+    - 2
+    - 2
+    IOPDRST:
+    - 3
+    - 3
+    IOPERST:
+    - 4
+    - 4
+    IOPHRST:
+    - 7
+    - 7
+  reg: RCC_IOPRSTR
+-
+  fields:
+    CRCRST:
+    - 12
+    - 12
+    CRYPRST:
+    - 24
+    - 24
+    DMARST:
+    - 0
+    - 0
+    MIFRST:
+    - 8
+    - 8
+  reg: RCC_AHBRSTR
+-
+  fields:
+    ADCRST:
+    - 9
+    - 9
+    DBGRST:
+    - 22
+    - 22
+    SPI1RST:
+    - 12
+    - 12
+    SYSCFGRST:
+    - 0
+    - 0
+    TIM21RST:
+    - 2
+    - 2
+    TIM22RST:
+    - 5
+    - 5
+    USART1RST:
+    - 14
+    - 14
+  reg: RCC_APB2RSTR
+-
+  fields:
+    CRCRST:
+    - 27
+    - 27
+    I2C1RST:
+    - 21
+    - 21
+    I2C2RST:
+    - 22
+    - 22
+    I2C3:
+    - 30
+    - 30
+    LPTIM1RST:
+    - 31
+    - 31
+    LPUART1RST:
+    - 18
+    - 18
+    PWRRST:
+    - 28
+    - 28
+    SPI2RST:
+    - 14
+    - 14
+    TIM2RST:
+    - 0
+    - 0
+    TIM3RST:
+    - 1
+    - 1
+    TIM6RST:
+    - 4
+    - 4
+    TIM7RST:
+    - 5
+    - 5
+    USART2RST:
+    - 17
+    - 17
+    USART4RST:
+    - 19
+    - 19
+    USART5RST:
+    - 20
+    - 20
+    WWDGRST:
+    - 11
+    - 11
+  reg: RCC_APB1RSTR
+-
+  fields:
+    IOPAEN:
+    - 0
+    - 0
+    IOPBEN:
+    - 1
+    - 1
+    IOPCEN:
+    - 2
+    - 2
+    IOPDEN:
+    - 3
+    - 3
+    IOPEEN:
+    - 4
+    - 4
+    IOPHEN:
+    - 7
+    - 7
+  reg: RCC_IOPENR
+-
+  fields:
+    CRCEN:
+    - 12
+    - 12
+    CRYPEN:
+    - 24
+    - 24
+    DMAEN:
+    - 0
+    - 0
+    MIFEN:
+    - 8
+    - 8
+  reg: RCC_AHBENR
+-
+  fields:
+    ADCEN:
+    - 9
+    - 9
+    DBGEN:
+    - 22
+    - 22
+    FWEN:
+    - 7
+    - 7
+    SPI1EN:
+    - 12
+    - 12
+    SYSCFGEN:
+    - 0
+    - 0
+    TIM21EN:
+    - 2
+    - 2
+    TIM22EN:
+    - 5
+    - 5
+    USART1EN:
+    - 14
+    - 14
+  reg: RCC_APB2ENR
+-
+  fields:
+    I2C1EN:
+    - 21
+    - 21
+    I2C2EN:
+    - 22
+    - 22
+    I2C3EN:
+    - 30
+    - 30
+    LPTIM1EN:
+    - 31
+    - 31
+    LPUART1EN:
+    - 18
+    - 18
+    PWREN:
+    - 28
+    - 28
+    SPI2EN:
+    - 14
+    - 14
+    TIM2EN:
+    - 0
+    - 0
+    TIM3EN:
+    - 2
+    - 2
+    TIM6EN:
+    - 4
+    - 4
+    TIM7EN:
+    - 5
+    - 5
+    USART2EN:
+    - 17
+    - 17
+    USART4EN:
+    - 19
+    - 19
+    USART5EN:
+    - 20
+    - 20
+    WWDGEN:
+    - 11
+    - 11
+  reg: RCC_APB1ENR
+-
+  fields:
+    IOPASMEN:
+    - 0
+    - 0
+    IOPBSMEN:
+    - 1
+    - 1
+    IOPCSMEN:
+    - 2
+    - 2
+    IOPDSMEN:
+    - 3
+    - 3
+    IOPESMEN:
+    - 4
+    - 4
+    IOPHSMEN:
+    - 7
+    - 7
+  reg: RCC_IOPSMEN
+-
+  fields:
+    CRCSMEN:
+    - 12
+    - 12
+    CRYPTSMEN:
+    - 24
+    - 24
+    DMASMEN:
+    - 0
+    - 0
+    MIFSMEN:
+    - 8
+    - 8
+    SRAMSMEN:
+    - 9
+    - 9
+  reg: RCC_AHBSMENR
+-
+  fields:
+    ADCSMEN:
+    - 9
+    - 9
+    DBGSMEN:
+    - 22
+    - 22
+    SPI1SMEN:
+    - 12
+    - 12
+    SYSCFGSMEN:
+    - 0
+    - 0
+    TIM21SMEN:
+    - 2
+    - 2
+    TIM22SMEN:
+    - 5
+    - 5
+    USART1SMEN:
+    - 14
+    - 14
+  reg: RCC_APB2SMENR
+-
+  fields:
+    CRSSMEN:
+    - 27
+    - 27
+    I2C1SMEN:
+    - 21
+    - 21
+    I2C2SMEN:
+    - 22
+    - 22
+    I2C3SMEN:
+    - 30
+    - 30
+    LPTIM1SMEN:
+    - 31
+    - 31
+    LPUART1SMEN:
+    - 18
+    - 18
+    PWRSMEN:
+    - 28
+    - 28
+    SPI2SMEN:
+    - 14
+    - 14
+    TIM2SMEN:
+    - 0
+    - 0
+    TIM3SMEN:
+    - 1
+    - 1
+    TIM6SMEN:
+    - 4
+    - 4
+    TIM7SMEN:
+    - 5
+    - 5
+    USART2SMEN:
+    - 17
+    - 17
+    USART4SMEN:
+    - 19
+    - 19
+    USART5SMEN:
+    - 20
+    - 20
+    WWDGSMEN:
+    - 11
+    - 11
+  reg: RCC_APB1SMENR
+-
+  fields:
+    I2C1SEL0:
+    - 12
+    - 12
+    I2C1SEL1:
+    - 13
+    - 13
+    I2C3SEL0:
+    - 16
+    - 16
+    I2C3SEL1:
+    - 17
+    - 17
+    LPTIM1SEL0:
+    - 18
+    - 18
+    LPTIM1SEL1:
+    - 19
+    - 19
+    LPUART1SEL0:
+    - 10
+    - 10
+    LPUART1SEL1:
+    - 11
+    - 11
+    USART1SEL0:
+    - 0
+    - 0
+    USART1SEL1:
+    - 1
+    - 1
+    USART2SEL0:
+    - 2
+    - 2
+    USART2SEL1:
+    - 3
+    - 3
+  reg: RCC_CCIPR
+-
+  fields:
+    CSSLSED:
+    - 14
+    - 14
+    CSSLSEON:
+    - 13
+    - 13
+    FWRSTF:
+    - 24
+    - 24
+    IWDGRSTF:
+    - 29
+    - 29
+    LPWRSTF:
+    - 31
+    - 31
+    LSEBYP:
+    - 10
+    - 10
+    LSEDRV:
+    - 11
+    - 12
+    LSEON:
+    - 8
+    - 8
+    LSERDY:
+    - 9
+    - 9
+    LSIIWDGLP:
+    - 2
+    - 2
+    LSION:
+    - 0
+    - 0
+    LSIRDY:
+    - 1
+    - 1
+    OBLRSTF:
+    - 25
+    - 25
+    PINRSTF:
+    - 26
+    - 26
+    PORRSTF:
+    - 27
+    - 27
+    RMVF:
+    - 23
+    - 23
+    RTCEN:
+    - 18
+    - 18
+    RTCRST:
+    - 19
+    - 19
+    RTCSEL:
+    - 16
+    - 17
+    SFTRSTF:
+    - 28
+    - 28
+    WWDGRSTF:
+    - 30
+    - 30
+  reg: RCC_CSR
+-
+  fields:
+    BOOT_MODE:
+    - 8
+    - 9
+    MEM_MODE:
+    - 0
+    - 1
+  reg: SYSCFG_CFGR1
+-
+  fields:
+    CAPA:
+    - 1
+    - 3
+    FWDISEN:
+    - 0
+    - 0
+    I2C1_FMP:
+    - 12
+    - 12
+    I2C2_FMP:
+    - 13
+    - 13
+    I2C_PB6_FMP:
+    - 8
+    - 8
+    I2C_PB7_FMP:
+    - 9
+    - 9
+    I2C_PB8_FMP:
+    - 10
+    - 10
+    I2C_PB9_FMP:
+    - 11
+    - 11
+  reg: SYSCFG_CFGR2
+-
+  fields:
+    EXTI0:
+    - 0
+    - 3
+    EXTI1:
+    - 4
+    - 7
+    EXTI2:
+    - 8
+    - 11
+    EXTI3:
+    - 12
+    - 15
+  reg: SYSCFG_EXTICR1
+-
+  fields:
+    EXTI4:
+    - 0
+    - 3
+    EXTI5:
+    - 4
+    - 7
+    EXTI6:
+    - 8
+    - 11
+    EXTI7:
+    - 12
+    - 15
+  reg: SYSCFG_EXTICR2
+-
+  fields:
+    EXTI10:
+    - 8
+    - 11
+    EXTI11:
+    - 12
+    - 15
+    EXTI8:
+    - 0
+    - 3
+    EXTI9:
+    - 4
+    - 7
+  reg: SYSCFG_EXTICR3
+-
+  fields:
+    EXTI12:
+    - 0
+    - 3
+    EXTI13:
+    - 4
+    - 7
+    EXTI14:
+    - 8
+    - 11
+    EXTI15:
+    - 12
+    - 15
+  reg: SYSCFG_EXTICR4
+-
+  fields:
+    ENBUF_BGAP_ADC:
+    - 8
+    - 8
+    ENBUF_SENSOR_ADC:
+    - 9
+    - 9
+    ENBUF_VREFINT_COMP:
+    - 12
+    - 12
+    ENREF_RC48MHz:
+    - 13
+    - 13
+    EN_BGAP:
+    - 0
+    - 0
+    REF_LOCK:
+    - 31
+    - 31
+    REF_RC48MHz_RDYF:
+    - 26
+    - 26
+    SEL_VREF_OUT:
+    - 4
+    - 5
+    SENSOR_ADC_RDYF:
+    - 27
+    - 27
+    VREFINT_ADC_RDYF:
+    - 28
+    - 28
+    VREFINT_COMP_RDYF:
+    - 29
+    - 29
+    VREFINT_RDYF:
+    - 30
+    - 30
+  reg: SYSCFG_CFGR3
+-
+  fields:
+    BIDIMODE:
+    - 15
+    - 15
+    BIDIOE:
+    - 14
+    - 14
+    BR:
+    - 3
+    - 5
+    CPHA:
+    - 0
+    - 0
+    CPOL:
+    - 1
+    - 1
+    CRCEN:
+    - 13
+    - 13
+    CRCNEXT:
+    - 12
+    - 12
+    DFF:
+    - 11
+    - 11
+    LSBFIRST:
+    - 7
+    - 7
+    MSTR:
+    - 2
+    - 2
+    RXONLY:
+    - 10
+    - 10
+    SPE:
+    - 6
+    - 6
+    SSI:
+    - 8
+    - 8
+    SSM:
+    - 9
+    - 9
+  reg: SPI1_CR1
+-
+  fields:
+    ERRIE:
+    - 5
+    - 5
+    FRF:
+    - 4
+    - 4
+    RXDMAEN:
+    - 0
+    - 0
+    RXNEIE:
+    - 6
+    - 6
+    SSOE:
+    - 2
+    - 2
+    TXDMAEN:
+    - 1
+    - 1
+    TXEIE:
+    - 7
+    - 7
+  reg: SPI1_CR2
+-
+  fields:
+    BSY:
+    - 7
+    - 7
+    CHSIDE:
+    - 2
+    - 2
+    CRCERR:
+    - 4
+    - 4
+    MODF:
+    - 5
+    - 5
+    OVR:
+    - 6
+    - 6
+    RXNE:
+    - 0
+    - 0
+    TIFRFE:
+    - 8
+    - 8
+    TXE:
+    - 1
+    - 1
+    UDR:
+    - 3
+    - 3
+  reg: SPI1_SR
+-
+  fields:
+    DR:
+    - 0
+    - 15
+  reg: SPI1_DR
+-
+  fields:
+    CRCPOLY:
+    - 0
+    - 15
+  reg: SPI1_CRCPR
+-
+  fields:
+    RxCRC:
+    - 0
+    - 15
+  reg: SPI1_RXCRCR
+-
+  fields:
+    TxCRC:
+    - 0
+    - 15
+  reg: SPI1_TXCRCR
+-
+  fields:
+    CHLEN:
+    - 0
+    - 0
+    CKPOL:
+    - 3
+    - 3
+    DATLEN:
+    - 1
+    - 2
+    I2SCFG:
+    - 8
+    - 9
+    I2SE:
+    - 10
+    - 10
+    I2SMOD:
+    - 11
+    - 11
+    I2SSTD:
+    - 4
+    - 5
+    PCMSYNC:
+    - 7
+    - 7
+  reg: SPI1_I2SCFGR
+-
+  fields:
+    I2SDIV:
+    - 0
+    - 7
+    MCKOE:
+    - 9
+    - 9
+    ODD:
+    - 8
+    - 8
+  reg: SPI1_I2SPR
+-
+  fields:
+    ADDRIE:
+    - 3
+    - 3
+    ALERTEN:
+    - 22
+    - 22
+    ANFOFF:
+    - 12
+    - 12
+    DNF:
+    - 8
+    - 11
+    ERRIE:
+    - 7
+    - 7
+    GCEN:
+    - 19
+    - 19
+    NACKIE:
+    - 4
+    - 4
+    NOSTRETCH:
+    - 17
+    - 17
+    PE:
+    - 0
+    - 0
+    PECEN:
+    - 23
+    - 23
+    RXDMAEN:
+    - 15
+    - 15
+    RXIE:
+    - 2
+    - 2
+    SBC:
+    - 16
+    - 16
+    SMBDEN:
+    - 21
+    - 21
+    SMBHEN:
+    - 20
+    - 20
+    STOPIE:
+    - 5
+    - 5
+    TCIE:
+    - 6
+    - 6
+    TXDMAEN:
+    - 14
+    - 14
+    TXIE:
+    - 1
+    - 1
+    WUPEN:
+    - 18
+    - 18
+  reg: I2C1_CR1
+-
+  fields:
+    ADD10:
+    - 11
+    - 11
+    AUTOEND:
+    - 25
+    - 25
+    HEAD10R:
+    - 12
+    - 12
+    NACK:
+    - 15
+    - 15
+    NBYTES:
+    - 16
+    - 23
+    PECBYTE:
+    - 26
+    - 26
+    RD_WRN:
+    - 10
+    - 10
+    RELOAD:
+    - 24
+    - 24
+    SADD:
+    - 0
+    - 9
+    START:
+    - 13
+    - 13
+    STOP:
+    - 14
+    - 14
+  reg: I2C1_CR2
+-
+  fields:
+    OA1:
+    - 0
+    - 9
+    OA1EN:
+    - 15
+    - 15
+    OA1MODE:
+    - 10
+    - 10
+  reg: I2C1_OAR1
+-
+  fields:
+    OA2:
+    - 1
+    - 7
+    OA2EN:
+    - 15
+    - 15
+    OA2MSK:
+    - 8
+    - 10
+  reg: I2C1_OAR2
+-
+  fields:
+    PRESC:
+    - 28
+    - 31
+    SCLDEL:
+    - 20
+    - 23
+    SCLH:
+    - 8
+    - 15
+    SCLL:
+    - 0
+    - 7
+    SDADEL:
+    - 16
+    - 19
+  reg: I2C1_TIMINGR
+-
+  fields:
+    TEXTEN:
+    - 31
+    - 31
+    TIDLE:
+    - 12
+    - 12
+    TIMEOUTA:
+    - 0
+    - 11
+    TIMEOUTB:
+    - 16
+    - 27
+    TIMOUTEN:
+    - 15
+    - 15
+  reg: I2C1_TIMEOUTR
+-
+  fields:
+    ADDCODE:
+    - 17
+    - 23
+    ADDR:
+    - 3
+    - 3
+    ALERT:
+    - 13
+    - 13
+    ARLO:
+    - 9
+    - 9
+    BERR:
+    - 8
+    - 8
+    BUSY:
+    - 15
+    - 15
+    DIR:
+    - 16
+    - 16
+    NACKF:
+    - 4
+    - 4
+    OVR:
+    - 10
+    - 10
+    PECERR:
+    - 11
+    - 11
+    RXNE:
+    - 2
+    - 2
+    STOPF:
+    - 5
+    - 5
+    TC:
+    - 6
+    - 6
+    TCR:
+    - 7
+    - 7
+    TIMEOUT:
+    - 12
+    - 12
+    TXE:
+    - 0
+    - 0
+    TXIS:
+    - 1
+    - 1
+  reg: I2C1_ISR
+-
+  fields:
+    ADDRCF:
+    - 3
+    - 3
+    ALERTCF:
+    - 13
+    - 13
+    ARLOCF:
+    - 9
+    - 9
+    BERRCF:
+    - 8
+    - 8
+    NACKCF:
+    - 4
+    - 4
+    OVRCF:
+    - 10
+    - 10
+    PECCF:
+    - 11
+    - 11
+    STOPCF:
+    - 5
+    - 5
+    TIMOUTCF:
+    - 12
+    - 12
+  reg: I2C1_ICR
+-
+  fields:
+    PEC:
+    - 0
+    - 7
+  reg: I2C1_PECR
+-
+  fields:
+    RXDATA:
+    - 0
+    - 7
+  reg: I2C1_RXDR
+-
+  fields:
+    TXDATA:
+    - 0
+    - 7
+  reg: I2C1_TXDR
+-
+  fields:
+    CSBF:
+    - 3
+    - 3
+    CWUF:
+    - 2
+    - 2
+    DBP:
+    - 8
+    - 8
+    DS_EE_KOFF:
+    - 13
+    - 13
+    FWU:
+    - 10
+    - 10
+    LPDS:
+    - 0
+    - 0
+    LPRUN:
+    - 14
+    - 14
+    PDDS:
+    - 1
+    - 1
+    PLS:
+    - 5
+    - 7
+    PVDE:
+    - 4
+    - 4
+    ULP:
+    - 9
+    - 9
+    VOS:
+    - 11
+    - 12
+  reg: PWR_CR
+-
+  fields:
+    BRE:
+    - 9
+    - 9
+    BRR:
+    - 3
+    - 3
+    EWUP:
+    - 8
+    - 8
+    PVDO:
+    - 2
+    - 2
+    REGLPF:
+    - 5
+    - 5
+    SBF:
+    - 1
+    - 1
+    VOSF:
+    - 4
+    - 4
+    WUF:
+    - 0
+    - 0
+  reg: PWR_CSR
+-
+  fields:
+    DISAB_BUF:
+    - 5
+    - 5
+    LATENCY:
+    - 0
+    - 0
+    PRE_READ:
+    - 6
+    - 6
+    PRFTEN:
+    - 1
+    - 1
+    RUN_PD:
+    - 4
+    - 4
+    SLEEP_PD:
+    - 3
+    - 3
+  reg: Flash_ACR
+-
+  fields:
+    DATA:
+    - 4
+    - 4
+    EOPIE:
+    - 16
+    - 16
+    ERASE:
+    - 9
+    - 9
+    ERRIE:
+    - 17
+    - 17
+    FIX:
+    - 8
+    - 8
+    FPRG:
+    - 10
+    - 10
+    NZDISABLE:
+    - 23
+    - 23
+    OBL_LAUNCH:
+    - 18
+    - 18
+    OPTLOCK:
+    - 2
+    - 2
+    PARALLELBANK:
+    - 15
+    - 15
+    PELOCK:
+    - 0
+    - 0
+    PRGLOCK:
+    - 1
+    - 1
+    PROG:
+    - 3
+    - 3
+  reg: Flash_PECR
+-
+  fields:
+    PDKEYR:
+    - 0
+    - 31
+  reg: Flash_PDKEYR
+-
+  fields:
+    PEKEYR:
+    - 0
+    - 31
+  reg: Flash_PEKEYR
+-
+  fields:
+    PRGKEYR:
+    - 0
+    - 31
+  reg: Flash_PRGKEYR
+-
+  fields:
+    OPTKEYR:
+    - 0
+    - 31
+  reg: Flash_OPTKEYR
+-
+  fields:
+    BSY:
+    - 0
+    - 0
+    ENDHV:
+    - 2
+    - 2
+    EOP:
+    - 1
+    - 1
+    FWWERR:
+    - 17
+    - 17
+    NOTZEROERR:
+    - 16
+    - 16
+    OPTVERR:
+    - 11
+    - 11
+    PGAERR:
+    - 9
+    - 9
+    RDERR:
+    - 13
+    - 13
+    READY:
+    - 3
+    - 3
+    SIZERR:
+    - 10
+    - 10
+    WRPERR:
+    - 8
+    - 8
+  reg: Flash_SR
+-
+  fields:
+    BFB2:
+    - 23
+    - 23
+    BOR_LEV:
+    - 16
+    - 19
+    RDPROT:
+    - 0
+    - 7
+    WDG_SW:
+    - 20
+    - 20
+    WPRMOD:
+    - 8
+    - 8
+    nBOOT1:
+    - 31
+    - 31
+    nRST_STDBY:
+    - 22
+    - 22
+    nRST_STOP:
+    - 21
+    - 21
+  reg: Flash_OPTR
+-
+  fields:
+    WRPROT1:
+    - 0
+    - 31
+  reg: Flash_WRPROT1
+-
+  fields:
+    WRPROT2:
+    - 0
+    - 15
+  reg: Flash_WRPROT2
+-
+  fields:
+    IM0:
+    - 0
+    - 0
+    IM1:
+    - 1
+    - 1
+    IM10:
+    - 10
+    - 10
+    IM11:
+    - 11
+    - 11
+    IM12:
+    - 12
+    - 12
+    IM13:
+    - 13
+    - 13
+    IM14:
+    - 14
+    - 14
+    IM15:
+    - 15
+    - 15
+    IM16:
+    - 16
+    - 16
+    IM17:
+    - 17
+    - 17
+    IM18:
+    - 18
+    - 18
+    IM19:
+    - 19
+    - 19
+    IM2:
+    - 2
+    - 2
+    IM20:
+    - 20
+    - 20
+    IM21:
+    - 21
+    - 21
+    IM22:
+    - 22
+    - 22
+    IM23:
+    - 23
+    - 23
+    IM24:
+    - 24
+    - 24
+    IM25:
+    - 25
+    - 25
+    IM26:
+    - 26
+    - 26
+    IM28:
+    - 28
+    - 28
+    IM29:
+    - 29
+    - 29
+    IM3:
+    - 3
+    - 3
+    IM4:
+    - 4
+    - 4
+    IM5:
+    - 5
+    - 5
+    IM6:
+    - 6
+    - 6
+    IM7:
+    - 7
+    - 7
+    IM8:
+    - 8
+    - 8
+    IM9:
+    - 9
+    - 9
+  reg: EXTI_IMR
+-
+  fields:
+    EM0:
+    - 0
+    - 0
+    EM1:
+    - 1
+    - 1
+    EM10:
+    - 10
+    - 10
+    EM11:
+    - 11
+    - 11
+    EM12:
+    - 12
+    - 12
+    EM13:
+    - 13
+    - 13
+    EM14:
+    - 14
+    - 14
+    EM15:
+    - 15
+    - 15
+    EM16:
+    - 16
+    - 16
+    EM17:
+    - 17
+    - 17
+    EM18:
+    - 18
+    - 18
+    EM19:
+    - 19
+    - 19
+    EM2:
+    - 2
+    - 2
+    EM20:
+    - 20
+    - 20
+    EM21:
+    - 21
+    - 21
+    EM22:
+    - 22
+    - 22
+    EM23:
+    - 23
+    - 23
+    EM24:
+    - 24
+    - 24
+    EM25:
+    - 25
+    - 25
+    EM26:
+    - 26
+    - 26
+    EM28:
+    - 28
+    - 28
+    EM29:
+    - 29
+    - 29
+    EM3:
+    - 3
+    - 3
+    EM4:
+    - 4
+    - 4
+    EM5:
+    - 5
+    - 5
+    EM6:
+    - 6
+    - 6
+    EM7:
+    - 7
+    - 7
+    EM8:
+    - 8
+    - 8
+    EM9:
+    - 9
+    - 9
+  reg: EXTI_EMR
+-
+  fields:
+    RT0:
+    - 0
+    - 0
+    RT1:
+    - 1
+    - 1
+    RT10:
+    - 10
+    - 10
+    RT11:
+    - 11
+    - 11
+    RT12:
+    - 12
+    - 12
+    RT13:
+    - 13
+    - 13
+    RT14:
+    - 14
+    - 14
+    RT15:
+    - 15
+    - 15
+    RT16:
+    - 16
+    - 16
+    RT17:
+    - 17
+    - 17
+    RT19:
+    - 19
+    - 19
+    RT2:
+    - 2
+    - 2
+    RT20:
+    - 20
+    - 20
+    RT21:
+    - 21
+    - 21
+    RT22:
+    - 22
+    - 22
+    RT3:
+    - 3
+    - 3
+    RT4:
+    - 4
+    - 4
+    RT5:
+    - 5
+    - 5
+    RT6:
+    - 6
+    - 6
+    RT7:
+    - 7
+    - 7
+    RT8:
+    - 8
+    - 8
+    RT9:
+    - 9
+    - 9
+  reg: EXTI_RTSR
+-
+  fields:
+    FT0:
+    - 0
+    - 0
+    FT1:
+    - 1
+    - 1
+    FT10:
+    - 10
+    - 10
+    FT11:
+    - 11
+    - 11
+    FT12:
+    - 12
+    - 12
+    FT13:
+    - 13
+    - 13
+    FT14:
+    - 14
+    - 14
+    FT15:
+    - 15
+    - 15
+    FT16:
+    - 16
+    - 16
+    FT17:
+    - 17
+    - 17
+    FT19:
+    - 19
+    - 19
+    FT2:
+    - 2
+    - 2
+    FT20:
+    - 20
+    - 20
+    FT21:
+    - 21
+    - 21
+    FT22:
+    - 22
+    - 22
+    FT3:
+    - 3
+    - 3
+    FT4:
+    - 4
+    - 4
+    FT5:
+    - 5
+    - 5
+    FT6:
+    - 6
+    - 6
+    FT7:
+    - 7
+    - 7
+    FT8:
+    - 8
+    - 8
+    FT9:
+    - 9
+    - 9
+  reg: EXTI_FTSR
+-
+  fields:
+    SWI0:
+    - 0
+    - 0
+    SWI1:
+    - 1
+    - 1
+    SWI10:
+    - 10
+    - 10
+    SWI11:
+    - 11
+    - 11
+    SWI12:
+    - 12
+    - 12
+    SWI13:
+    - 13
+    - 13
+    SWI14:
+    - 14
+    - 14
+    SWI15:
+    - 15
+    - 15
+    SWI16:
+    - 16
+    - 16
+    SWI17:
+    - 17
+    - 17
+    SWI19:
+    - 19
+    - 19
+    SWI2:
+    - 2
+    - 2
+    SWI20:
+    - 20
+    - 20
+    SWI21:
+    - 21
+    - 21
+    SWI22:
+    - 22
+    - 22
+    SWI3:
+    - 3
+    - 3
+    SWI4:
+    - 4
+    - 4
+    SWI5:
+    - 5
+    - 5
+    SWI6:
+    - 6
+    - 6
+    SWI7:
+    - 7
+    - 7
+    SWI8:
+    - 8
+    - 8
+    SWI9:
+    - 9
+    - 9
+  reg: EXTI_SWIER
+-
+  fields:
+    PIF0:
+    - 0
+    - 0
+    PIF1:
+    - 1
+    - 1
+    PIF10:
+    - 10
+    - 10
+    PIF11:
+    - 11
+    - 11
+    PIF12:
+    - 12
+    - 12
+    PIF13:
+    - 13
+    - 13
+    PIF14:
+    - 14
+    - 14
+    PIF15:
+    - 15
+    - 15
+    PIF16:
+    - 16
+    - 16
+    PIF17:
+    - 17
+    - 17
+    PIF19:
+    - 19
+    - 19
+    PIF2:
+    - 2
+    - 2
+    PIF20:
+    - 20
+    - 20
+    PIF21:
+    - 21
+    - 21
+    PIF22:
+    - 22
+    - 22
+    PIF3:
+    - 3
+    - 3
+    PIF4:
+    - 4
+    - 4
+    PIF5:
+    - 5
+    - 5
+    PIF6:
+    - 6
+    - 6
+    PIF7:
+    - 7
+    - 7
+    PIF8:
+    - 8
+    - 8
+    PIF9:
+    - 9
+    - 9
+  reg: EXTI_PR
+-
+  fields:
+    ADRDY:
+    - 0
+    - 0
+    AWD:
+    - 7
+    - 7
+    EOC:
+    - 2
+    - 2
+    EOCAL:
+    - 11
+    - 11
+    EOS:
+    - 3
+    - 3
+    EOSMP:
+    - 1
+    - 1
+    OVR:
+    - 4
+    - 4
+  reg: ADC_ISR
+-
+  fields:
+    ADRDYIE:
+    - 0
+    - 0
+    AWDIE:
+    - 7
+    - 7
+    EOCALIE:
+    - 11
+    - 11
+    EOCIE:
+    - 2
+    - 2
+    EOSIE:
+    - 3
+    - 3
+    EOSMPIE:
+    - 1
+    - 1
+    OVRIE:
+    - 4
+    - 4
+  reg: ADC_IER
+-
+  fields:
+    ADCAL:
+    - 31
+    - 31
+    ADDIS:
+    - 1
+    - 1
+    ADEN:
+    - 0
+    - 0
+    ADSTART:
+    - 2
+    - 2
+    ADSTP:
+    - 4
+    - 4
+    ADVREGEN:
+    - 28
+    - 28
+  reg: ADC_CR
+-
+  fields:
+    ALIGN:
+    - 5
+    - 5
+    AUTDLY:
+    - 14
+    - 14
+    AUTOFF:
+    - 15
+    - 15
+    AWDCH:
+    - 26
+    - 30
+    AWDEN:
+    - 23
+    - 23
+    AWDSGL:
+    - 22
+    - 22
+    CONT:
+    - 13
+    - 13
+    DISCEN:
+    - 16
+    - 16
+    DMACFG:
+    - 1
+    - 1
+    DMAEN:
+    - 0
+    - 0
+    EXTEN:
+    - 10
+    - 11
+    EXTSEL:
+    - 6
+    - 8
+    OVRMOD:
+    - 12
+    - 12
+    RES:
+    - 3
+    - 4
+    SCANDIR:
+    - 2
+    - 2
+  reg: ADC_CFGR1
+-
+  fields:
+    CKMODE:
+    - 30
+    - 31
+    OVSE:
+    - 0
+    - 0
+    OVSR:
+    - 2
+    - 4
+    OVSS:
+    - 5
+    - 8
+    TOVS:
+    - 9
+    - 9
+  reg: ADC_CFGR2
+-
+  fields:
+    SMPR:
+    - 0
+    - 2
+  reg: ADC_SMPR
+-
+  fields:
+    HT:
+    - 16
+    - 27
+    LT:
+    - 0
+    - 11
+  reg: ADC_TR
+-
+  fields:
+    CHSEL0:
+    - 0
+    - 0
+    CHSEL1:
+    - 1
+    - 1
+    CHSEL10:
+    - 10
+    - 10
+    CHSEL11:
+    - 11
+    - 11
+    CHSEL12:
+    - 12
+    - 12
+    CHSEL13:
+    - 13
+    - 13
+    CHSEL14:
+    - 14
+    - 14
+    CHSEL15:
+    - 15
+    - 15
+    CHSEL16:
+    - 16
+    - 16
+    CHSEL17:
+    - 17
+    - 17
+    CHSEL18:
+    - 18
+    - 18
+    CHSEL2:
+    - 2
+    - 2
+    CHSEL3:
+    - 3
+    - 3
+    CHSEL4:
+    - 4
+    - 4
+    CHSEL5:
+    - 5
+    - 5
+    CHSEL6:
+    - 6
+    - 6
+    CHSEL7:
+    - 7
+    - 7
+    CHSEL8:
+    - 8
+    - 8
+    CHSEL9:
+    - 9
+    - 9
+  reg: ADC_CHSELR
+-
+  fields:
+    DATA:
+    - 0
+    - 15
+  reg: ADC_DR
+-
+  fields:
+    CALFACT:
+    - 0
+    - 6
+  reg: ADC_CALFACT
+-
+  fields:
+    LFMEN:
+    - 25
+    - 25
+    PRESC:
+    - 18
+    - 21
+    TSEN:
+    - 23
+    - 23
+    VLCDEN:
+    - 24
+    - 24
+    VREFEN:
+    - 22
+    - 22
+  reg: ADC_CCR
+-
+  fields:
+    DEV_ID:
+    - 0
+    - 11
+    REV_ID:
+    - 16
+    - 31
+  reg: DBG_IDCODE
+-
+  fields:
+    DBG_SLEEP:
+    - 0
+    - 0
+    DBG_STANDBY:
+    - 2
+    - 2
+    DBG_STOP:
+    - 1
+    - 1
+  reg: DBG_CR
+-
+  fields:
+    DBG_I2C1_STOP:
+    - 21
+    - 21
+    DBG_I2C2_STOP:
+    - 22
+    - 22
+    DBG_IWDG_STOP:
+    - 12
+    - 12
+    DBG_LPTIMER_STOP:
+    - 31
+    - 31
+    DBG_RTC_STOP:
+    - 10
+    - 10
+    DBG_TIMER2_STOP:
+    - 0
+    - 0
+    DBG_TIMER6_STOP:
+    - 4
+    - 4
+    DBG_WWDG_STOP:
+    - 11
+    - 11
+  reg: DBG_APB1_FZ
+-
+  fields:
+    DBG_TIMER21_STOP:
+    - 2
+    - 2
+    DBG_TIMER22_STO:
+    - 6
+    - 6
+  reg: DBG_APB2_FZ
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    CMS:
+    - 5
+    - 6
+    DIR:
+    - 4
+    - 4
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM2_CR1
+-
+  fields:
+    CCDS:
+    - 3
+    - 3
+    MMS:
+    - 4
+    - 6
+    TI1S:
+    - 7
+    - 7
+  reg: TIM2_CR2
+-
+  fields:
+    ECE:
+    - 14
+    - 14
+    ETF:
+    - 8
+    - 11
+    ETP:
+    - 15
+    - 15
+    ETPS:
+    - 12
+    - 13
+    MSM:
+    - 7
+    - 7
+    SMS:
+    - 0
+    - 2
+    TS:
+    - 4
+    - 6
+  reg: TIM2_SMCR
+-
+  fields:
+    CC1DE:
+    - 9
+    - 9
+    CC1IE:
+    - 1
+    - 1
+    CC2DE:
+    - 10
+    - 10
+    CC2IE:
+    - 2
+    - 2
+    CC3DE:
+    - 11
+    - 11
+    CC3IE:
+    - 3
+    - 3
+    CC4DE:
+    - 12
+    - 12
+    CC4IE:
+    - 4
+    - 4
+    TDE:
+    - 14
+    - 14
+    TIE:
+    - 6
+    - 6
+    UDE:
+    - 8
+    - 8
+    UIE:
+    - 0
+    - 0
+  reg: TIM2_DIER
+-
+  fields:
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    CC2IF:
+    - 2
+    - 2
+    CC2OF:
+    - 10
+    - 10
+    CC3IF:
+    - 3
+    - 3
+    CC3OF:
+    - 11
+    - 11
+    CC4IF:
+    - 4
+    - 4
+    CC4OF:
+    - 12
+    - 12
+    TIF:
+    - 6
+    - 6
+    UIF:
+    - 0
+    - 0
+  reg: TIM2_SR
+-
+  fields:
+    CC1G:
+    - 1
+    - 1
+    CC2G:
+    - 2
+    - 2
+    CC3G:
+    - 3
+    - 3
+    CC4G:
+    - 4
+    - 4
+    TG:
+    - 6
+    - 6
+    UG:
+    - 0
+    - 0
+  reg: TIM2_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    OC1CE:
+    - 7
+    - 7
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+    OC2CE:
+    - 15
+    - 15
+    OC2FE:
+    - 10
+    - 10
+    OC2M:
+    - 12
+    - 14
+    OC2PE:
+    - 11
+    - 11
+  reg: TIM2_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    IC1F:
+    - 4
+    - 7
+    IC1PSC:
+    - 2
+    - 3
+    IC2F:
+    - 12
+    - 15
+    IC2PSC:
+    - 10
+    - 11
+  reg: TIM2_CCMR1_Input
+-
+  fields:
+    CC3S:
+    - 0
+    - 1
+    CC4S:
+    - 8
+    - 9
+    OC3CE:
+    - 7
+    - 7
+    OC3FE:
+    - 2
+    - 2
+    OC3M:
+    - 4
+    - 6
+    OC3PE:
+    - 3
+    - 3
+    OC4CE:
+    - 15
+    - 15
+    OC4FE:
+    - 10
+    - 10
+    OC4M:
+    - 12
+    - 14
+    OC4PE:
+    - 11
+    - 11
+  reg: TIM2_CCMR2_Output
+-
+  fields:
+    CC3S:
+    - 0
+    - 1
+    CC4S:
+    - 8
+    - 9
+    IC3F:
+    - 4
+    - 7
+    IC3PSC:
+    - 2
+    - 3
+    IC4F:
+    - 12
+    - 15
+    IC4PSC:
+    - 10
+    - 11
+  reg: TIM2_CCMR2_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+    CC2E:
+    - 4
+    - 4
+    CC2NP:
+    - 7
+    - 7
+    CC2P:
+    - 5
+    - 5
+    CC3E:
+    - 8
+    - 8
+    CC3NP:
+    - 11
+    - 11
+    CC3P:
+    - 9
+    - 9
+    CC4E:
+    - 12
+    - 12
+    CC4NP:
+    - 15
+    - 15
+    CC4P:
+    - 13
+    - 13
+  reg: TIM2_CCER
+-
+  fields:
+    CNT_H:
+    - 16
+    - 31
+    CNT_L:
+    - 0
+    - 15
+  reg: TIM2_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM2_PSC
+-
+  fields:
+    ARR_H:
+    - 16
+    - 31
+    ARR_L:
+    - 0
+    - 15
+  reg: TIM2_ARR
+-
+  fields:
+    CCR1_H:
+    - 16
+    - 31
+    CCR1_L:
+    - 0
+    - 15
+  reg: TIM2_CCR1
+-
+  fields:
+    CCR2_H:
+    - 16
+    - 31
+    CCR2_L:
+    - 0
+    - 15
+  reg: TIM2_CCR2
+-
+  fields:
+    CCR3_H:
+    - 16
+    - 31
+    CCR3_L:
+    - 0
+    - 15
+  reg: TIM2_CCR3
+-
+  fields:
+    CCR4_H:
+    - 16
+    - 31
+    CCR4_L:
+    - 0
+    - 15
+  reg: TIM2_CCR4
+-
+  fields:
+    DBA:
+    - 0
+    - 4
+    DBL:
+    - 8
+    - 12
+  reg: TIM2_DCR
+-
+  fields:
+    DMAB:
+    - 0
+    - 15
+  reg: TIM2_DMAR
+-
+  fields:
+    ETR_RMP:
+    - 0
+    - 2
+    TI4_RMP:
+    - 3
+    - 4
+  reg: TIM2_OR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    CMS:
+    - 5
+    - 6
+    DIR:
+    - 4
+    - 4
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM21_CR1
+-
+  fields:
+    MMS:
+    - 4
+    - 6
+  reg: TIM21_CR2
+-
+  fields:
+    ECE:
+    - 14
+    - 14
+    ETF:
+    - 8
+    - 11
+    ETP:
+    - 15
+    - 15
+    ETPS:
+    - 12
+    - 13
+    MSM:
+    - 7
+    - 7
+    SMS:
+    - 0
+    - 2
+    TS:
+    - 4
+    - 6
+  reg: TIM21_SMCR
+-
+  fields:
+    CC1IE:
+    - 1
+    - 1
+    CC2IE:
+    - 2
+    - 2
+    TIE:
+    - 6
+    - 6
+    UIE:
+    - 0
+    - 0
+  reg: TIM21_DIER
+-
+  fields:
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    CC2IF:
+    - 2
+    - 2
+    CC2OF:
+    - 10
+    - 10
+    TIF:
+    - 6
+    - 6
+    UIF:
+    - 0
+    - 0
+  reg: TIM21_SR
+-
+  fields:
+    CC1G:
+    - 1
+    - 1
+    CC2G:
+    - 2
+    - 2
+    TG:
+    - 6
+    - 6
+    UG:
+    - 0
+    - 0
+  reg: TIM21_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+    OC2FE:
+    - 10
+    - 10
+    OC2M:
+    - 12
+    - 14
+    OC2PE:
+    - 11
+    - 11
+  reg: TIM21_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    IC1F:
+    - 4
+    - 7
+    IC1PSC:
+    - 2
+    - 3
+    IC2F:
+    - 12
+    - 15
+    IC2PSC:
+    - 10
+    - 11
+  reg: TIM21_CCMR1_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+    CC2E:
+    - 4
+    - 4
+    CC2NP:
+    - 7
+    - 7
+    CC2P:
+    - 5
+    - 5
+  reg: TIM21_CCER
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: TIM21_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM21_PSC
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: TIM21_ARR
+-
+  fields:
+    CCR1:
+    - 0
+    - 15
+  reg: TIM21_CCR1
+-
+  fields:
+    CCR2:
+    - 0
+    - 15
+  reg: TIM21_CCR2
+-
+  fields:
+    ETR_RMP:
+    - 0
+    - 1
+    TI1_RMP:
+    - 2
+    - 4
+    TI2_RMP:
+    - 5
+    - 5
+  reg: TIM21_OR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    CMS:
+    - 5
+    - 6
+    DIR:
+    - 4
+    - 4
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM22_CR1
+-
+  fields:
+    MMS:
+    - 4
+    - 6
+  reg: TIM22_CR2
+-
+  fields:
+    ECE:
+    - 14
+    - 14
+    ETF:
+    - 8
+    - 11
+    ETP:
+    - 15
+    - 15
+    ETPS:
+    - 12
+    - 13
+    MSM:
+    - 7
+    - 7
+    SMS:
+    - 0
+    - 2
+    TS:
+    - 4
+    - 6
+  reg: TIM22_SMCR
+-
+  fields:
+    CC1IE:
+    - 1
+    - 1
+    CC2IE:
+    - 2
+    - 2
+    TIE:
+    - 6
+    - 6
+    UIE:
+    - 0
+    - 0
+  reg: TIM22_DIER
+-
+  fields:
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    CC2IF:
+    - 2
+    - 2
+    CC2OF:
+    - 10
+    - 10
+    TIF:
+    - 6
+    - 6
+    UIF:
+    - 0
+    - 0
+  reg: TIM22_SR
+-
+  fields:
+    CC1G:
+    - 1
+    - 1
+    CC2G:
+    - 2
+    - 2
+    TG:
+    - 6
+    - 6
+    UG:
+    - 0
+    - 0
+  reg: TIM22_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+    OC2FE:
+    - 10
+    - 10
+    OC2M:
+    - 12
+    - 14
+    OC2PE:
+    - 11
+    - 11
+  reg: TIM22_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    IC1F:
+    - 4
+    - 7
+    IC1PSC:
+    - 2
+    - 3
+    IC2F:
+    - 12
+    - 15
+    IC2PSC:
+    - 10
+    - 11
+  reg: TIM22_CCMR1_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+    CC2E:
+    - 4
+    - 4
+    CC2NP:
+    - 7
+    - 7
+    CC2P:
+    - 5
+    - 5
+  reg: TIM22_CCER
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: TIM22_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM22_PSC
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: TIM22_ARR
+-
+  fields:
+    CCR1:
+    - 0
+    - 15
+  reg: TIM22_CCR1
+-
+  fields:
+    CCR2:
+    - 0
+    - 15
+  reg: TIM22_CCR2
+-
+  fields:
+    ETR_RMP:
+    - 0
+    - 1
+    TI1_RMP:
+    - 2
+    - 3
+  reg: TIM22_OR
+-
+  fields:
+    CMIE:
+    - 14
+    - 14
+    DEAT0:
+    - 21
+    - 21
+    DEAT1:
+    - 22
+    - 22
+    DEAT2:
+    - 23
+    - 23
+    DEAT3:
+    - 24
+    - 24
+    DEAT4:
+    - 25
+    - 25
+    DEDT0:
+    - 16
+    - 16
+    DEDT1:
+    - 17
+    - 17
+    DEDT2:
+    - 18
+    - 18
+    DEDT3:
+    - 19
+    - 19
+    DEDT4:
+    - 20
+    - 20
+    IDLEIE:
+    - 4
+    - 4
+    M0:
+    - 12
+    - 12
+    M1:
+    - 28
+    - 28
+    MME:
+    - 13
+    - 13
+    PCE:
+    - 10
+    - 10
+    PEIE:
+    - 8
+    - 8
+    PS:
+    - 9
+    - 9
+    RE:
+    - 2
+    - 2
+    RXNEIE:
+    - 5
+    - 5
+    TCIE:
+    - 6
+    - 6
+    TE:
+    - 3
+    - 3
+    TXEIE:
+    - 7
+    - 7
+    UE:
+    - 0
+    - 0
+    UESM:
+    - 1
+    - 1
+    WAKE:
+    - 11
+    - 11
+  reg: LPUART1_CR1
+-
+  fields:
+    ADD0_3:
+    - 24
+    - 27
+    ADD4_7:
+    - 28
+    - 31
+    ADDM7:
+    - 4
+    - 4
+    CLKEN:
+    - 11
+    - 11
+    MSBFIRST:
+    - 19
+    - 19
+    RXINV:
+    - 16
+    - 16
+    STOP:
+    - 12
+    - 13
+    SWAP:
+    - 15
+    - 15
+    TAINV:
+    - 18
+    - 18
+    TXINV:
+    - 17
+    - 17
+  reg: LPUART1_CR2
+-
+  fields:
+    CTSE:
+    - 9
+    - 9
+    CTSIE:
+    - 10
+    - 10
+    DDRE:
+    - 13
+    - 13
+    DEM:
+    - 14
+    - 14
+    DEP:
+    - 15
+    - 15
+    DMAR:
+    - 6
+    - 6
+    DMAT:
+    - 7
+    - 7
+    EIE:
+    - 0
+    - 0
+    HDSEL:
+    - 3
+    - 3
+    OVRDIS:
+    - 12
+    - 12
+    RTSE:
+    - 8
+    - 8
+    WUFIE:
+    - 22
+    - 22
+    WUS:
+    - 20
+    - 21
+  reg: LPUART1_CR3
+-
+  fields:
+    BRR:
+    - 0
+    - 19
+  reg: LPUART1_BRR
+-
+  fields:
+    MMRQ:
+    - 2
+    - 2
+    RXFRQ:
+    - 3
+    - 3
+    SBKRQ:
+    - 1
+    - 1
+  reg: LPUART1_RQR
+-
+  fields:
+    BUSY:
+    - 16
+    - 16
+    CMF:
+    - 17
+    - 17
+    CTS:
+    - 10
+    - 10
+    CTSIF:
+    - 9
+    - 9
+    FE:
+    - 1
+    - 1
+    IDLE:
+    - 4
+    - 4
+    NF:
+    - 2
+    - 2
+    ORE:
+    - 3
+    - 3
+    PE:
+    - 0
+    - 0
+    REACK:
+    - 22
+    - 22
+    RWU:
+    - 19
+    - 19
+    RXNE:
+    - 5
+    - 5
+    SBKF:
+    - 18
+    - 18
+    TC:
+    - 6
+    - 6
+    TEACK:
+    - 21
+    - 21
+    TXE:
+    - 7
+    - 7
+    WUF:
+    - 20
+    - 20
+  reg: LPUART1_ISR
+-
+  fields:
+    CMCF:
+    - 17
+    - 17
+    CTSCF:
+    - 9
+    - 9
+    FECF:
+    - 1
+    - 1
+    IDLECF:
+    - 4
+    - 4
+    NCF:
+    - 2
+    - 2
+    ORECF:
+    - 3
+    - 3
+    PECF:
+    - 0
+    - 0
+    TCCF:
+    - 6
+    - 6
+    WUCF:
+    - 20
+    - 20
+  reg: LPUART1_ICR
+-
+  fields:
+    RDR:
+    - 0
+    - 8
+  reg: LPUART1_RDR
+-
+  fields:
+    TDR:
+    - 0
+    - 8
+  reg: LPUART1_TDR
+-
+  fields:
+    SETENA:
+    - 0
+    - 31
+  reg: NVIC_ISER
+-
+  fields:
+    CLRENA:
+    - 0
+    - 31
+  reg: NVIC_ICER
+-
+  fields:
+    SETPEND:
+    - 0
+    - 31
+  reg: NVIC_ISPR
+-
+  fields:
+    CLRPEND:
+    - 0
+    - 31
+  reg: NVIC_ICPR
+-
+  fields:
+    PRI_0:
+    - 0
+    - 7
+    PRI_1:
+    - 8
+    - 15
+    PRI_2:
+    - 16
+    - 23
+    PRI_3:
+    - 24
+    - 31
+  reg: NVIC_IPR0
+-
+  fields:
+    PRI_4:
+    - 0
+    - 7
+    PRI_5:
+    - 8
+    - 15
+    PRI_6:
+    - 16
+    - 23
+    PRI_7:
+    - 24
+    - 31
+  reg: NVIC_IPR1
+-
+  fields:
+    PRI_10:
+    - 16
+    - 23
+    PRI_11:
+    - 24
+    - 31
+    PRI_8:
+    - 0
+    - 7
+    PRI_9:
+    - 8
+    - 15
+  reg: NVIC_IPR2
+-
+  fields:
+    PRI_12:
+    - 0
+    - 7
+    PRI_13:
+    - 8
+    - 15
+    PRI_14:
+    - 16
+    - 23
+    PRI_15:
+    - 24
+    - 31
+  reg: NVIC_IPR3
+-
+  fields:
+    PRI_16:
+    - 0
+    - 7
+    PRI_17:
+    - 8
+    - 15
+    PRI_18:
+    - 16
+    - 23
+    PRI_19:
+    - 24
+    - 31
+  reg: NVIC_IPR4
+-
+  fields:
+    PRI_20:
+    - 0
+    - 7
+    PRI_21:
+    - 8
+    - 15
+    PRI_22:
+    - 16
+    - 23
+    PRI_23:
+    - 24
+    - 31
+  reg: NVIC_IPR5
+-
+  fields:
+    PRI_24:
+    - 0
+    - 7
+    PRI_25:
+    - 8
+    - 15
+    PRI_26:
+    - 16
+    - 23
+    PRI_27:
+    - 24
+    - 31
+  reg: NVIC_IPR6
+-
+  fields:
+    PRI_28:
+    - 0
+    - 7
+    PRI_29:
+    - 8
+    - 15
+    PRI_30:
+    - 16
+    - 23
+    PRI_31:
+    - 24
+    - 31
+  reg: NVIC_IPR7
+-
+  fields:
+    DREGION:
+    - 8
+    - 15
+    IREGION:
+    - 16
+    - 23
+    SEPARATE:
+    - 0
+    - 0
+  reg: MPU_MPU_TYPER
+-
+  fields:
+    ENABLE:
+    - 0
+    - 0
+    HFNMIENA:
+    - 1
+    - 1
+    PRIVDEFENA:
+    - 2
+    - 2
+  reg: MPU_MPU_CTRL
+-
+  fields:
+    REGION:
+    - 0
+    - 7
+  reg: MPU_MPU_RNR
+-
+  fields:
+    ADDR:
+    - 5
+    - 31
+    REGION:
+    - 0
+    - 3
+    VALID:
+    - 4
+    - 4
+  reg: MPU_MPU_RBAR
+-
+  fields:
+    AP:
+    - 24
+    - 26
+    B:
+    - 16
+    - 16
+    C:
+    - 17
+    - 17
+    ENABLE:
+    - 0
+    - 0
+    S:
+    - 18
+    - 18
+    SIZE:
+    - 1
+    - 5
+    SRD:
+    - 8
+    - 15
+    TEX:
+    - 19
+    - 21
+    XN:
+    - 28
+    - 28
+  reg: MPU_MPU_RASR
+-
+  fields:
+    CLKSOURCE:
+    - 2
+    - 2
+    COUNTFLAG:
+    - 16
+    - 16
+    ENABLE:
+    - 0
+    - 0
+    TICKINT:
+    - 1
+    - 1
+  reg: STK_CSR
+-
+  fields:
+    RELOAD:
+    - 0
+    - 23
+  reg: STK_RVR
+-
+  fields:
+    CURRENT:
+    - 0
+    - 23
+  reg: STK_CVR
+-
+  fields:
+    NOREF:
+    - 31
+    - 31
+    SKEW:
+    - 30
+    - 30
+    TENMS:
+    - 0
+    - 23
+  reg: STK_CALIB
+-
+  fields:
+    Architecture:
+    - 16
+    - 19
+    Implementer:
+    - 24
+    - 31
+    PartNo:
+    - 4
+    - 15
+    Revision:
+    - 0
+    - 3
+    Variant:
+    - 20
+    - 23
+  reg: SCB_CPUID
+-
+  fields:
+    ISRPENDING:
+    - 22
+    - 22
+    NMIPENDSET:
+    - 31
+    - 31
+    PENDSTCLR:
+    - 25
+    - 25
+    PENDSTSET:
+    - 26
+    - 26
+    PENDSVCLR:
+    - 27
+    - 27
+    PENDSVSET:
+    - 28
+    - 28
+    RETTOBASE:
+    - 11
+    - 11
+    VECTACTIVE:
+    - 0
+    - 8
+    VECTPENDING:
+    - 12
+    - 18
+  reg: SCB_ICSR
+-
+  fields:
+    TBLOFF:
+    - 7
+    - 31
+  reg: SCB_VTOR
+-
+  fields:
+    ENDIANESS:
+    - 15
+    - 15
+    SYSRESETREQ:
+    - 2
+    - 2
+    VECTCLRACTIVE:
+    - 1
+    - 1
+    VECTKEYSTAT:
+    - 16
+    - 31
+  reg: SCB_AIRCR
+-
+  fields:
+    SEVEONPEND:
+    - 4
+    - 4
+    SLEEPDEEP:
+    - 2
+    - 2
+    SLEEPONEXIT:
+    - 1
+    - 1
+  reg: SCB_SCR
+-
+  fields:
+    BFHFNMIGN:
+    - 8
+    - 8
+    DIV_0_TRP:
+    - 4
+    - 4
+    NONBASETHRDENA:
+    - 0
+    - 0
+    STKALIGN:
+    - 9
+    - 9
+    UNALIGN__TRP:
+    - 3
+    - 3
+    USERSETMPEND:
+    - 1
+    - 1
+  reg: SCB_CCR
+-
+  fields:
+    PRI_11:
+    - 24
+    - 31
+  reg: SCB_SHPR2
+-
+  fields:
+    PRI_14:
+    - 16
+    - 23
+    PRI_15:
+    - 24
+    - 31
+  reg: SCB_SHPR3
+type: u32
+version: 0.0.1
