@@ -1,0 +1,14050 @@
+MCU: stm32F0x8
+registers:
+-
+  fields:
+    DR:
+    - 0
+    - 31
+  reg: CRC_DR
+-
+  fields:
+    IDR:
+    - 0
+    - 7
+  reg: CRC_IDR
+-
+  fields:
+    POLYSIZE:
+    - 3
+    - 4
+    RESET:
+    - 0
+    - 0
+    REV_IN:
+    - 5
+    - 6
+    REV_OUT:
+    - 7
+    - 7
+  reg: CRC_CR
+-
+  fields:
+    INIT:
+    - 0
+    - 31
+  reg: CRC_INIT
+-
+  fields:
+    MODER0:
+    - 0
+    - 1
+    MODER1:
+    - 2
+    - 3
+    MODER10:
+    - 20
+    - 21
+    MODER11:
+    - 22
+    - 23
+    MODER12:
+    - 24
+    - 25
+    MODER13:
+    - 26
+    - 27
+    MODER14:
+    - 28
+    - 29
+    MODER15:
+    - 30
+    - 31
+    MODER2:
+    - 4
+    - 5
+    MODER3:
+    - 6
+    - 7
+    MODER4:
+    - 8
+    - 9
+    MODER5:
+    - 10
+    - 11
+    MODER6:
+    - 12
+    - 13
+    MODER7:
+    - 14
+    - 15
+    MODER8:
+    - 16
+    - 17
+    MODER9:
+    - 18
+    - 19
+  reg: GPIOF_MODER
+-
+  fields:
+    OT0:
+    - 0
+    - 0
+    OT1:
+    - 1
+    - 1
+    OT10:
+    - 10
+    - 10
+    OT11:
+    - 11
+    - 11
+    OT12:
+    - 12
+    - 12
+    OT13:
+    - 13
+    - 13
+    OT14:
+    - 14
+    - 14
+    OT15:
+    - 15
+    - 15
+    OT2:
+    - 2
+    - 2
+    OT3:
+    - 3
+    - 3
+    OT4:
+    - 4
+    - 4
+    OT5:
+    - 5
+    - 5
+    OT6:
+    - 6
+    - 6
+    OT7:
+    - 7
+    - 7
+    OT8:
+    - 8
+    - 8
+    OT9:
+    - 9
+    - 9
+  reg: GPIOF_OTYPER
+-
+  fields:
+    OSPEEDR0:
+    - 0
+    - 1
+    OSPEEDR1:
+    - 2
+    - 3
+    OSPEEDR10:
+    - 20
+    - 21
+    OSPEEDR11:
+    - 22
+    - 23
+    OSPEEDR12:
+    - 24
+    - 25
+    OSPEEDR13:
+    - 26
+    - 27
+    OSPEEDR14:
+    - 28
+    - 29
+    OSPEEDR15:
+    - 30
+    - 31
+    OSPEEDR2:
+    - 4
+    - 5
+    OSPEEDR3:
+    - 6
+    - 7
+    OSPEEDR4:
+    - 8
+    - 9
+    OSPEEDR5:
+    - 10
+    - 11
+    OSPEEDR6:
+    - 12
+    - 13
+    OSPEEDR7:
+    - 14
+    - 15
+    OSPEEDR8:
+    - 16
+    - 17
+    OSPEEDR9:
+    - 18
+    - 19
+  reg: GPIOF_OSPEEDR
+-
+  fields:
+    PUPDR0:
+    - 0
+    - 1
+    PUPDR1:
+    - 2
+    - 3
+    PUPDR10:
+    - 20
+    - 21
+    PUPDR11:
+    - 22
+    - 23
+    PUPDR12:
+    - 24
+    - 25
+    PUPDR13:
+    - 26
+    - 27
+    PUPDR14:
+    - 28
+    - 29
+    PUPDR15:
+    - 30
+    - 31
+    PUPDR2:
+    - 4
+    - 5
+    PUPDR3:
+    - 6
+    - 7
+    PUPDR4:
+    - 8
+    - 9
+    PUPDR5:
+    - 10
+    - 11
+    PUPDR6:
+    - 12
+    - 13
+    PUPDR7:
+    - 14
+    - 15
+    PUPDR8:
+    - 16
+    - 17
+    PUPDR9:
+    - 18
+    - 19
+  reg: GPIOF_PUPDR
+-
+  fields:
+    IDR0:
+    - 0
+    - 0
+    IDR1:
+    - 1
+    - 1
+    IDR10:
+    - 10
+    - 10
+    IDR11:
+    - 11
+    - 11
+    IDR12:
+    - 12
+    - 12
+    IDR13:
+    - 13
+    - 13
+    IDR14:
+    - 14
+    - 14
+    IDR15:
+    - 15
+    - 15
+    IDR2:
+    - 2
+    - 2
+    IDR3:
+    - 3
+    - 3
+    IDR4:
+    - 4
+    - 4
+    IDR5:
+    - 5
+    - 5
+    IDR6:
+    - 6
+    - 6
+    IDR7:
+    - 7
+    - 7
+    IDR8:
+    - 8
+    - 8
+    IDR9:
+    - 9
+    - 9
+  reg: GPIOF_IDR
+-
+  fields:
+    ODR0:
+    - 0
+    - 0
+    ODR1:
+    - 1
+    - 1
+    ODR10:
+    - 10
+    - 10
+    ODR11:
+    - 11
+    - 11
+    ODR12:
+    - 12
+    - 12
+    ODR13:
+    - 13
+    - 13
+    ODR14:
+    - 14
+    - 14
+    ODR15:
+    - 15
+    - 15
+    ODR2:
+    - 2
+    - 2
+    ODR3:
+    - 3
+    - 3
+    ODR4:
+    - 4
+    - 4
+    ODR5:
+    - 5
+    - 5
+    ODR6:
+    - 6
+    - 6
+    ODR7:
+    - 7
+    - 7
+    ODR8:
+    - 8
+    - 8
+    ODR9:
+    - 9
+    - 9
+  reg: GPIOF_ODR
+-
+  fields:
+    BR0:
+    - 16
+    - 16
+    BR1:
+    - 17
+    - 17
+    BR10:
+    - 26
+    - 26
+    BR11:
+    - 27
+    - 27
+    BR12:
+    - 28
+    - 28
+    BR13:
+    - 29
+    - 29
+    BR14:
+    - 30
+    - 30
+    BR15:
+    - 31
+    - 31
+    BR2:
+    - 18
+    - 18
+    BR3:
+    - 19
+    - 19
+    BR4:
+    - 20
+    - 20
+    BR5:
+    - 21
+    - 21
+    BR6:
+    - 22
+    - 22
+    BR7:
+    - 23
+    - 23
+    BR8:
+    - 24
+    - 24
+    BR9:
+    - 25
+    - 25
+    BS0:
+    - 0
+    - 0
+    BS1:
+    - 1
+    - 1
+    BS10:
+    - 10
+    - 10
+    BS11:
+    - 11
+    - 11
+    BS12:
+    - 12
+    - 12
+    BS13:
+    - 13
+    - 13
+    BS14:
+    - 14
+    - 14
+    BS15:
+    - 15
+    - 15
+    BS2:
+    - 2
+    - 2
+    BS3:
+    - 3
+    - 3
+    BS4:
+    - 4
+    - 4
+    BS5:
+    - 5
+    - 5
+    BS6:
+    - 6
+    - 6
+    BS7:
+    - 7
+    - 7
+    BS8:
+    - 8
+    - 8
+    BS9:
+    - 9
+    - 9
+  reg: GPIOF_BSRR
+-
+  fields:
+    LCK0:
+    - 0
+    - 0
+    LCK1:
+    - 1
+    - 1
+    LCK10:
+    - 10
+    - 10
+    LCK11:
+    - 11
+    - 11
+    LCK12:
+    - 12
+    - 12
+    LCK13:
+    - 13
+    - 13
+    LCK14:
+    - 14
+    - 14
+    LCK15:
+    - 15
+    - 15
+    LCK2:
+    - 2
+    - 2
+    LCK3:
+    - 3
+    - 3
+    LCK4:
+    - 4
+    - 4
+    LCK5:
+    - 5
+    - 5
+    LCK6:
+    - 6
+    - 6
+    LCK7:
+    - 7
+    - 7
+    LCK8:
+    - 8
+    - 8
+    LCK9:
+    - 9
+    - 9
+    LCKK:
+    - 16
+    - 16
+  reg: GPIOF_LCKR
+-
+  fields:
+    AFRL0:
+    - 0
+    - 3
+    AFRL1:
+    - 4
+    - 7
+    AFRL2:
+    - 8
+    - 11
+    AFRL3:
+    - 12
+    - 15
+    AFRL4:
+    - 16
+    - 19
+    AFRL5:
+    - 20
+    - 23
+    AFRL6:
+    - 24
+    - 27
+    AFRL7:
+    - 28
+    - 31
+  reg: GPIOF_AFRL
+-
+  fields:
+    AFRH10:
+    - 8
+    - 11
+    AFRH11:
+    - 12
+    - 15
+    AFRH12:
+    - 16
+    - 19
+    AFRH13:
+    - 20
+    - 23
+    AFRH14:
+    - 24
+    - 27
+    AFRH15:
+    - 28
+    - 31
+    AFRH8:
+    - 0
+    - 3
+    AFRH9:
+    - 4
+    - 7
+  reg: GPIOF_AFRH
+-
+  fields:
+    BR0:
+    - 0
+    - 0
+    BR1:
+    - 1
+    - 1
+    BR10:
+    - 10
+    - 10
+    BR11:
+    - 11
+    - 11
+    BR12:
+    - 12
+    - 12
+    BR13:
+    - 13
+    - 13
+    BR14:
+    - 14
+    - 14
+    BR15:
+    - 15
+    - 15
+    BR2:
+    - 2
+    - 2
+    BR3:
+    - 3
+    - 3
+    BR4:
+    - 4
+    - 4
+    BR5:
+    - 5
+    - 5
+    BR6:
+    - 6
+    - 6
+    BR7:
+    - 7
+    - 7
+    BR8:
+    - 8
+    - 8
+    BR9:
+    - 9
+    - 9
+  reg: GPIOF_BRR
+-
+  fields:
+    MODER0:
+    - 0
+    - 1
+    MODER1:
+    - 2
+    - 3
+    MODER10:
+    - 20
+    - 21
+    MODER11:
+    - 22
+    - 23
+    MODER12:
+    - 24
+    - 25
+    MODER13:
+    - 26
+    - 27
+    MODER14:
+    - 28
+    - 29
+    MODER15:
+    - 30
+    - 31
+    MODER2:
+    - 4
+    - 5
+    MODER3:
+    - 6
+    - 7
+    MODER4:
+    - 8
+    - 9
+    MODER5:
+    - 10
+    - 11
+    MODER6:
+    - 12
+    - 13
+    MODER7:
+    - 14
+    - 15
+    MODER8:
+    - 16
+    - 17
+    MODER9:
+    - 18
+    - 19
+  reg: GPIOA_MODER
+-
+  fields:
+    OT0:
+    - 0
+    - 0
+    OT1:
+    - 1
+    - 1
+    OT10:
+    - 10
+    - 10
+    OT11:
+    - 11
+    - 11
+    OT12:
+    - 12
+    - 12
+    OT13:
+    - 13
+    - 13
+    OT14:
+    - 14
+    - 14
+    OT15:
+    - 15
+    - 15
+    OT2:
+    - 2
+    - 2
+    OT3:
+    - 3
+    - 3
+    OT4:
+    - 4
+    - 4
+    OT5:
+    - 5
+    - 5
+    OT6:
+    - 6
+    - 6
+    OT7:
+    - 7
+    - 7
+    OT8:
+    - 8
+    - 8
+    OT9:
+    - 9
+    - 9
+  reg: GPIOA_OTYPER
+-
+  fields:
+    OSPEEDR0:
+    - 0
+    - 1
+    OSPEEDR1:
+    - 2
+    - 3
+    OSPEEDR10:
+    - 20
+    - 21
+    OSPEEDR11:
+    - 22
+    - 23
+    OSPEEDR12:
+    - 24
+    - 25
+    OSPEEDR13:
+    - 26
+    - 27
+    OSPEEDR14:
+    - 28
+    - 29
+    OSPEEDR15:
+    - 30
+    - 31
+    OSPEEDR2:
+    - 4
+    - 5
+    OSPEEDR3:
+    - 6
+    - 7
+    OSPEEDR4:
+    - 8
+    - 9
+    OSPEEDR5:
+    - 10
+    - 11
+    OSPEEDR6:
+    - 12
+    - 13
+    OSPEEDR7:
+    - 14
+    - 15
+    OSPEEDR8:
+    - 16
+    - 17
+    OSPEEDR9:
+    - 18
+    - 19
+  reg: GPIOA_OSPEEDR
+-
+  fields:
+    PUPDR0:
+    - 0
+    - 1
+    PUPDR1:
+    - 2
+    - 3
+    PUPDR10:
+    - 20
+    - 21
+    PUPDR11:
+    - 22
+    - 23
+    PUPDR12:
+    - 24
+    - 25
+    PUPDR13:
+    - 26
+    - 27
+    PUPDR14:
+    - 28
+    - 29
+    PUPDR15:
+    - 30
+    - 31
+    PUPDR2:
+    - 4
+    - 5
+    PUPDR3:
+    - 6
+    - 7
+    PUPDR4:
+    - 8
+    - 9
+    PUPDR5:
+    - 10
+    - 11
+    PUPDR6:
+    - 12
+    - 13
+    PUPDR7:
+    - 14
+    - 15
+    PUPDR8:
+    - 16
+    - 17
+    PUPDR9:
+    - 18
+    - 19
+  reg: GPIOA_PUPDR
+-
+  fields:
+    IDR0:
+    - 0
+    - 0
+    IDR1:
+    - 1
+    - 1
+    IDR10:
+    - 10
+    - 10
+    IDR11:
+    - 11
+    - 11
+    IDR12:
+    - 12
+    - 12
+    IDR13:
+    - 13
+    - 13
+    IDR14:
+    - 14
+    - 14
+    IDR15:
+    - 15
+    - 15
+    IDR2:
+    - 2
+    - 2
+    IDR3:
+    - 3
+    - 3
+    IDR4:
+    - 4
+    - 4
+    IDR5:
+    - 5
+    - 5
+    IDR6:
+    - 6
+    - 6
+    IDR7:
+    - 7
+    - 7
+    IDR8:
+    - 8
+    - 8
+    IDR9:
+    - 9
+    - 9
+  reg: GPIOA_IDR
+-
+  fields:
+    ODR0:
+    - 0
+    - 0
+    ODR1:
+    - 1
+    - 1
+    ODR10:
+    - 10
+    - 10
+    ODR11:
+    - 11
+    - 11
+    ODR12:
+    - 12
+    - 12
+    ODR13:
+    - 13
+    - 13
+    ODR14:
+    - 14
+    - 14
+    ODR15:
+    - 15
+    - 15
+    ODR2:
+    - 2
+    - 2
+    ODR3:
+    - 3
+    - 3
+    ODR4:
+    - 4
+    - 4
+    ODR5:
+    - 5
+    - 5
+    ODR6:
+    - 6
+    - 6
+    ODR7:
+    - 7
+    - 7
+    ODR8:
+    - 8
+    - 8
+    ODR9:
+    - 9
+    - 9
+  reg: GPIOA_ODR
+-
+  fields:
+    BR0:
+    - 16
+    - 16
+    BR1:
+    - 17
+    - 17
+    BR10:
+    - 26
+    - 26
+    BR11:
+    - 27
+    - 27
+    BR12:
+    - 28
+    - 28
+    BR13:
+    - 29
+    - 29
+    BR14:
+    - 30
+    - 30
+    BR15:
+    - 31
+    - 31
+    BR2:
+    - 18
+    - 18
+    BR3:
+    - 19
+    - 19
+    BR4:
+    - 20
+    - 20
+    BR5:
+    - 21
+    - 21
+    BR6:
+    - 22
+    - 22
+    BR7:
+    - 23
+    - 23
+    BR8:
+    - 24
+    - 24
+    BR9:
+    - 25
+    - 25
+    BS0:
+    - 0
+    - 0
+    BS1:
+    - 1
+    - 1
+    BS10:
+    - 10
+    - 10
+    BS11:
+    - 11
+    - 11
+    BS12:
+    - 12
+    - 12
+    BS13:
+    - 13
+    - 13
+    BS14:
+    - 14
+    - 14
+    BS15:
+    - 15
+    - 15
+    BS2:
+    - 2
+    - 2
+    BS3:
+    - 3
+    - 3
+    BS4:
+    - 4
+    - 4
+    BS5:
+    - 5
+    - 5
+    BS6:
+    - 6
+    - 6
+    BS7:
+    - 7
+    - 7
+    BS8:
+    - 8
+    - 8
+    BS9:
+    - 9
+    - 9
+  reg: GPIOA_BSRR
+-
+  fields:
+    LCK0:
+    - 0
+    - 0
+    LCK1:
+    - 1
+    - 1
+    LCK10:
+    - 10
+    - 10
+    LCK11:
+    - 11
+    - 11
+    LCK12:
+    - 12
+    - 12
+    LCK13:
+    - 13
+    - 13
+    LCK14:
+    - 14
+    - 14
+    LCK15:
+    - 15
+    - 15
+    LCK2:
+    - 2
+    - 2
+    LCK3:
+    - 3
+    - 3
+    LCK4:
+    - 4
+    - 4
+    LCK5:
+    - 5
+    - 5
+    LCK6:
+    - 6
+    - 6
+    LCK7:
+    - 7
+    - 7
+    LCK8:
+    - 8
+    - 8
+    LCK9:
+    - 9
+    - 9
+    LCKK:
+    - 16
+    - 16
+  reg: GPIOA_LCKR
+-
+  fields:
+    AFRL0:
+    - 0
+    - 3
+    AFRL1:
+    - 4
+    - 7
+    AFRL2:
+    - 8
+    - 11
+    AFRL3:
+    - 12
+    - 15
+    AFRL4:
+    - 16
+    - 19
+    AFRL5:
+    - 20
+    - 23
+    AFRL6:
+    - 24
+    - 27
+    AFRL7:
+    - 28
+    - 31
+  reg: GPIOA_AFRL
+-
+  fields:
+    AFRH10:
+    - 8
+    - 11
+    AFRH11:
+    - 12
+    - 15
+    AFRH12:
+    - 16
+    - 19
+    AFRH13:
+    - 20
+    - 23
+    AFRH14:
+    - 24
+    - 27
+    AFRH15:
+    - 28
+    - 31
+    AFRH8:
+    - 0
+    - 3
+    AFRH9:
+    - 4
+    - 7
+  reg: GPIOA_AFRH
+-
+  fields:
+    BR0:
+    - 0
+    - 0
+    BR1:
+    - 1
+    - 1
+    BR10:
+    - 10
+    - 10
+    BR11:
+    - 11
+    - 11
+    BR12:
+    - 12
+    - 12
+    BR13:
+    - 13
+    - 13
+    BR14:
+    - 14
+    - 14
+    BR15:
+    - 15
+    - 15
+    BR2:
+    - 2
+    - 2
+    BR3:
+    - 3
+    - 3
+    BR4:
+    - 4
+    - 4
+    BR5:
+    - 5
+    - 5
+    BR6:
+    - 6
+    - 6
+    BR7:
+    - 7
+    - 7
+    BR8:
+    - 8
+    - 8
+    BR9:
+    - 9
+    - 9
+  reg: GPIOA_BRR
+-
+  fields:
+    BIDIMODE:
+    - 15
+    - 15
+    BIDIOE:
+    - 14
+    - 14
+    BR:
+    - 3
+    - 5
+    CPHA:
+    - 0
+    - 0
+    CPOL:
+    - 1
+    - 1
+    CRCEN:
+    - 13
+    - 13
+    CRCNEXT:
+    - 12
+    - 12
+    DFF:
+    - 11
+    - 11
+    LSBFIRST:
+    - 7
+    - 7
+    MSTR:
+    - 2
+    - 2
+    RXONLY:
+    - 10
+    - 10
+    SPE:
+    - 6
+    - 6
+    SSI:
+    - 8
+    - 8
+    SSM:
+    - 9
+    - 9
+  reg: SPI1_CR1
+-
+  fields:
+    DS:
+    - 8
+    - 11
+    ERRIE:
+    - 5
+    - 5
+    FRF:
+    - 4
+    - 4
+    FRXTH:
+    - 12
+    - 12
+    LDMA_RX:
+    - 13
+    - 13
+    LDMA_TX:
+    - 14
+    - 14
+    NSSP:
+    - 3
+    - 3
+    RXDMAEN:
+    - 0
+    - 0
+    RXNEIE:
+    - 6
+    - 6
+    SSOE:
+    - 2
+    - 2
+    TXDMAEN:
+    - 1
+    - 1
+    TXEIE:
+    - 7
+    - 7
+  reg: SPI1_CR2
+-
+  fields:
+    BSY:
+    - 7
+    - 7
+    CHSIDE:
+    - 2
+    - 2
+    CRCERR:
+    - 4
+    - 4
+    FRLVL:
+    - 9
+    - 10
+    FTLVL:
+    - 11
+    - 12
+    MODF:
+    - 5
+    - 5
+    OVR:
+    - 6
+    - 6
+    RXNE:
+    - 0
+    - 0
+    TIFRFE:
+    - 8
+    - 8
+    TXE:
+    - 1
+    - 1
+    UDR:
+    - 3
+    - 3
+  reg: SPI1_SR
+-
+  fields:
+    DR:
+    - 0
+    - 15
+  reg: SPI1_DR
+-
+  fields:
+    CRCPOLY:
+    - 0
+    - 15
+  reg: SPI1_CRCPR
+-
+  fields:
+    RxCRC:
+    - 0
+    - 15
+  reg: SPI1_RXCRCR
+-
+  fields:
+    TxCRC:
+    - 0
+    - 15
+  reg: SPI1_TXCRCR
+-
+  fields:
+    CHLEN:
+    - 0
+    - 0
+    CKPOL:
+    - 3
+    - 3
+    DATLEN:
+    - 1
+    - 2
+    I2SCFG:
+    - 8
+    - 9
+    I2SE:
+    - 10
+    - 10
+    I2SMOD:
+    - 11
+    - 11
+    I2SSTD:
+    - 4
+    - 5
+    PCMSYNC:
+    - 7
+    - 7
+  reg: SPI1_I2SCFGR
+-
+  fields:
+    I2SDIV:
+    - 0
+    - 7
+    MCKOE:
+    - 9
+    - 9
+    ODD:
+    - 8
+    - 8
+  reg: SPI1_I2SPR
+-
+  fields:
+    CSBF:
+    - 3
+    - 3
+    CWUF:
+    - 2
+    - 2
+    DBP:
+    - 8
+    - 8
+    LPDS:
+    - 0
+    - 0
+    PDDS:
+    - 1
+    - 1
+    PLS:
+    - 5
+    - 7
+    PVDE:
+    - 4
+    - 4
+  reg: PWR_CR
+-
+  fields:
+    EWUP1:
+    - 8
+    - 8
+    EWUP2:
+    - 9
+    - 9
+    EWUP3:
+    - 10
+    - 10
+    EWUP4:
+    - 11
+    - 11
+    EWUP5:
+    - 12
+    - 12
+    EWUP6:
+    - 13
+    - 13
+    EWUP7:
+    - 14
+    - 14
+    EWUP8:
+    - 15
+    - 15
+    PVDO:
+    - 2
+    - 2
+    SBF:
+    - 1
+    - 1
+    VREFINTRDY:
+    - 3
+    - 3
+    WUF:
+    - 0
+    - 0
+  reg: PWR_CSR
+-
+  fields:
+    ADDRIE:
+    - 3
+    - 3
+    ALERTEN:
+    - 22
+    - 22
+    ANFOFF:
+    - 12
+    - 12
+    DNF:
+    - 8
+    - 11
+    ERRIE:
+    - 7
+    - 7
+    GCEN:
+    - 19
+    - 19
+    NACKIE:
+    - 4
+    - 4
+    NOSTRETCH:
+    - 17
+    - 17
+    PE:
+    - 0
+    - 0
+    PECEN:
+    - 23
+    - 23
+    RXDMAEN:
+    - 15
+    - 15
+    RXIE:
+    - 2
+    - 2
+    SBC:
+    - 16
+    - 16
+    SMBDEN:
+    - 21
+    - 21
+    SMBHEN:
+    - 20
+    - 20
+    STOPIE:
+    - 5
+    - 5
+    SWRST:
+    - 13
+    - 13
+    TCIE:
+    - 6
+    - 6
+    TXDMAEN:
+    - 14
+    - 14
+    TXIE:
+    - 1
+    - 1
+    WUPEN:
+    - 18
+    - 18
+  reg: I2C1_CR1
+-
+  fields:
+    ADD10:
+    - 11
+    - 11
+    AUTOEND:
+    - 25
+    - 25
+    HEAD10R:
+    - 12
+    - 12
+    NACK:
+    - 15
+    - 15
+    NBYTES:
+    - 16
+    - 23
+    PECBYTE:
+    - 26
+    - 26
+    RD_WRN:
+    - 10
+    - 10
+    RELOAD:
+    - 24
+    - 24
+    SADD0:
+    - 0
+    - 0
+    SADD1:
+    - 1
+    - 7
+    SADD8:
+    - 8
+    - 9
+    START:
+    - 13
+    - 13
+    STOP:
+    - 14
+    - 14
+  reg: I2C1_CR2
+-
+  fields:
+    OA1EN:
+    - 15
+    - 15
+    OA1MODE:
+    - 10
+    - 10
+    OA1_0:
+    - 0
+    - 0
+    OA1_1:
+    - 1
+    - 7
+    OA1_8:
+    - 8
+    - 9
+  reg: I2C1_OAR1
+-
+  fields:
+    OA2:
+    - 1
+    - 7
+    OA2EN:
+    - 15
+    - 15
+    OA2MSK:
+    - 8
+    - 10
+  reg: I2C1_OAR2
+-
+  fields:
+    PRESC:
+    - 28
+    - 31
+    SCLDEL:
+    - 20
+    - 23
+    SCLH:
+    - 8
+    - 15
+    SCLL:
+    - 0
+    - 7
+    SDADEL:
+    - 16
+    - 19
+  reg: I2C1_TIMINGR
+-
+  fields:
+    TEXTEN:
+    - 31
+    - 31
+    TIDLE:
+    - 12
+    - 12
+    TIMEOUTA:
+    - 0
+    - 11
+    TIMEOUTB:
+    - 16
+    - 27
+    TIMOUTEN:
+    - 15
+    - 15
+  reg: I2C1_TIMEOUTR
+-
+  fields:
+    ADDCODE:
+    - 17
+    - 23
+    ADDR:
+    - 3
+    - 3
+    ALERT:
+    - 13
+    - 13
+    ARLO:
+    - 9
+    - 9
+    BERR:
+    - 8
+    - 8
+    BUSY:
+    - 15
+    - 15
+    DIR:
+    - 16
+    - 16
+    NACKF:
+    - 4
+    - 4
+    OVR:
+    - 10
+    - 10
+    PECERR:
+    - 11
+    - 11
+    RXNE:
+    - 2
+    - 2
+    STOPF:
+    - 5
+    - 5
+    TC:
+    - 6
+    - 6
+    TCR:
+    - 7
+    - 7
+    TIMEOUT:
+    - 12
+    - 12
+    TXE:
+    - 0
+    - 0
+    TXIS:
+    - 1
+    - 1
+  reg: I2C1_ISR
+-
+  fields:
+    ADDRCF:
+    - 3
+    - 3
+    ALERTCF:
+    - 13
+    - 13
+    ARLOCF:
+    - 9
+    - 9
+    BERRCF:
+    - 8
+    - 8
+    NACKCF:
+    - 4
+    - 4
+    OVRCF:
+    - 10
+    - 10
+    PECCF:
+    - 11
+    - 11
+    STOPCF:
+    - 5
+    - 5
+    TIMOUTCF:
+    - 12
+    - 12
+  reg: I2C1_ICR
+-
+  fields:
+    PEC:
+    - 0
+    - 7
+  reg: I2C1_PECR
+-
+  fields:
+    RXDATA:
+    - 0
+    - 7
+  reg: I2C1_RXDR
+-
+  fields:
+    TXDATA:
+    - 0
+    - 7
+  reg: I2C1_TXDR
+-
+  fields:
+    KEY:
+    - 0
+    - 15
+  reg: IWDG_KR
+-
+  fields:
+    PR:
+    - 0
+    - 2
+  reg: IWDG_PR
+-
+  fields:
+    RL:
+    - 0
+    - 11
+  reg: IWDG_RLR
+-
+  fields:
+    PVU:
+    - 0
+    - 0
+    RVU:
+    - 1
+    - 1
+    WVU:
+    - 2
+    - 2
+  reg: IWDG_SR
+-
+  fields:
+    WIN:
+    - 0
+    - 11
+  reg: IWDG_WINR
+-
+  fields:
+    T:
+    - 0
+    - 6
+    WDGA:
+    - 7
+    - 7
+  reg: WWDG_CR
+-
+  fields:
+    EWI:
+    - 9
+    - 9
+    W:
+    - 0
+    - 6
+    WDGTB:
+    - 7
+    - 8
+  reg: WWDG_CFR
+-
+  fields:
+    EWIF:
+    - 0
+    - 0
+  reg: WWDG_SR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    CMS:
+    - 5
+    - 6
+    DIR:
+    - 4
+    - 4
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM1_CR1
+-
+  fields:
+    CCDS:
+    - 3
+    - 3
+    CCPC:
+    - 0
+    - 0
+    CCUS:
+    - 2
+    - 2
+    MMS:
+    - 4
+    - 6
+    OIS1:
+    - 8
+    - 8
+    OIS1N:
+    - 9
+    - 9
+    OIS2:
+    - 10
+    - 10
+    OIS2N:
+    - 11
+    - 11
+    OIS3:
+    - 12
+    - 12
+    OIS3N:
+    - 13
+    - 13
+    OIS4:
+    - 14
+    - 14
+    TI1S:
+    - 7
+    - 7
+  reg: TIM1_CR2
+-
+  fields:
+    ECE:
+    - 14
+    - 14
+    ETF:
+    - 8
+    - 11
+    ETP:
+    - 15
+    - 15
+    ETPS:
+    - 12
+    - 13
+    MSM:
+    - 7
+    - 7
+    SMS:
+    - 0
+    - 2
+    TS:
+    - 4
+    - 6
+  reg: TIM1_SMCR
+-
+  fields:
+    BIE:
+    - 7
+    - 7
+    CC1DE:
+    - 9
+    - 9
+    CC1IE:
+    - 1
+    - 1
+    CC2DE:
+    - 10
+    - 10
+    CC2IE:
+    - 2
+    - 2
+    CC3DE:
+    - 11
+    - 11
+    CC3IE:
+    - 3
+    - 3
+    CC4DE:
+    - 12
+    - 12
+    CC4IE:
+    - 4
+    - 4
+    COMDE:
+    - 13
+    - 13
+    COMIE:
+    - 5
+    - 5
+    TDE:
+    - 14
+    - 14
+    TIE:
+    - 6
+    - 6
+    UDE:
+    - 8
+    - 8
+    UIE:
+    - 0
+    - 0
+  reg: TIM1_DIER
+-
+  fields:
+    BIF:
+    - 7
+    - 7
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    CC2IF:
+    - 2
+    - 2
+    CC2OF:
+    - 10
+    - 10
+    CC3IF:
+    - 3
+    - 3
+    CC3OF:
+    - 11
+    - 11
+    CC4IF:
+    - 4
+    - 4
+    CC4OF:
+    - 12
+    - 12
+    COMIF:
+    - 5
+    - 5
+    TIF:
+    - 6
+    - 6
+    UIF:
+    - 0
+    - 0
+  reg: TIM1_SR
+-
+  fields:
+    BG:
+    - 7
+    - 7
+    CC1G:
+    - 1
+    - 1
+    CC2G:
+    - 2
+    - 2
+    CC3G:
+    - 3
+    - 3
+    CC4G:
+    - 4
+    - 4
+    COMG:
+    - 5
+    - 5
+    TG:
+    - 6
+    - 6
+    UG:
+    - 0
+    - 0
+  reg: TIM1_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    OC1CE:
+    - 7
+    - 7
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+    OC2CE:
+    - 15
+    - 15
+    OC2FE:
+    - 10
+    - 10
+    OC2M:
+    - 12
+    - 14
+    OC2PE:
+    - 11
+    - 11
+  reg: TIM1_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    IC1F:
+    - 4
+    - 7
+    IC1PCS:
+    - 2
+    - 3
+    IC2F:
+    - 12
+    - 15
+    IC2PCS:
+    - 10
+    - 11
+  reg: TIM1_CCMR1_Input
+-
+  fields:
+    CC3S:
+    - 0
+    - 1
+    CC4S:
+    - 8
+    - 9
+    OC3CE:
+    - 7
+    - 7
+    OC3FE:
+    - 2
+    - 2
+    OC3M:
+    - 4
+    - 6
+    OC3PE:
+    - 3
+    - 3
+    OC4CE:
+    - 15
+    - 15
+    OC4FE:
+    - 10
+    - 10
+    OC4M:
+    - 12
+    - 14
+    OC4PE:
+    - 11
+    - 11
+  reg: TIM1_CCMR2_Output
+-
+  fields:
+    CC3S:
+    - 0
+    - 1
+    CC4S:
+    - 8
+    - 9
+    IC3F:
+    - 4
+    - 7
+    IC3PSC:
+    - 2
+    - 3
+    IC4F:
+    - 12
+    - 15
+    IC4PSC:
+    - 10
+    - 11
+  reg: TIM1_CCMR2_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NE:
+    - 2
+    - 2
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+    CC2E:
+    - 4
+    - 4
+    CC2NE:
+    - 6
+    - 6
+    CC2NP:
+    - 7
+    - 7
+    CC2P:
+    - 5
+    - 5
+    CC3E:
+    - 8
+    - 8
+    CC3NE:
+    - 10
+    - 10
+    CC3NP:
+    - 11
+    - 11
+    CC3P:
+    - 9
+    - 9
+    CC4E:
+    - 12
+    - 12
+    CC4P:
+    - 13
+    - 13
+  reg: TIM1_CCER
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: TIM1_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM1_PSC
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: TIM1_ARR
+-
+  fields:
+    REP:
+    - 0
+    - 7
+  reg: TIM1_RCR
+-
+  fields:
+    CCR1:
+    - 0
+    - 15
+  reg: TIM1_CCR1
+-
+  fields:
+    CCR2:
+    - 0
+    - 15
+  reg: TIM1_CCR2
+-
+  fields:
+    CCR3:
+    - 0
+    - 15
+  reg: TIM1_CCR3
+-
+  fields:
+    CCR4:
+    - 0
+    - 15
+  reg: TIM1_CCR4
+-
+  fields:
+    AOE:
+    - 14
+    - 14
+    BKE:
+    - 12
+    - 12
+    BKP:
+    - 13
+    - 13
+    DTG:
+    - 0
+    - 7
+    LOCK:
+    - 8
+    - 9
+    MOE:
+    - 15
+    - 15
+    OSSI:
+    - 10
+    - 10
+    OSSR:
+    - 11
+    - 11
+  reg: TIM1_BDTR
+-
+  fields:
+    DBA:
+    - 0
+    - 4
+    DBL:
+    - 8
+    - 12
+  reg: TIM1_DCR
+-
+  fields:
+    DMAB:
+    - 0
+    - 15
+  reg: TIM1_DMAR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    CMS:
+    - 5
+    - 6
+    DIR:
+    - 4
+    - 4
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM2_CR1
+-
+  fields:
+    CCDS:
+    - 3
+    - 3
+    MMS:
+    - 4
+    - 6
+    TI1S:
+    - 7
+    - 7
+  reg: TIM2_CR2
+-
+  fields:
+    ECE:
+    - 14
+    - 14
+    ETF:
+    - 8
+    - 11
+    ETP:
+    - 15
+    - 15
+    ETPS:
+    - 12
+    - 13
+    MSM:
+    - 7
+    - 7
+    SMS:
+    - 0
+    - 2
+    TS:
+    - 4
+    - 6
+  reg: TIM2_SMCR
+-
+  fields:
+    CC1DE:
+    - 9
+    - 9
+    CC1IE:
+    - 1
+    - 1
+    CC2DE:
+    - 10
+    - 10
+    CC2IE:
+    - 2
+    - 2
+    CC3DE:
+    - 11
+    - 11
+    CC3IE:
+    - 3
+    - 3
+    CC4DE:
+    - 12
+    - 12
+    CC4IE:
+    - 4
+    - 4
+    COMDE:
+    - 13
+    - 13
+    TDE:
+    - 14
+    - 14
+    TIE:
+    - 6
+    - 6
+    UDE:
+    - 8
+    - 8
+    UIE:
+    - 0
+    - 0
+  reg: TIM2_DIER
+-
+  fields:
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    CC2IF:
+    - 2
+    - 2
+    CC2OF:
+    - 10
+    - 10
+    CC3IF:
+    - 3
+    - 3
+    CC3OF:
+    - 11
+    - 11
+    CC4IF:
+    - 4
+    - 4
+    CC4OF:
+    - 12
+    - 12
+    TIF:
+    - 6
+    - 6
+    UIF:
+    - 0
+    - 0
+  reg: TIM2_SR
+-
+  fields:
+    CC1G:
+    - 1
+    - 1
+    CC2G:
+    - 2
+    - 2
+    CC3G:
+    - 3
+    - 3
+    CC4G:
+    - 4
+    - 4
+    TG:
+    - 6
+    - 6
+    UG:
+    - 0
+    - 0
+  reg: TIM2_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    OC1CE:
+    - 7
+    - 7
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+    OC2CE:
+    - 15
+    - 15
+    OC2FE:
+    - 10
+    - 10
+    OC2M:
+    - 12
+    - 14
+    OC2PE:
+    - 11
+    - 11
+  reg: TIM2_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    IC1F:
+    - 4
+    - 7
+    IC1PSC:
+    - 2
+    - 3
+    IC2F:
+    - 12
+    - 15
+    IC2PSC:
+    - 10
+    - 11
+  reg: TIM2_CCMR1_Input
+-
+  fields:
+    CC3S:
+    - 0
+    - 1
+    CC4S:
+    - 8
+    - 9
+    OC3CE:
+    - 7
+    - 7
+    OC3FE:
+    - 2
+    - 2
+    OC3M:
+    - 4
+    - 6
+    OC3PE:
+    - 3
+    - 3
+    OC4CE:
+    - 15
+    - 15
+    OC4FE:
+    - 10
+    - 10
+    OC4M:
+    - 12
+    - 14
+    OC4PE:
+    - 11
+    - 11
+  reg: TIM2_CCMR2_Output
+-
+  fields:
+    CC3S:
+    - 0
+    - 1
+    CC4S:
+    - 8
+    - 9
+    IC3F:
+    - 4
+    - 7
+    IC3PSC:
+    - 2
+    - 3
+    IC4F:
+    - 12
+    - 15
+    IC4PSC:
+    - 10
+    - 11
+  reg: TIM2_CCMR2_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+    CC2E:
+    - 4
+    - 4
+    CC2NP:
+    - 7
+    - 7
+    CC2P:
+    - 5
+    - 5
+    CC3E:
+    - 8
+    - 8
+    CC3NP:
+    - 11
+    - 11
+    CC3P:
+    - 9
+    - 9
+    CC4E:
+    - 12
+    - 12
+    CC4NP:
+    - 15
+    - 15
+    CC4P:
+    - 13
+    - 13
+  reg: TIM2_CCER
+-
+  fields:
+    CNT_H:
+    - 16
+    - 31
+    CNT_L:
+    - 0
+    - 15
+  reg: TIM2_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM2_PSC
+-
+  fields:
+    ARR_H:
+    - 16
+    - 31
+    ARR_L:
+    - 0
+    - 15
+  reg: TIM2_ARR
+-
+  fields:
+    CCR1_H:
+    - 16
+    - 31
+    CCR1_L:
+    - 0
+    - 15
+  reg: TIM2_CCR1
+-
+  fields:
+    CCR2_H:
+    - 16
+    - 31
+    CCR2_L:
+    - 0
+    - 15
+  reg: TIM2_CCR2
+-
+  fields:
+    CCR3_H:
+    - 16
+    - 31
+    CCR3_L:
+    - 0
+    - 15
+  reg: TIM2_CCR3
+-
+  fields:
+    CCR4_H:
+    - 16
+    - 31
+    CCR4_L:
+    - 0
+    - 15
+  reg: TIM2_CCR4
+-
+  fields:
+    DBA:
+    - 0
+    - 4
+    DBL:
+    - 8
+    - 12
+  reg: TIM2_DCR
+-
+  fields:
+    DMAR:
+    - 0
+    - 15
+  reg: TIM2_DMAR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM14_CR1
+-
+  fields:
+    CC1IE:
+    - 1
+    - 1
+    UIE:
+    - 0
+    - 0
+  reg: TIM14_DIER
+-
+  fields:
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    UIF:
+    - 0
+    - 0
+  reg: TIM14_SR
+-
+  fields:
+    CC1G:
+    - 1
+    - 1
+    UG:
+    - 0
+    - 0
+  reg: TIM14_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+  reg: TIM14_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    IC1F:
+    - 4
+    - 7
+    IC1PSC:
+    - 2
+    - 3
+  reg: TIM14_CCMR1_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+  reg: TIM14_CCER
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: TIM14_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM14_PSC
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: TIM14_ARR
+-
+  fields:
+    CCR1:
+    - 0
+    - 15
+  reg: TIM14_CCR1
+-
+  fields:
+    RMP:
+    - 0
+    - 1
+  reg: TIM14_OR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM6_CR1
+-
+  fields:
+    MMS:
+    - 4
+    - 6
+  reg: TIM6_CR2
+-
+  fields:
+    UDE:
+    - 8
+    - 8
+    UIE:
+    - 0
+    - 0
+  reg: TIM6_DIER
+-
+  fields:
+    UIF:
+    - 0
+    - 0
+  reg: TIM6_SR
+-
+  fields:
+    UG:
+    - 0
+    - 0
+  reg: TIM6_EGR
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: TIM6_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM6_PSC
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: TIM6_ARR
+-
+  fields:
+    MR0:
+    - 0
+    - 0
+    MR1:
+    - 1
+    - 1
+    MR10:
+    - 10
+    - 10
+    MR11:
+    - 11
+    - 11
+    MR12:
+    - 12
+    - 12
+    MR13:
+    - 13
+    - 13
+    MR14:
+    - 14
+    - 14
+    MR15:
+    - 15
+    - 15
+    MR16:
+    - 16
+    - 16
+    MR17:
+    - 17
+    - 17
+    MR18:
+    - 18
+    - 18
+    MR19:
+    - 19
+    - 19
+    MR2:
+    - 2
+    - 2
+    MR20:
+    - 20
+    - 20
+    MR21:
+    - 21
+    - 21
+    MR22:
+    - 22
+    - 22
+    MR23:
+    - 23
+    - 23
+    MR24:
+    - 24
+    - 24
+    MR25:
+    - 25
+    - 25
+    MR26:
+    - 26
+    - 26
+    MR27:
+    - 27
+    - 27
+    MR3:
+    - 3
+    - 3
+    MR4:
+    - 4
+    - 4
+    MR5:
+    - 5
+    - 5
+    MR6:
+    - 6
+    - 6
+    MR7:
+    - 7
+    - 7
+    MR8:
+    - 8
+    - 8
+    MR9:
+    - 9
+    - 9
+  reg: EXTI_IMR
+-
+  fields:
+    MR0:
+    - 0
+    - 0
+    MR1:
+    - 1
+    - 1
+    MR10:
+    - 10
+    - 10
+    MR11:
+    - 11
+    - 11
+    MR12:
+    - 12
+    - 12
+    MR13:
+    - 13
+    - 13
+    MR14:
+    - 14
+    - 14
+    MR15:
+    - 15
+    - 15
+    MR16:
+    - 16
+    - 16
+    MR17:
+    - 17
+    - 17
+    MR18:
+    - 18
+    - 18
+    MR19:
+    - 19
+    - 19
+    MR2:
+    - 2
+    - 2
+    MR20:
+    - 20
+    - 20
+    MR21:
+    - 21
+    - 21
+    MR22:
+    - 22
+    - 22
+    MR23:
+    - 23
+    - 23
+    MR24:
+    - 24
+    - 24
+    MR25:
+    - 25
+    - 25
+    MR26:
+    - 26
+    - 26
+    MR27:
+    - 27
+    - 27
+    MR3:
+    - 3
+    - 3
+    MR4:
+    - 4
+    - 4
+    MR5:
+    - 5
+    - 5
+    MR6:
+    - 6
+    - 6
+    MR7:
+    - 7
+    - 7
+    MR8:
+    - 8
+    - 8
+    MR9:
+    - 9
+    - 9
+  reg: EXTI_EMR
+-
+  fields:
+    TR0:
+    - 0
+    - 0
+    TR1:
+    - 1
+    - 1
+    TR10:
+    - 10
+    - 10
+    TR11:
+    - 11
+    - 11
+    TR12:
+    - 12
+    - 12
+    TR13:
+    - 13
+    - 13
+    TR14:
+    - 14
+    - 14
+    TR15:
+    - 15
+    - 15
+    TR16:
+    - 16
+    - 16
+    TR17:
+    - 17
+    - 17
+    TR19:
+    - 19
+    - 19
+    TR2:
+    - 2
+    - 2
+    TR3:
+    - 3
+    - 3
+    TR4:
+    - 4
+    - 4
+    TR5:
+    - 5
+    - 5
+    TR6:
+    - 6
+    - 6
+    TR7:
+    - 7
+    - 7
+    TR8:
+    - 8
+    - 8
+    TR9:
+    - 9
+    - 9
+  reg: EXTI_RTSR
+-
+  fields:
+    TR0:
+    - 0
+    - 0
+    TR1:
+    - 1
+    - 1
+    TR10:
+    - 10
+    - 10
+    TR11:
+    - 11
+    - 11
+    TR12:
+    - 12
+    - 12
+    TR13:
+    - 13
+    - 13
+    TR14:
+    - 14
+    - 14
+    TR15:
+    - 15
+    - 15
+    TR16:
+    - 16
+    - 16
+    TR17:
+    - 17
+    - 17
+    TR19:
+    - 19
+    - 19
+    TR2:
+    - 2
+    - 2
+    TR3:
+    - 3
+    - 3
+    TR4:
+    - 4
+    - 4
+    TR5:
+    - 5
+    - 5
+    TR6:
+    - 6
+    - 6
+    TR7:
+    - 7
+    - 7
+    TR8:
+    - 8
+    - 8
+    TR9:
+    - 9
+    - 9
+  reg: EXTI_FTSR
+-
+  fields:
+    SWIER0:
+    - 0
+    - 0
+    SWIER1:
+    - 1
+    - 1
+    SWIER10:
+    - 10
+    - 10
+    SWIER11:
+    - 11
+    - 11
+    SWIER12:
+    - 12
+    - 12
+    SWIER13:
+    - 13
+    - 13
+    SWIER14:
+    - 14
+    - 14
+    SWIER15:
+    - 15
+    - 15
+    SWIER16:
+    - 16
+    - 16
+    SWIER17:
+    - 17
+    - 17
+    SWIER19:
+    - 19
+    - 19
+    SWIER2:
+    - 2
+    - 2
+    SWIER3:
+    - 3
+    - 3
+    SWIER4:
+    - 4
+    - 4
+    SWIER5:
+    - 5
+    - 5
+    SWIER6:
+    - 6
+    - 6
+    SWIER7:
+    - 7
+    - 7
+    SWIER8:
+    - 8
+    - 8
+    SWIER9:
+    - 9
+    - 9
+  reg: EXTI_SWIER
+-
+  fields:
+    PR0:
+    - 0
+    - 0
+    PR1:
+    - 1
+    - 1
+    PR10:
+    - 10
+    - 10
+    PR11:
+    - 11
+    - 11
+    PR12:
+    - 12
+    - 12
+    PR13:
+    - 13
+    - 13
+    PR14:
+    - 14
+    - 14
+    PR15:
+    - 15
+    - 15
+    PR16:
+    - 16
+    - 16
+    PR17:
+    - 17
+    - 17
+    PR19:
+    - 19
+    - 19
+    PR2:
+    - 2
+    - 2
+    PR3:
+    - 3
+    - 3
+    PR4:
+    - 4
+    - 4
+    PR5:
+    - 5
+    - 5
+    PR6:
+    - 6
+    - 6
+    PR7:
+    - 7
+    - 7
+    PR8:
+    - 8
+    - 8
+    PR9:
+    - 9
+    - 9
+  reg: EXTI_PR
+-
+  fields:
+    SETENA:
+    - 0
+    - 31
+  reg: NVIC_ISER
+-
+  fields:
+    CLRENA:
+    - 0
+    - 31
+  reg: NVIC_ICER
+-
+  fields:
+    SETPEND:
+    - 0
+    - 31
+  reg: NVIC_ISPR
+-
+  fields:
+    CLRPEND:
+    - 0
+    - 31
+  reg: NVIC_ICPR
+-
+  fields:
+    PRI_00:
+    - 6
+    - 7
+    PRI_01:
+    - 14
+    - 15
+    PRI_02:
+    - 22
+    - 23
+    PRI_03:
+    - 30
+    - 31
+  reg: NVIC_IPR0
+-
+  fields:
+    PRI_40:
+    - 6
+    - 7
+    PRI_41:
+    - 14
+    - 15
+    PRI_42:
+    - 22
+    - 23
+    PRI_43:
+    - 30
+    - 31
+  reg: NVIC_IPR1
+-
+  fields:
+    PRI_80:
+    - 6
+    - 7
+    PRI_81:
+    - 14
+    - 15
+    PRI_82:
+    - 22
+    - 23
+    PRI_83:
+    - 30
+    - 31
+  reg: NVIC_IPR2
+-
+  fields:
+    PRI_120:
+    - 6
+    - 7
+    PRI_121:
+    - 14
+    - 15
+    PRI_122:
+    - 22
+    - 23
+    PRI_123:
+    - 30
+    - 31
+  reg: NVIC_IPR3
+-
+  fields:
+    PRI_160:
+    - 6
+    - 7
+    PRI_161:
+    - 14
+    - 15
+    PRI_162:
+    - 22
+    - 23
+    PRI_163:
+    - 30
+    - 31
+  reg: NVIC_IPR4
+-
+  fields:
+    PRI_200:
+    - 6
+    - 7
+    PRI_201:
+    - 14
+    - 15
+    PRI_202:
+    - 22
+    - 23
+    PRI_203:
+    - 30
+    - 31
+  reg: NVIC_IPR5
+-
+  fields:
+    PRI_240:
+    - 6
+    - 7
+    PRI_241:
+    - 14
+    - 15
+    PRI_242:
+    - 22
+    - 23
+    PRI_243:
+    - 30
+    - 31
+  reg: NVIC_IPR6
+-
+  fields:
+    PRI_280:
+    - 6
+    - 7
+    PRI_281:
+    - 14
+    - 15
+    PRI_282:
+    - 22
+    - 23
+    PRI_283:
+    - 30
+    - 31
+  reg: NVIC_IPR7
+-
+  fields:
+    GIF1:
+    - 0
+    - 0
+    GIF2:
+    - 4
+    - 4
+    GIF3:
+    - 8
+    - 8
+    GIF4:
+    - 12
+    - 12
+    GIF5:
+    - 16
+    - 16
+    GIF6:
+    - 20
+    - 20
+    GIF7:
+    - 24
+    - 24
+    HTIF1:
+    - 2
+    - 2
+    HTIF2:
+    - 6
+    - 6
+    HTIF3:
+    - 10
+    - 10
+    HTIF4:
+    - 14
+    - 14
+    HTIF5:
+    - 18
+    - 18
+    HTIF6:
+    - 22
+    - 22
+    HTIF7:
+    - 26
+    - 26
+    TCIF1:
+    - 1
+    - 1
+    TCIF2:
+    - 5
+    - 5
+    TCIF3:
+    - 9
+    - 9
+    TCIF4:
+    - 13
+    - 13
+    TCIF5:
+    - 17
+    - 17
+    TCIF6:
+    - 21
+    - 21
+    TCIF7:
+    - 25
+    - 25
+    TEIF1:
+    - 3
+    - 3
+    TEIF2:
+    - 7
+    - 7
+    TEIF3:
+    - 11
+    - 11
+    TEIF4:
+    - 15
+    - 15
+    TEIF5:
+    - 19
+    - 19
+    TEIF6:
+    - 23
+    - 23
+    TEIF7:
+    - 27
+    - 27
+  reg: DMA1_ISR
+-
+  fields:
+    CGIF1:
+    - 0
+    - 0
+    CGIF2:
+    - 4
+    - 4
+    CGIF3:
+    - 8
+    - 8
+    CGIF4:
+    - 12
+    - 12
+    CGIF5:
+    - 16
+    - 16
+    CGIF6:
+    - 20
+    - 20
+    CGIF7:
+    - 24
+    - 24
+    CHTIF1:
+    - 2
+    - 2
+    CHTIF2:
+    - 6
+    - 6
+    CHTIF3:
+    - 10
+    - 10
+    CHTIF4:
+    - 14
+    - 14
+    CHTIF5:
+    - 18
+    - 18
+    CHTIF6:
+    - 22
+    - 22
+    CHTIF7:
+    - 26
+    - 26
+    CTCIF1:
+    - 1
+    - 1
+    CTCIF2:
+    - 5
+    - 5
+    CTCIF3:
+    - 9
+    - 9
+    CTCIF4:
+    - 13
+    - 13
+    CTCIF5:
+    - 17
+    - 17
+    CTCIF6:
+    - 21
+    - 21
+    CTCIF7:
+    - 25
+    - 25
+    CTEIF1:
+    - 3
+    - 3
+    CTEIF2:
+    - 7
+    - 7
+    CTEIF3:
+    - 11
+    - 11
+    CTEIF4:
+    - 15
+    - 15
+    CTEIF5:
+    - 19
+    - 19
+    CTEIF6:
+    - 23
+    - 23
+    CTEIF7:
+    - 27
+    - 27
+  reg: DMA1_IFCR
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR1
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR1
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR1
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR1
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR2
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR2
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR2
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR2
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR3
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR3
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR3
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR3
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR4
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR4
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR4
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR4
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR5
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR5
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR5
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR5
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR6
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR6
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR6
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR6
+-
+  fields:
+    CIRC:
+    - 5
+    - 5
+    DIR:
+    - 4
+    - 4
+    EN:
+    - 0
+    - 0
+    HTIE:
+    - 2
+    - 2
+    MEM2MEM:
+    - 14
+    - 14
+    MINC:
+    - 7
+    - 7
+    MSIZE:
+    - 10
+    - 11
+    PINC:
+    - 6
+    - 6
+    PL:
+    - 12
+    - 13
+    PSIZE:
+    - 8
+    - 9
+    TCIE:
+    - 1
+    - 1
+    TEIE:
+    - 3
+    - 3
+  reg: DMA1_CCR7
+-
+  fields:
+    NDT:
+    - 0
+    - 15
+  reg: DMA1_CNDTR7
+-
+  fields:
+    PA:
+    - 0
+    - 31
+  reg: DMA1_CPAR7
+-
+  fields:
+    MA:
+    - 0
+    - 31
+  reg: DMA1_CMAR7
+-
+  fields:
+    CSSON:
+    - 19
+    - 19
+    HSEBYP:
+    - 18
+    - 18
+    HSEON:
+    - 16
+    - 16
+    HSERDY:
+    - 17
+    - 17
+    HSICAL:
+    - 8
+    - 15
+    HSION:
+    - 0
+    - 0
+    HSIRDY:
+    - 1
+    - 1
+    HSITRIM:
+    - 3
+    - 7
+    PLLON:
+    - 24
+    - 24
+    PLLRDY:
+    - 25
+    - 25
+  reg: RCC_CR
+-
+  fields:
+    ADCPRE:
+    - 14
+    - 14
+    HPRE:
+    - 4
+    - 7
+    MCO:
+    - 24
+    - 26
+    MCOPRE:
+    - 28
+    - 30
+    PLLMUL:
+    - 18
+    - 21
+    PLLNODIV:
+    - 31
+    - 31
+    PLLSRC:
+    - 15
+    - 16
+    PLLXTPRE:
+    - 17
+    - 17
+    PPRE:
+    - 8
+    - 10
+    SW:
+    - 0
+    - 1
+    SWS:
+    - 2
+    - 3
+  reg: RCC_CFGR
+-
+  fields:
+    CSSC:
+    - 23
+    - 23
+    CSSF:
+    - 7
+    - 7
+    HSERDYC:
+    - 19
+    - 19
+    HSERDYF:
+    - 3
+    - 3
+    HSERDYIE:
+    - 11
+    - 11
+    HSI14RDYC:
+    - 21
+    - 21
+    HSI14RDYE:
+    - 13
+    - 13
+    HSI14RDYF:
+    - 5
+    - 5
+    HSI48RDYC:
+    - 22
+    - 22
+    HSI48RDYF:
+    - 6
+    - 6
+    HSI48RDYIE:
+    - 14
+    - 14
+    HSIRDYC:
+    - 18
+    - 18
+    HSIRDYF:
+    - 2
+    - 2
+    HSIRDYIE:
+    - 10
+    - 10
+    LSERDYC:
+    - 17
+    - 17
+    LSERDYF:
+    - 1
+    - 1
+    LSERDYIE:
+    - 9
+    - 9
+    LSIRDYC:
+    - 16
+    - 16
+    LSIRDYF:
+    - 0
+    - 0
+    LSIRDYIE:
+    - 8
+    - 8
+    PLLRDYC:
+    - 20
+    - 20
+    PLLRDYF:
+    - 4
+    - 4
+    PLLRDYIE:
+    - 12
+    - 12
+  reg: RCC_CIR
+-
+  fields:
+    ADCRST:
+    - 9
+    - 9
+    DBGMCURST:
+    - 22
+    - 22
+    SPI1RST:
+    - 12
+    - 12
+    SYSCFGRST:
+    - 0
+    - 0
+    TIM15RST:
+    - 16
+    - 16
+    TIM16RST:
+    - 17
+    - 17
+    TIM17RST:
+    - 18
+    - 18
+    TIM1RST:
+    - 11
+    - 11
+    USART1RST:
+    - 14
+    - 14
+  reg: RCC_APB2RSTR
+-
+  fields:
+    CANRST:
+    - 25
+    - 25
+    CECRST:
+    - 30
+    - 30
+    CRSRST:
+    - 27
+    - 27
+    DACRST:
+    - 29
+    - 29
+    I2C1RST:
+    - 21
+    - 21
+    I2C2RST:
+    - 22
+    - 22
+    PWRRST:
+    - 28
+    - 28
+    SPI2RST:
+    - 14
+    - 14
+    TIM14RST:
+    - 8
+    - 8
+    TIM2RST:
+    - 0
+    - 0
+    TIM3RST:
+    - 1
+    - 1
+    TIM6RST:
+    - 4
+    - 4
+    TIM7RST:
+    - 5
+    - 5
+    USART2RST:
+    - 17
+    - 17
+    USART3RST:
+    - 18
+    - 18
+    USART4RST:
+    - 19
+    - 19
+    USART5RST:
+    - 20
+    - 20
+    USBRST:
+    - 23
+    - 23
+    WWDGRST:
+    - 11
+    - 11
+  reg: RCC_APB1RSTR
+-
+  fields:
+    CRCEN:
+    - 6
+    - 6
+    DMA1EN:
+    - 0
+    - 0
+    DMA2EN:
+    - 1
+    - 1
+    FLITFEN:
+    - 4
+    - 4
+    IOPAEN:
+    - 17
+    - 17
+    IOPBEN:
+    - 18
+    - 18
+    IOPCEN:
+    - 19
+    - 19
+    IOPDEN:
+    - 20
+    - 20
+    IOPFEN:
+    - 22
+    - 22
+    SRAMEN:
+    - 2
+    - 2
+    TSCEN:
+    - 24
+    - 24
+  reg: RCC_AHBENR
+-
+  fields:
+    ADCEN:
+    - 9
+    - 9
+    DBGMCUEN:
+    - 22
+    - 22
+    SPI1EN:
+    - 12
+    - 12
+    SYSCFGEN:
+    - 0
+    - 0
+    TIM15EN:
+    - 16
+    - 16
+    TIM16EN:
+    - 17
+    - 17
+    TIM17EN:
+    - 18
+    - 18
+    TIM1EN:
+    - 11
+    - 11
+    USART1EN:
+    - 14
+    - 14
+  reg: RCC_APB2ENR
+-
+  fields:
+    CANEN:
+    - 25
+    - 25
+    CECEN:
+    - 30
+    - 30
+    CRSEN:
+    - 27
+    - 27
+    DACEN:
+    - 29
+    - 29
+    I2C1EN:
+    - 21
+    - 21
+    I2C2EN:
+    - 22
+    - 22
+    PWREN:
+    - 28
+    - 28
+    SPI2EN:
+    - 14
+    - 14
+    TIM14EN:
+    - 8
+    - 8
+    TIM2EN:
+    - 0
+    - 0
+    TIM3EN:
+    - 1
+    - 1
+    TIM6EN:
+    - 4
+    - 4
+    TIM7EN:
+    - 5
+    - 5
+    USART2EN:
+    - 17
+    - 17
+    USART3EN:
+    - 18
+    - 18
+    USART4EN:
+    - 19
+    - 19
+    USART5EN:
+    - 20
+    - 20
+    USBRST:
+    - 23
+    - 23
+    WWDGEN:
+    - 11
+    - 11
+  reg: RCC_APB1ENR
+-
+  fields:
+    BDRST:
+    - 16
+    - 16
+    LSEBYP:
+    - 2
+    - 2
+    LSEDRV:
+    - 3
+    - 4
+    LSEON:
+    - 0
+    - 0
+    LSERDY:
+    - 1
+    - 1
+    RTCEN:
+    - 15
+    - 15
+    RTCSEL:
+    - 8
+    - 9
+  reg: RCC_BDCR
+-
+  fields:
+    IWDGRSTF:
+    - 29
+    - 29
+    LPWRRSTF:
+    - 31
+    - 31
+    LSION:
+    - 0
+    - 0
+    LSIRDY:
+    - 1
+    - 1
+    OBLRSTF:
+    - 25
+    - 25
+    PINRSTF:
+    - 26
+    - 26
+    PORRSTF:
+    - 27
+    - 27
+    RMVF:
+    - 24
+    - 24
+    SFTRSTF:
+    - 28
+    - 28
+    WWDGRSTF:
+    - 30
+    - 30
+  reg: RCC_CSR
+-
+  fields:
+    IOPARST:
+    - 17
+    - 17
+    IOPBRST:
+    - 18
+    - 18
+    IOPCRST:
+    - 19
+    - 19
+    IOPDRST:
+    - 20
+    - 20
+    IOPFRST:
+    - 22
+    - 22
+    TSCRST:
+    - 24
+    - 24
+  reg: RCC_AHBRSTR
+-
+  fields:
+    PREDIV:
+    - 0
+    - 3
+  reg: RCC_CFGR2
+-
+  fields:
+    ADCSW:
+    - 8
+    - 8
+    CECSW:
+    - 6
+    - 6
+    I2C1SW:
+    - 4
+    - 4
+    USART1SW:
+    - 0
+    - 1
+    USART2SW:
+    - 16
+    - 17
+    USBSW:
+    - 7
+    - 7
+  reg: RCC_CFGR3
+-
+  fields:
+    HSI14CAL:
+    - 8
+    - 15
+    HSI14DIS:
+    - 2
+    - 2
+    HSI14ON:
+    - 0
+    - 0
+    HSI14RDY:
+    - 1
+    - 1
+    HSI14TRIM:
+    - 3
+    - 7
+    HSI48CAL:
+    - 24
+    - 24
+    HSI48ON:
+    - 16
+    - 16
+    HSI48RDY:
+    - 17
+    - 17
+  reg: RCC_CR2
+-
+  fields:
+    ADC_DMA_RMP:
+    - 8
+    - 8
+    I2C1_DMA_RMP:
+    - 27
+    - 27
+    I2C1_FM_plus:
+    - 20
+    - 20
+    I2C2_FM_plus:
+    - 21
+    - 21
+    I2C_PB6_FM:
+    - 16
+    - 16
+    I2C_PB7_FM:
+    - 17
+    - 17
+    I2C_PB8_FM:
+    - 18
+    - 18
+    I2C_PB9_FM:
+    - 19
+    - 19
+    MEM_MODE:
+    - 0
+    - 1
+    SPI2_DMA_RMP:
+    - 24
+    - 24
+    TIM16_DMA_RMP:
+    - 11
+    - 11
+    TIM17_DMA_RMP:
+    - 12
+    - 12
+    TIM1_DMA_RMP:
+    - 28
+    - 28
+    TIM2_DMA_RMP:
+    - 29
+    - 29
+    TIM3_DMA_RMP:
+    - 30
+    - 30
+    USART1_RX_DMA_RMP:
+    - 10
+    - 10
+    USART1_TX_DMA_RMP:
+    - 9
+    - 9
+    USART2_DMA_RMP:
+    - 25
+    - 25
+    USART3_DMA_RMP:
+    - 26
+    - 26
+  reg: SYSCFG_COMP_SYSCFG_CFGR1
+-
+  fields:
+    EXTI0:
+    - 0
+    - 3
+    EXTI1:
+    - 4
+    - 7
+    EXTI2:
+    - 8
+    - 11
+    EXTI3:
+    - 12
+    - 15
+  reg: SYSCFG_COMP_SYSCFG_EXTICR1
+-
+  fields:
+    EXTI4:
+    - 0
+    - 3
+    EXTI5:
+    - 4
+    - 7
+    EXTI6:
+    - 8
+    - 11
+    EXTI7:
+    - 12
+    - 15
+  reg: SYSCFG_COMP_SYSCFG_EXTICR2
+-
+  fields:
+    EXTI10:
+    - 8
+    - 11
+    EXTI11:
+    - 12
+    - 15
+    EXTI8:
+    - 0
+    - 3
+    EXTI9:
+    - 4
+    - 7
+  reg: SYSCFG_COMP_SYSCFG_EXTICR3
+-
+  fields:
+    EXTI12:
+    - 0
+    - 3
+    EXTI13:
+    - 4
+    - 7
+    EXTI14:
+    - 8
+    - 11
+    EXTI15:
+    - 12
+    - 15
+  reg: SYSCFG_COMP_SYSCFG_EXTICR4
+-
+  fields:
+    LOCUP_LOCK:
+    - 0
+    - 0
+    PVD_LOCK:
+    - 2
+    - 2
+    SRAM_PARITY_LOCK:
+    - 1
+    - 1
+    SRAM_PEF:
+    - 8
+    - 8
+  reg: SYSCFG_COMP_SYSCFG_CFGR2
+-
+  fields:
+    COMP1EN:
+    - 0
+    - 0
+    COMP1HYST:
+    - 12
+    - 13
+    COMP1INSEL:
+    - 4
+    - 6
+    COMP1LOCK:
+    - 15
+    - 15
+    COMP1MODE:
+    - 2
+    - 3
+    COMP1OUT:
+    - 14
+    - 14
+    COMP1OUTSEL:
+    - 8
+    - 10
+    COMP1POL:
+    - 11
+    - 11
+    COMP1_INP_DAC:
+    - 1
+    - 1
+    COMP2EN:
+    - 16
+    - 16
+    COMP2HYST:
+    - 28
+    - 29
+    COMP2INSEL:
+    - 20
+    - 22
+    COMP2LOCK:
+    - 31
+    - 31
+    COMP2MODE:
+    - 18
+    - 19
+    COMP2OUT:
+    - 30
+    - 30
+    COMP2OUTSEL:
+    - 24
+    - 26
+    COMP2POL:
+    - 27
+    - 27
+    WNDWEN:
+    - 23
+    - 23
+  reg: SYSCFG_COMP_COMP_CSR
+-
+  fields:
+    ADRDY:
+    - 0
+    - 0
+    AWD:
+    - 7
+    - 7
+    EOC:
+    - 2
+    - 2
+    EOS:
+    - 3
+    - 3
+    EOSMP:
+    - 1
+    - 1
+    OVR:
+    - 4
+    - 4
+  reg: ADC_ISR
+-
+  fields:
+    ADRDYIE:
+    - 0
+    - 0
+    AWDIE:
+    - 7
+    - 7
+    EOCIE:
+    - 2
+    - 2
+    EOSIE:
+    - 3
+    - 3
+    EOSMPIE:
+    - 1
+    - 1
+    OVRIE:
+    - 4
+    - 4
+  reg: ADC_IER
+-
+  fields:
+    ADCAL:
+    - 31
+    - 31
+    ADDIS:
+    - 1
+    - 1
+    ADEN:
+    - 0
+    - 0
+    ADSTART:
+    - 2
+    - 2
+    ADSTP:
+    - 4
+    - 4
+  reg: ADC_CR
+-
+  fields:
+    ALIGN:
+    - 5
+    - 5
+    AUTDLY:
+    - 14
+    - 14
+    AUTOFF:
+    - 15
+    - 15
+    AWDCH:
+    - 26
+    - 30
+    AWDEN:
+    - 23
+    - 23
+    AWDSGL:
+    - 22
+    - 22
+    CONT:
+    - 13
+    - 13
+    DISCEN:
+    - 16
+    - 16
+    DMACFG:
+    - 1
+    - 1
+    DMAEN:
+    - 0
+    - 0
+    EXTEN:
+    - 10
+    - 11
+    EXTSEL:
+    - 6
+    - 8
+    OVRMOD:
+    - 12
+    - 12
+    RES:
+    - 3
+    - 4
+    SCANDIR:
+    - 2
+    - 2
+  reg: ADC_CFGR1
+-
+  fields:
+    JITOFF_D2:
+    - 30
+    - 30
+    JITOFF_D4:
+    - 31
+    - 31
+  reg: ADC_CFGR2
+-
+  fields:
+    SMPR:
+    - 0
+    - 2
+  reg: ADC_SMPR
+-
+  fields:
+    HT:
+    - 16
+    - 27
+    LT:
+    - 0
+    - 11
+  reg: ADC_TR
+-
+  fields:
+    CHSEL0:
+    - 0
+    - 0
+    CHSEL1:
+    - 1
+    - 1
+    CHSEL10:
+    - 10
+    - 10
+    CHSEL11:
+    - 11
+    - 11
+    CHSEL12:
+    - 12
+    - 12
+    CHSEL13:
+    - 13
+    - 13
+    CHSEL14:
+    - 14
+    - 14
+    CHSEL15:
+    - 15
+    - 15
+    CHSEL16:
+    - 16
+    - 16
+    CHSEL17:
+    - 17
+    - 17
+    CHSEL18:
+    - 18
+    - 18
+    CHSEL2:
+    - 2
+    - 2
+    CHSEL3:
+    - 3
+    - 3
+    CHSEL4:
+    - 4
+    - 4
+    CHSEL5:
+    - 5
+    - 5
+    CHSEL6:
+    - 6
+    - 6
+    CHSEL7:
+    - 7
+    - 7
+    CHSEL8:
+    - 8
+    - 8
+    CHSEL9:
+    - 9
+    - 9
+  reg: ADC_CHSELR
+-
+  fields:
+    DATA:
+    - 0
+    - 15
+  reg: ADC_DR
+-
+  fields:
+    TSEN:
+    - 23
+    - 23
+    VBATEN:
+    - 24
+    - 24
+    VREFEN:
+    - 22
+    - 22
+  reg: ADC_CCR
+-
+  fields:
+    CMIE:
+    - 14
+    - 14
+    DEAT:
+    - 21
+    - 25
+    DEDT:
+    - 16
+    - 20
+    EOBIE:
+    - 27
+    - 27
+    IDLEIE:
+    - 4
+    - 4
+    M:
+    - 12
+    - 12
+    M1:
+    - 28
+    - 28
+    MME:
+    - 13
+    - 13
+    OVER8:
+    - 15
+    - 15
+    PCE:
+    - 10
+    - 10
+    PEIE:
+    - 8
+    - 8
+    PS:
+    - 9
+    - 9
+    RE:
+    - 2
+    - 2
+    RTOIE:
+    - 26
+    - 26
+    RXNEIE:
+    - 5
+    - 5
+    TCIE:
+    - 6
+    - 6
+    TE:
+    - 3
+    - 3
+    TXEIE:
+    - 7
+    - 7
+    UE:
+    - 0
+    - 0
+    UESM:
+    - 1
+    - 1
+    WAKE:
+    - 11
+    - 11
+  reg: USART1_CR1
+-
+  fields:
+    ABREN:
+    - 20
+    - 20
+    ABRMOD:
+    - 21
+    - 22
+    ADD0:
+    - 24
+    - 27
+    ADD4:
+    - 28
+    - 31
+    ADDM7:
+    - 4
+    - 4
+    CLKEN:
+    - 11
+    - 11
+    CPHA:
+    - 9
+    - 9
+    CPOL:
+    - 10
+    - 10
+    DATAINV:
+    - 18
+    - 18
+    LBCL:
+    - 8
+    - 8
+    LBDIE:
+    - 6
+    - 6
+    LBDL:
+    - 5
+    - 5
+    LINEN:
+    - 14
+    - 14
+    MSBFIRST:
+    - 19
+    - 19
+    RTOEN:
+    - 23
+    - 23
+    RXINV:
+    - 16
+    - 16
+    STOP:
+    - 12
+    - 13
+    SWAP:
+    - 15
+    - 15
+    TXINV:
+    - 17
+    - 17
+  reg: USART1_CR2
+-
+  fields:
+    CTSE:
+    - 9
+    - 9
+    CTSIE:
+    - 10
+    - 10
+    DDRE:
+    - 13
+    - 13
+    DEM:
+    - 14
+    - 14
+    DEP:
+    - 15
+    - 15
+    DMAR:
+    - 6
+    - 6
+    DMAT:
+    - 7
+    - 7
+    EIE:
+    - 0
+    - 0
+    HDSEL:
+    - 3
+    - 3
+    IREN:
+    - 1
+    - 1
+    IRLP:
+    - 2
+    - 2
+    NACK:
+    - 4
+    - 4
+    ONEBIT:
+    - 11
+    - 11
+    OVRDIS:
+    - 12
+    - 12
+    RTSE:
+    - 8
+    - 8
+    SCARCNT:
+    - 17
+    - 19
+    SCEN:
+    - 5
+    - 5
+    WUFIE:
+    - 22
+    - 22
+    WUS:
+    - 20
+    - 21
+  reg: USART1_CR3
+-
+  fields:
+    DIV_Fraction:
+    - 0
+    - 3
+    DIV_Mantissa:
+    - 4
+    - 15
+  reg: USART1_BRR
+-
+  fields:
+    GT:
+    - 8
+    - 15
+    PSC:
+    - 0
+    - 7
+  reg: USART1_GTPR
+-
+  fields:
+    BLEN:
+    - 24
+    - 31
+    RTO:
+    - 0
+    - 23
+  reg: USART1_RTOR
+-
+  fields:
+    ABRRQ:
+    - 0
+    - 0
+    MMRQ:
+    - 2
+    - 2
+    RXFRQ:
+    - 3
+    - 3
+    SBKRQ:
+    - 1
+    - 1
+    TXFRQ:
+    - 4
+    - 4
+  reg: USART1_RQR
+-
+  fields:
+    ABRE:
+    - 14
+    - 14
+    ABRF:
+    - 15
+    - 15
+    BUSY:
+    - 16
+    - 16
+    CMF:
+    - 17
+    - 17
+    CTS:
+    - 10
+    - 10
+    CTSIF:
+    - 9
+    - 9
+    EOBF:
+    - 12
+    - 12
+    FE:
+    - 1
+    - 1
+    IDLE:
+    - 4
+    - 4
+    LBDF:
+    - 8
+    - 8
+    NF:
+    - 2
+    - 2
+    ORE:
+    - 3
+    - 3
+    PE:
+    - 0
+    - 0
+    REACK:
+    - 22
+    - 22
+    RTOF:
+    - 11
+    - 11
+    RWU:
+    - 19
+    - 19
+    RXNE:
+    - 5
+    - 5
+    SBKF:
+    - 18
+    - 18
+    TC:
+    - 6
+    - 6
+    TEACK:
+    - 21
+    - 21
+    TXE:
+    - 7
+    - 7
+    WUF:
+    - 20
+    - 20
+  reg: USART1_ISR
+-
+  fields:
+    CMCF:
+    - 17
+    - 17
+    CTSCF:
+    - 9
+    - 9
+    EOBCF:
+    - 12
+    - 12
+    FECF:
+    - 1
+    - 1
+    IDLECF:
+    - 4
+    - 4
+    LBDCF:
+    - 8
+    - 8
+    NCF:
+    - 2
+    - 2
+    ORECF:
+    - 3
+    - 3
+    PECF:
+    - 0
+    - 0
+    RTOCF:
+    - 11
+    - 11
+    TCCF:
+    - 6
+    - 6
+    WUCF:
+    - 20
+    - 20
+  reg: USART1_ICR
+-
+  fields:
+    RDR:
+    - 0
+    - 8
+  reg: USART1_RDR
+-
+  fields:
+    TDR:
+    - 0
+    - 8
+  reg: USART1_TDR
+-
+  fields:
+    HT:
+    - 20
+    - 21
+    HU:
+    - 16
+    - 19
+    MNT:
+    - 12
+    - 14
+    MNU:
+    - 8
+    - 11
+    PM:
+    - 22
+    - 22
+    ST:
+    - 4
+    - 6
+    SU:
+    - 0
+    - 3
+  reg: RTC_TR
+-
+  fields:
+    DT:
+    - 4
+    - 5
+    DU:
+    - 0
+    - 3
+    MT:
+    - 12
+    - 12
+    MU:
+    - 8
+    - 11
+    WDU:
+    - 13
+    - 15
+    YT:
+    - 20
+    - 23
+    YU:
+    - 16
+    - 19
+  reg: RTC_DR
+-
+  fields:
+    ADD1H:
+    - 16
+    - 16
+    ALRAE:
+    - 8
+    - 8
+    ALRAIE:
+    - 12
+    - 12
+    BKP:
+    - 18
+    - 18
+    BYPSHAD:
+    - 5
+    - 5
+    COE:
+    - 23
+    - 23
+    COSEL:
+    - 19
+    - 19
+    FMT:
+    - 6
+    - 6
+    OSEL:
+    - 21
+    - 22
+    POL:
+    - 20
+    - 20
+    REFCKON:
+    - 4
+    - 4
+    SUB1H:
+    - 17
+    - 17
+    TSE:
+    - 11
+    - 11
+    TSEDGE:
+    - 3
+    - 3
+    TSIE:
+    - 15
+    - 15
+    WUCKSEL:
+    - 0
+    - 2
+    WUTE:
+    - 10
+    - 10
+    WUTIE:
+    - 14
+    - 14
+  reg: RTC_CR
+-
+  fields:
+    ALRAF:
+    - 8
+    - 8
+    ALRAWF:
+    - 0
+    - 0
+    INIT:
+    - 7
+    - 7
+    INITF:
+    - 6
+    - 6
+    INITS:
+    - 4
+    - 4
+    RECALPF:
+    - 16
+    - 16
+    RSF:
+    - 5
+    - 5
+    SHPF:
+    - 3
+    - 3
+    TAMP1F:
+    - 13
+    - 13
+    TAMP2F:
+    - 14
+    - 14
+    TAMP3F:
+    - 15
+    - 15
+    TSF:
+    - 11
+    - 11
+    TSOVF:
+    - 12
+    - 12
+    WUTF:
+    - 10
+    - 10
+    WUTWF:
+    - 2
+    - 2
+  reg: RTC_ISR
+-
+  fields:
+    PREDIV_A:
+    - 16
+    - 22
+    PREDIV_S:
+    - 0
+    - 14
+  reg: RTC_PRER
+-
+  fields:
+    DT:
+    - 28
+    - 29
+    DU:
+    - 24
+    - 27
+    HT:
+    - 20
+    - 21
+    HU:
+    - 16
+    - 19
+    MNT:
+    - 12
+    - 14
+    MNU:
+    - 8
+    - 11
+    MSK1:
+    - 7
+    - 7
+    MSK2:
+    - 15
+    - 15
+    MSK3:
+    - 23
+    - 23
+    MSK4:
+    - 31
+    - 31
+    PM:
+    - 22
+    - 22
+    ST:
+    - 4
+    - 6
+    SU:
+    - 0
+    - 3
+    WDSEL:
+    - 30
+    - 30
+  reg: RTC_ALRMAR
+-
+  fields:
+    KEY:
+    - 0
+    - 7
+  reg: RTC_WPR
+-
+  fields:
+    SS:
+    - 0
+    - 15
+  reg: RTC_SSR
+-
+  fields:
+    ADD1S:
+    - 31
+    - 31
+    SUBFS:
+    - 0
+    - 14
+  reg: RTC_SHIFTR
+-
+  fields:
+    HT:
+    - 20
+    - 21
+    HU:
+    - 16
+    - 19
+    MNT:
+    - 12
+    - 14
+    MNU:
+    - 8
+    - 11
+    PM:
+    - 22
+    - 22
+    ST:
+    - 4
+    - 6
+    SU:
+    - 0
+    - 3
+  reg: RTC_TSTR
+-
+  fields:
+    DT:
+    - 4
+    - 5
+    DU:
+    - 0
+    - 3
+    MT:
+    - 12
+    - 12
+    MU:
+    - 8
+    - 11
+    WDU:
+    - 13
+    - 15
+  reg: RTC_TSDR
+-
+  fields:
+    SS:
+    - 0
+    - 15
+  reg: RTC_TSSSR
+-
+  fields:
+    CALM:
+    - 0
+    - 8
+    CALP:
+    - 15
+    - 15
+    CALW16:
+    - 13
+    - 13
+    CALW8:
+    - 14
+    - 14
+  reg: RTC_CALR
+-
+  fields:
+    PC13MODE:
+    - 19
+    - 19
+    PC13VALUE:
+    - 18
+    - 18
+    PC14MODE:
+    - 21
+    - 21
+    PC14VALUE:
+    - 20
+    - 20
+    PC15MODE:
+    - 23
+    - 23
+    PC15VALUE:
+    - 22
+    - 22
+    TAMP1E:
+    - 0
+    - 0
+    TAMP1TRG:
+    - 1
+    - 1
+    TAMP2E:
+    - 3
+    - 3
+    TAMP2_TRG:
+    - 4
+    - 4
+    TAMP3E:
+    - 5
+    - 5
+    TAMP3TRG:
+    - 6
+    - 6
+    TAMPFLT:
+    - 11
+    - 12
+    TAMPFREQ:
+    - 8
+    - 10
+    TAMPIE:
+    - 2
+    - 2
+    TAMPTS:
+    - 7
+    - 7
+    TAMP_PRCH:
+    - 13
+    - 14
+    TAMP_PUDIS:
+    - 15
+    - 15
+  reg: RTC_TAFCR
+-
+  fields:
+    MASKSS:
+    - 24
+    - 27
+    SS:
+    - 0
+    - 14
+  reg: RTC_ALRMASSR
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP0R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP1R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP2R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP3R
+-
+  fields:
+    BKP:
+    - 0
+    - 31
+  reg: RTC_BKP4R
+-
+  fields:
+    WUT:
+    - 0
+    - 15
+  reg: RTC_WUTR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM15_CR1
+-
+  fields:
+    CCDS:
+    - 3
+    - 3
+    CCPC:
+    - 0
+    - 0
+    CCUS:
+    - 2
+    - 2
+    MMS:
+    - 4
+    - 6
+    OIS1:
+    - 8
+    - 8
+    OIS1N:
+    - 9
+    - 9
+    OIS2:
+    - 10
+    - 10
+  reg: TIM15_CR2
+-
+  fields:
+    MSM:
+    - 7
+    - 7
+    SMS:
+    - 0
+    - 2
+    TS:
+    - 4
+    - 6
+  reg: TIM15_SMCR
+-
+  fields:
+    BIE:
+    - 7
+    - 7
+    CC1DE:
+    - 9
+    - 9
+    CC1IE:
+    - 1
+    - 1
+    CC2DE:
+    - 10
+    - 10
+    CC2IE:
+    - 2
+    - 2
+    COMIE:
+    - 5
+    - 5
+    TDE:
+    - 14
+    - 14
+    TIE:
+    - 6
+    - 6
+    UDE:
+    - 8
+    - 8
+    UIE:
+    - 0
+    - 0
+  reg: TIM15_DIER
+-
+  fields:
+    BIF:
+    - 7
+    - 7
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    CC2IF:
+    - 2
+    - 2
+    CC2OF:
+    - 10
+    - 10
+    COMIF:
+    - 5
+    - 5
+    TIF:
+    - 6
+    - 6
+    UIF:
+    - 0
+    - 0
+  reg: TIM15_SR
+-
+  fields:
+    BG:
+    - 7
+    - 7
+    CC1G:
+    - 1
+    - 1
+    CC2G:
+    - 2
+    - 2
+    COMG:
+    - 5
+    - 5
+    TG:
+    - 6
+    - 6
+    UG:
+    - 0
+    - 0
+  reg: TIM15_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+    OC2FE:
+    - 10
+    - 10
+    OC2M:
+    - 12
+    - 14
+    OC2PE:
+    - 11
+    - 11
+  reg: TIM15_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    CC2S:
+    - 8
+    - 9
+    IC1F:
+    - 4
+    - 7
+    IC1PSC:
+    - 2
+    - 3
+    IC2F:
+    - 12
+    - 15
+    IC2PSC:
+    - 10
+    - 11
+  reg: TIM15_CCMR1_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NE:
+    - 2
+    - 2
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+    CC2E:
+    - 4
+    - 4
+    CC2NP:
+    - 7
+    - 7
+    CC2P:
+    - 5
+    - 5
+  reg: TIM15_CCER
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: TIM15_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM15_PSC
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: TIM15_ARR
+-
+  fields:
+    REP:
+    - 0
+    - 7
+  reg: TIM15_RCR
+-
+  fields:
+    CCR1:
+    - 0
+    - 15
+  reg: TIM15_CCR1
+-
+  fields:
+    CCR2:
+    - 0
+    - 15
+  reg: TIM15_CCR2
+-
+  fields:
+    AOE:
+    - 14
+    - 14
+    BKE:
+    - 12
+    - 12
+    BKP:
+    - 13
+    - 13
+    DTG:
+    - 0
+    - 7
+    LOCK:
+    - 8
+    - 9
+    MOE:
+    - 15
+    - 15
+    OSSI:
+    - 10
+    - 10
+    OSSR:
+    - 11
+    - 11
+  reg: TIM15_BDTR
+-
+  fields:
+    DBA:
+    - 0
+    - 4
+    DBL:
+    - 8
+    - 12
+  reg: TIM15_DCR
+-
+  fields:
+    DMAB:
+    - 0
+    - 15
+  reg: TIM15_DMAR
+-
+  fields:
+    ARPE:
+    - 7
+    - 7
+    CEN:
+    - 0
+    - 0
+    CKD:
+    - 8
+    - 9
+    OPM:
+    - 3
+    - 3
+    UDIS:
+    - 1
+    - 1
+    URS:
+    - 2
+    - 2
+  reg: TIM16_CR1
+-
+  fields:
+    CCDS:
+    - 3
+    - 3
+    CCPC:
+    - 0
+    - 0
+    CCUS:
+    - 2
+    - 2
+    OIS1:
+    - 8
+    - 8
+    OIS1N:
+    - 9
+    - 9
+  reg: TIM16_CR2
+-
+  fields:
+    BIE:
+    - 7
+    - 7
+    CC1DE:
+    - 9
+    - 9
+    CC1IE:
+    - 1
+    - 1
+    COMIE:
+    - 5
+    - 5
+    TDE:
+    - 14
+    - 14
+    TIE:
+    - 6
+    - 6
+    UDE:
+    - 8
+    - 8
+    UIE:
+    - 0
+    - 0
+  reg: TIM16_DIER
+-
+  fields:
+    BIF:
+    - 7
+    - 7
+    CC1IF:
+    - 1
+    - 1
+    CC1OF:
+    - 9
+    - 9
+    COMIF:
+    - 5
+    - 5
+    TIF:
+    - 6
+    - 6
+    UIF:
+    - 0
+    - 0
+  reg: TIM16_SR
+-
+  fields:
+    BG:
+    - 7
+    - 7
+    CC1G:
+    - 1
+    - 1
+    COMG:
+    - 5
+    - 5
+    TG:
+    - 6
+    - 6
+    UG:
+    - 0
+    - 0
+  reg: TIM16_EGR
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    OC1FE:
+    - 2
+    - 2
+    OC1M:
+    - 4
+    - 6
+    OC1PE:
+    - 3
+    - 3
+  reg: TIM16_CCMR1_Output
+-
+  fields:
+    CC1S:
+    - 0
+    - 1
+    IC1F:
+    - 4
+    - 7
+    IC1PSC:
+    - 2
+    - 3
+  reg: TIM16_CCMR1_Input
+-
+  fields:
+    CC1E:
+    - 0
+    - 0
+    CC1NE:
+    - 2
+    - 2
+    CC1NP:
+    - 3
+    - 3
+    CC1P:
+    - 1
+    - 1
+  reg: TIM16_CCER
+-
+  fields:
+    CNT:
+    - 0
+    - 15
+  reg: TIM16_CNT
+-
+  fields:
+    PSC:
+    - 0
+    - 15
+  reg: TIM16_PSC
+-
+  fields:
+    ARR:
+    - 0
+    - 15
+  reg: TIM16_ARR
+-
+  fields:
+    REP:
+    - 0
+    - 7
+  reg: TIM16_RCR
+-
+  fields:
+    CCR1:
+    - 0
+    - 15
+  reg: TIM16_CCR1
+-
+  fields:
+    AOE:
+    - 14
+    - 14
+    BKE:
+    - 12
+    - 12
+    BKP:
+    - 13
+    - 13
+    DTG:
+    - 0
+    - 7
+    LOCK:
+    - 8
+    - 9
+    MOE:
+    - 15
+    - 15
+    OSSI:
+    - 10
+    - 10
+    OSSR:
+    - 11
+    - 11
+  reg: TIM16_BDTR
+-
+  fields:
+    DBA:
+    - 0
+    - 4
+    DBL:
+    - 8
+    - 12
+  reg: TIM16_DCR
+-
+  fields:
+    DMAB:
+    - 0
+    - 15
+  reg: TIM16_DMAR
+-
+  fields:
+    AM:
+    - 2
+    - 2
+    CTPH:
+    - 28
+    - 31
+    CTPL:
+    - 24
+    - 27
+    IODEF:
+    - 4
+    - 4
+    MCV:
+    - 5
+    - 7
+    PGPSC:
+    - 12
+    - 14
+    SSD:
+    - 17
+    - 23
+    SSE:
+    - 16
+    - 16
+    SSPSC:
+    - 15
+    - 15
+    START:
+    - 1
+    - 1
+    SYNCPOL:
+    - 3
+    - 3
+    TSCE:
+    - 0
+    - 0
+  reg: TSC_CR
+-
+  fields:
+    EOAIE:
+    - 0
+    - 0
+    MCEIE:
+    - 1
+    - 1
+  reg: TSC_IER
+-
+  fields:
+    EOAIC:
+    - 0
+    - 0
+    MCEIC:
+    - 1
+    - 1
+  reg: TSC_ICR
+-
+  fields:
+    EOAF:
+    - 0
+    - 0
+    MCEF:
+    - 1
+    - 1
+  reg: TSC_ISR
+-
+  fields:
+    G1_IO1:
+    - 0
+    - 0
+    G1_IO2:
+    - 1
+    - 1
+    G1_IO3:
+    - 2
+    - 2
+    G1_IO4:
+    - 3
+    - 3
+    G2_IO1:
+    - 4
+    - 4
+    G2_IO2:
+    - 5
+    - 5
+    G2_IO3:
+    - 6
+    - 6
+    G2_IO4:
+    - 7
+    - 7
+    G3_IO1:
+    - 8
+    - 8
+    G3_IO2:
+    - 9
+    - 9
+    G3_IO3:
+    - 10
+    - 10
+    G3_IO4:
+    - 11
+    - 11
+    G4_IO1:
+    - 12
+    - 12
+    G4_IO2:
+    - 13
+    - 13
+    G4_IO3:
+    - 14
+    - 14
+    G4_IO4:
+    - 15
+    - 15
+    G5_IO1:
+    - 16
+    - 16
+    G5_IO2:
+    - 17
+    - 17
+    G5_IO3:
+    - 18
+    - 18
+    G5_IO4:
+    - 19
+    - 19
+    G6_IO1:
+    - 20
+    - 20
+    G6_IO2:
+    - 21
+    - 21
+    G6_IO3:
+    - 22
+    - 22
+    G6_IO4:
+    - 23
+    - 23
+  reg: TSC_IOHCR
+-
+  fields:
+    G1_IO1:
+    - 0
+    - 0
+    G1_IO2:
+    - 1
+    - 1
+    G1_IO3:
+    - 2
+    - 2
+    G1_IO4:
+    - 3
+    - 3
+    G2_IO1:
+    - 4
+    - 4
+    G2_IO2:
+    - 5
+    - 5
+    G2_IO3:
+    - 6
+    - 6
+    G2_IO4:
+    - 7
+    - 7
+    G3_IO1:
+    - 8
+    - 8
+    G3_IO2:
+    - 9
+    - 9
+    G3_IO3:
+    - 10
+    - 10
+    G3_IO4:
+    - 11
+    - 11
+    G4_IO1:
+    - 12
+    - 12
+    G4_IO2:
+    - 13
+    - 13
+    G4_IO3:
+    - 14
+    - 14
+    G4_IO4:
+    - 15
+    - 15
+    G5_IO1:
+    - 16
+    - 16
+    G5_IO2:
+    - 17
+    - 17
+    G5_IO3:
+    - 18
+    - 18
+    G5_IO4:
+    - 19
+    - 19
+    G6_IO1:
+    - 20
+    - 20
+    G6_IO2:
+    - 21
+    - 21
+    G6_IO3:
+    - 22
+    - 22
+    G6_IO4:
+    - 23
+    - 23
+  reg: TSC_IOASCR
+-
+  fields:
+    G1_IO1:
+    - 0
+    - 0
+    G1_IO2:
+    - 1
+    - 1
+    G1_IO3:
+    - 2
+    - 2
+    G1_IO4:
+    - 3
+    - 3
+    G2_IO1:
+    - 4
+    - 4
+    G2_IO2:
+    - 5
+    - 5
+    G2_IO3:
+    - 6
+    - 6
+    G2_IO4:
+    - 7
+    - 7
+    G3_IO1:
+    - 8
+    - 8
+    G3_IO2:
+    - 9
+    - 9
+    G3_IO3:
+    - 10
+    - 10
+    G3_IO4:
+    - 11
+    - 11
+    G4_IO1:
+    - 12
+    - 12
+    G4_IO2:
+    - 13
+    - 13
+    G4_IO3:
+    - 14
+    - 14
+    G4_IO4:
+    - 15
+    - 15
+    G5_IO1:
+    - 16
+    - 16
+    G5_IO2:
+    - 17
+    - 17
+    G5_IO3:
+    - 18
+    - 18
+    G5_IO4:
+    - 19
+    - 19
+    G6_IO1:
+    - 20
+    - 20
+    G6_IO2:
+    - 21
+    - 21
+    G6_IO3:
+    - 22
+    - 22
+    G6_IO4:
+    - 23
+    - 23
+  reg: TSC_IOSCR
+-
+  fields:
+    G1_IO1:
+    - 0
+    - 0
+    G1_IO2:
+    - 1
+    - 1
+    G1_IO3:
+    - 2
+    - 2
+    G1_IO4:
+    - 3
+    - 3
+    G2_IO1:
+    - 4
+    - 4
+    G2_IO2:
+    - 5
+    - 5
+    G2_IO3:
+    - 6
+    - 6
+    G2_IO4:
+    - 7
+    - 7
+    G3_IO1:
+    - 8
+    - 8
+    G3_IO2:
+    - 9
+    - 9
+    G3_IO3:
+    - 10
+    - 10
+    G3_IO4:
+    - 11
+    - 11
+    G4_IO1:
+    - 12
+    - 12
+    G4_IO2:
+    - 13
+    - 13
+    G4_IO3:
+    - 14
+    - 14
+    G4_IO4:
+    - 15
+    - 15
+    G5_IO1:
+    - 16
+    - 16
+    G5_IO2:
+    - 17
+    - 17
+    G5_IO3:
+    - 18
+    - 18
+    G5_IO4:
+    - 19
+    - 19
+    G6_IO1:
+    - 20
+    - 20
+    G6_IO2:
+    - 21
+    - 21
+    G6_IO3:
+    - 22
+    - 22
+    G6_IO4:
+    - 23
+    - 23
+  reg: TSC_IOCCR
+-
+  fields:
+    G1E:
+    - 0
+    - 0
+    G1S:
+    - 16
+    - 16
+    G2E:
+    - 1
+    - 1
+    G2S:
+    - 17
+    - 17
+    G3E:
+    - 2
+    - 2
+    G3S:
+    - 18
+    - 18
+    G4E:
+    - 3
+    - 3
+    G4S:
+    - 19
+    - 19
+    G5E:
+    - 4
+    - 4
+    G5S:
+    - 20
+    - 20
+    G6E:
+    - 5
+    - 5
+    G6S:
+    - 21
+    - 21
+    G7E:
+    - 6
+    - 6
+    G7S:
+    - 22
+    - 22
+    G8E:
+    - 7
+    - 7
+    G8S:
+    - 23
+    - 23
+  reg: TSC_IOGCSR
+-
+  fields:
+    CNT:
+    - 0
+    - 13
+  reg: TSC_IOG1CR
+-
+  fields:
+    CNT:
+    - 0
+    - 13
+  reg: TSC_IOG2CR
+-
+  fields:
+    CNT:
+    - 0
+    - 13
+  reg: TSC_IOG3CR
+-
+  fields:
+    CNT:
+    - 0
+    - 13
+  reg: TSC_IOG4CR
+-
+  fields:
+    CNT:
+    - 0
+    - 13
+  reg: TSC_IOG5CR
+-
+  fields:
+    CNT:
+    - 0
+    - 13
+  reg: TSC_IOG6CR
+-
+  fields:
+    CECEN:
+    - 0
+    - 0
+    TXEOM:
+    - 2
+    - 2
+    TXSOM:
+    - 1
+    - 1
+  reg: CEC_CR
+-
+  fields:
+    BREGEN:
+    - 10
+    - 10
+    BRESTP:
+    - 9
+    - 9
+    LBPEGEN:
+    - 11
+    - 11
+    LSTN:
+    - 4
+    - 4
+    OAR:
+    - 0
+    - 3
+    RXTOL:
+    - 8
+    - 8
+    SFT:
+    - 5
+    - 7
+  reg: CEC_CFGR
+-
+  fields:
+    TXD:
+    - 0
+    - 7
+  reg: CEC_TXDR
+-
+  fields:
+    RXDR:
+    - 0
+    - 7
+  reg: CEC_RXDR
+-
+  fields:
+    ARBLST:
+    - 7
+    - 7
+    BRE:
+    - 3
+    - 3
+    LBPE:
+    - 5
+    - 5
+    RXACKE:
+    - 6
+    - 6
+    RXBR:
+    - 0
+    - 0
+    RXEND:
+    - 1
+    - 1
+    RXOVR:
+    - 2
+    - 2
+    SBPE:
+    - 4
+    - 4
+    TXACKE:
+    - 12
+    - 12
+    TXBR:
+    - 8
+    - 8
+    TXEND:
+    - 9
+    - 9
+    TXERR:
+    - 11
+    - 11
+    TXUDR:
+    - 10
+    - 10
+  reg: CEC_ISR
+-
+  fields:
+    ARBLSTIE:
+    - 7
+    - 7
+    BREIE:
+    - 3
+    - 3
+    LBPEIE:
+    - 5
+    - 5
+    RXACKIE:
+    - 6
+    - 6
+    RXBRIE:
+    - 0
+    - 0
+    RXENDIE:
+    - 1
+    - 1
+    RXOVRIE:
+    - 2
+    - 2
+    SBPEIE:
+    - 4
+    - 4
+    TXACKIE:
+    - 12
+    - 12
+    TXBRIE:
+    - 8
+    - 8
+    TXENDIE:
+    - 9
+    - 9
+    TXERRIE:
+    - 11
+    - 11
+    TXUDRIE:
+    - 10
+    - 10
+  reg: CEC_IER
+-
+  fields:
+    LATENCY:
+    - 0
+    - 2
+    PRFTBE:
+    - 4
+    - 4
+    PRFTBS:
+    - 5
+    - 5
+  reg: Flash_ACR
+-
+  fields:
+    FKEYR:
+    - 0
+    - 31
+  reg: Flash_KEYR
+-
+  fields:
+    OPTKEYR:
+    - 0
+    - 31
+  reg: Flash_OPTKEYR
+-
+  fields:
+    BSY:
+    - 0
+    - 0
+    EOP:
+    - 5
+    - 5
+    PGERR:
+    - 2
+    - 2
+    WRPRT:
+    - 4
+    - 4
+  reg: Flash_SR
+-
+  fields:
+    EOPIE:
+    - 12
+    - 12
+    ERRIE:
+    - 10
+    - 10
+    FORCE_OPTLOAD:
+    - 13
+    - 13
+    LOCK:
+    - 7
+    - 7
+    MER:
+    - 2
+    - 2
+    OPTER:
+    - 5
+    - 5
+    OPTPG:
+    - 4
+    - 4
+    OPTWRE:
+    - 9
+    - 9
+    PER:
+    - 1
+    - 1
+    PG:
+    - 0
+    - 0
+    STRT:
+    - 6
+    - 6
+  reg: Flash_CR
+-
+  fields:
+    FAR:
+    - 0
+    - 31
+  reg: Flash_AR
+-
+  fields:
+    BOOT_SEL:
+    - 15
+    - 15
+    Data0:
+    - 16
+    - 23
+    Data1:
+    - 24
+    - 31
+    OPTERR:
+    - 0
+    - 0
+    RAM_PARITY_CHECK:
+    - 14
+    - 14
+    RDPRT:
+    - 1
+    - 2
+    VDDA_MONITOR:
+    - 13
+    - 13
+    WDG_SW:
+    - 8
+    - 8
+    nBOOT0:
+    - 11
+    - 11
+    nBOOT1:
+    - 12
+    - 12
+    nRST_STDBY:
+    - 10
+    - 10
+    nRST_STOP:
+    - 9
+    - 9
+  reg: Flash_OBR
+-
+  fields:
+    WRP:
+    - 0
+    - 31
+  reg: Flash_WRPR
+-
+  fields:
+    DEV_ID:
+    - 0
+    - 11
+    DIV_ID:
+    - 12
+    - 15
+    REV_ID:
+    - 16
+    - 31
+  reg: DBGMCU_IDCODE
+-
+  fields:
+    DBG_STANDBY:
+    - 2
+    - 2
+    DBG_STOP:
+    - 1
+    - 1
+  reg: DBGMCU_CR
+-
+  fields:
+    DBG_CAN_STOP:
+    - 25
+    - 25
+    DBG_I2C1_SMBUS_TIMEOUT:
+    - 21
+    - 21
+    DBG_IWDG_STOP:
+    - 12
+    - 12
+    DBG_RTC_STOP:
+    - 10
+    - 10
+    DBG_TIM14_STOP:
+    - 8
+    - 8
+    DBG_TIM2_STOP:
+    - 0
+    - 0
+    DBG_TIM3_STOP:
+    - 1
+    - 1
+    DBG_TIM6_STOP:
+    - 4
+    - 4
+    DBG_TIM7_STOP:
+    - 5
+    - 5
+    DBG_WWDG_STOP:
+    - 11
+    - 11
+  reg: DBGMCU_APB1_FZ
+-
+  fields:
+    DBG_TIM15_STOP:
+    - 16
+    - 16
+    DBG_TIM16_STOP:
+    - 17
+    - 17
+    DBG_TIM17_STOP:
+    - 18
+    - 18
+    DBG_TIM1_STOP:
+    - 11
+    - 11
+  reg: DBGMCU_APB2_FZ
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP0R
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP1R
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP2R
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP3R
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP4R
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP5R
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP6R
+-
+  fields:
+    CTR_RX:
+    - 15
+    - 15
+    CTR_TX:
+    - 7
+    - 7
+    DTOG_RX:
+    - 14
+    - 14
+    DTOG_TX:
+    - 6
+    - 6
+    EA:
+    - 0
+    - 3
+    EP_KIND:
+    - 8
+    - 8
+    EP_TYPE:
+    - 9
+    - 10
+    SETUP:
+    - 11
+    - 11
+    STAT_RX:
+    - 12
+    - 13
+    STAT_TX:
+    - 4
+    - 5
+  reg: USB_EP7R
+-
+  fields:
+    CTRM:
+    - 15
+    - 15
+    ERRM:
+    - 13
+    - 13
+    ESOFM:
+    - 8
+    - 8
+    FRES:
+    - 0
+    - 0
+    FSUSP:
+    - 3
+    - 3
+    L1REQM:
+    - 7
+    - 7
+    L1RESUME:
+    - 5
+    - 5
+    LPMODE:
+    - 2
+    - 2
+    PDWN:
+    - 1
+    - 1
+    PMAOVRM:
+    - 14
+    - 14
+    RESETM:
+    - 10
+    - 10
+    RESUME:
+    - 4
+    - 4
+    SOFM:
+    - 9
+    - 9
+    SUSPM:
+    - 11
+    - 11
+    WKUPM:
+    - 12
+    - 12
+  reg: USB_CNTR
+-
+  fields:
+    CTR:
+    - 15
+    - 15
+    DIR:
+    - 4
+    - 4
+    EP_ID:
+    - 0
+    - 3
+    ERR:
+    - 13
+    - 13
+    ESOF:
+    - 8
+    - 8
+    L1REQ:
+    - 7
+    - 7
+    PMAOVR:
+    - 14
+    - 14
+    RESET:
+    - 10
+    - 10
+    SOF:
+    - 9
+    - 9
+    SUSP:
+    - 11
+    - 11
+    WKUP:
+    - 12
+    - 12
+  reg: USB_ISTR
+-
+  fields:
+    FN:
+    - 0
+    - 10
+    LCK:
+    - 13
+    - 13
+    LSOF:
+    - 11
+    - 12
+    RXDM:
+    - 14
+    - 14
+    RXDP:
+    - 15
+    - 15
+  reg: USB_FNR
+-
+  fields:
+    ADD:
+    - 0
+    - 6
+    EF:
+    - 7
+    - 7
+  reg: USB_DADDR
+-
+  fields:
+    BTABLE:
+    - 3
+    - 15
+  reg: USB_BTABLE
+-
+  fields:
+    BESL:
+    - 4
+    - 7
+    LPMACK:
+    - 1
+    - 1
+    LPMEN:
+    - 0
+    - 0
+    REMWAKE:
+    - 3
+    - 3
+  reg: USB_LPMCSR
+-
+  fields:
+    BCDEN:
+    - 0
+    - 0
+    DCDEN:
+    - 1
+    - 1
+    DCDET:
+    - 4
+    - 4
+    DPPU:
+    - 15
+    - 15
+    PDEN:
+    - 2
+    - 2
+    PDET:
+    - 5
+    - 5
+    PS2DET:
+    - 7
+    - 7
+    SDEN:
+    - 3
+    - 3
+    SDET:
+    - 6
+    - 6
+  reg: USB_BCDR
+-
+  fields:
+    AUTOTRIMEN:
+    - 6
+    - 6
+    CEN:
+    - 5
+    - 5
+    ERRIE:
+    - 2
+    - 2
+    ESYNCIE:
+    - 3
+    - 3
+    SWSYNC:
+    - 7
+    - 7
+    SYNCOKIE:
+    - 0
+    - 0
+    SYNCWARNIE:
+    - 1
+    - 1
+    TRIM:
+    - 8
+    - 13
+  reg: CRS_CR
+-
+  fields:
+    FELIM:
+    - 16
+    - 23
+    RELOAD:
+    - 0
+    - 15
+    SYNCDIV:
+    - 24
+    - 26
+    SYNCPOL:
+    - 31
+    - 31
+    SYNCSRC:
+    - 28
+    - 29
+  reg: CRS_CFGR
+-
+  fields:
+    ERRF:
+    - 2
+    - 2
+    ESYNCF:
+    - 3
+    - 3
+    FECAP:
+    - 16
+    - 31
+    FEDIR:
+    - 15
+    - 15
+    SYNCERR:
+    - 8
+    - 8
+    SYNCMISS:
+    - 9
+    - 9
+    SYNCOKF:
+    - 0
+    - 0
+    SYNCWARNF:
+    - 1
+    - 1
+    TRIMOVF:
+    - 10
+    - 10
+  reg: CRS_ISR
+-
+  fields:
+    ERRC:
+    - 2
+    - 2
+    ESYNCC:
+    - 3
+    - 3
+    SYNCOKC:
+    - 0
+    - 0
+    SYNCWARNC:
+    - 1
+    - 1
+  reg: CRS_ICR
+-
+  fields:
+    ABOM:
+    - 6
+    - 6
+    AWUM:
+    - 5
+    - 5
+    DBF:
+    - 16
+    - 16
+    INRQ:
+    - 0
+    - 0
+    NART:
+    - 4
+    - 4
+    RESET:
+    - 15
+    - 15
+    RFLM:
+    - 3
+    - 3
+    SLEEP:
+    - 1
+    - 1
+    TTCM:
+    - 7
+    - 7
+    TXFP:
+    - 2
+    - 2
+  reg: CAN_CAN_MCR
+-
+  fields:
+    ERRI:
+    - 2
+    - 2
+    INAK:
+    - 0
+    - 0
+    RX:
+    - 11
+    - 11
+    RXM:
+    - 9
+    - 9
+    SAMP:
+    - 10
+    - 10
+    SLAK:
+    - 1
+    - 1
+    SLAKI:
+    - 4
+    - 4
+    TXM:
+    - 8
+    - 8
+    WKUI:
+    - 3
+    - 3
+  reg: CAN_CAN_MSR
+-
+  fields:
+    ABRQ0:
+    - 7
+    - 7
+    ABRQ1:
+    - 15
+    - 15
+    ABRQ2:
+    - 23
+    - 23
+    ALST0:
+    - 2
+    - 2
+    ALST1:
+    - 10
+    - 10
+    ALST2:
+    - 18
+    - 18
+    CODE:
+    - 24
+    - 25
+    LOW0:
+    - 29
+    - 29
+    LOW1:
+    - 30
+    - 30
+    LOW2:
+    - 31
+    - 31
+    RQCP0:
+    - 0
+    - 0
+    RQCP1:
+    - 8
+    - 8
+    RQCP2:
+    - 16
+    - 16
+    TERR0:
+    - 3
+    - 3
+    TERR1:
+    - 11
+    - 11
+    TERR2:
+    - 19
+    - 19
+    TME0:
+    - 26
+    - 26
+    TME1:
+    - 27
+    - 27
+    TME2:
+    - 28
+    - 28
+    TXOK0:
+    - 1
+    - 1
+    TXOK1:
+    - 9
+    - 9
+    TXOK2:
+    - 17
+    - 17
+  reg: CAN_CAN_TSR
+-
+  fields:
+    FMP0:
+    - 0
+    - 1
+    FOVR0:
+    - 4
+    - 4
+    FULL0:
+    - 3
+    - 3
+    RFOM0:
+    - 5
+    - 5
+  reg: CAN_CAN_RF0R
+-
+  fields:
+    FMP1:
+    - 0
+    - 1
+    FOVR1:
+    - 4
+    - 4
+    FULL1:
+    - 3
+    - 3
+    RFOM1:
+    - 5
+    - 5
+  reg: CAN_CAN_RF1R
+-
+  fields:
+    BOFIE:
+    - 10
+    - 10
+    EPVIE:
+    - 9
+    - 9
+    ERRIE:
+    - 15
+    - 15
+    EWGIE:
+    - 8
+    - 8
+    FFIE0:
+    - 2
+    - 2
+    FFIE1:
+    - 5
+    - 5
+    FMPIE0:
+    - 1
+    - 1
+    FMPIE1:
+    - 4
+    - 4
+    FOVIE0:
+    - 3
+    - 3
+    FOVIE1:
+    - 6
+    - 6
+    LECIE:
+    - 11
+    - 11
+    SLKIE:
+    - 17
+    - 17
+    TMEIE:
+    - 0
+    - 0
+    WKUIE:
+    - 16
+    - 16
+  reg: CAN_CAN_IER
+-
+  fields:
+    BOFF:
+    - 2
+    - 2
+    EPVF:
+    - 1
+    - 1
+    EWGF:
+    - 0
+    - 0
+    LEC:
+    - 4
+    - 6
+    REC:
+    - 24
+    - 31
+    TEC:
+    - 16
+    - 23
+  reg: CAN_CAN_ESR
+-
+  fields:
+    BRP:
+    - 0
+    - 9
+    LBKM:
+    - 30
+    - 30
+    SILM:
+    - 31
+    - 31
+    SJW:
+    - 24
+    - 25
+    TS1:
+    - 16
+    - 19
+    TS2:
+    - 20
+    - 22
+  reg: CAN_CAN_BTR
+-
+  fields:
+    EXID:
+    - 3
+    - 20
+    IDE:
+    - 2
+    - 2
+    RTR:
+    - 1
+    - 1
+    STID:
+    - 21
+    - 31
+    TXRQ:
+    - 0
+    - 0
+  reg: CAN_CAN_TI0R
+-
+  fields:
+    DLC:
+    - 0
+    - 3
+    TGT:
+    - 8
+    - 8
+    TIME:
+    - 16
+    - 31
+  reg: CAN_CAN_TDT0R
+-
+  fields:
+    DATA0:
+    - 0
+    - 7
+    DATA1:
+    - 8
+    - 15
+    DATA2:
+    - 16
+    - 23
+    DATA3:
+    - 24
+    - 31
+  reg: CAN_CAN_TDL0R
+-
+  fields:
+    DATA4:
+    - 0
+    - 7
+    DATA5:
+    - 8
+    - 15
+    DATA6:
+    - 16
+    - 23
+    DATA7:
+    - 24
+    - 31
+  reg: CAN_CAN_TDH0R
+-
+  fields:
+    EXID:
+    - 3
+    - 20
+    IDE:
+    - 2
+    - 2
+    RTR:
+    - 1
+    - 1
+    STID:
+    - 21
+    - 31
+    TXRQ:
+    - 0
+    - 0
+  reg: CAN_CAN_TI1R
+-
+  fields:
+    DLC:
+    - 0
+    - 3
+    TGT:
+    - 8
+    - 8
+    TIME:
+    - 16
+    - 31
+  reg: CAN_CAN_TDT1R
+-
+  fields:
+    DATA0:
+    - 0
+    - 7
+    DATA1:
+    - 8
+    - 15
+    DATA2:
+    - 16
+    - 23
+    DATA3:
+    - 24
+    - 31
+  reg: CAN_CAN_TDL1R
+-
+  fields:
+    DATA4:
+    - 0
+    - 7
+    DATA5:
+    - 8
+    - 15
+    DATA6:
+    - 16
+    - 23
+    DATA7:
+    - 24
+    - 31
+  reg: CAN_CAN_TDH1R
+-
+  fields:
+    EXID:
+    - 3
+    - 20
+    IDE:
+    - 2
+    - 2
+    RTR:
+    - 1
+    - 1
+    STID:
+    - 21
+    - 31
+    TXRQ:
+    - 0
+    - 0
+  reg: CAN_CAN_TI2R
+-
+  fields:
+    DLC:
+    - 0
+    - 3
+    TGT:
+    - 8
+    - 8
+    TIME:
+    - 16
+    - 31
+  reg: CAN_CAN_TDT2R
+-
+  fields:
+    DATA0:
+    - 0
+    - 7
+    DATA1:
+    - 8
+    - 15
+    DATA2:
+    - 16
+    - 23
+    DATA3:
+    - 24
+    - 31
+  reg: CAN_CAN_TDL2R
+-
+  fields:
+    DATA4:
+    - 0
+    - 7
+    DATA5:
+    - 8
+    - 15
+    DATA6:
+    - 16
+    - 23
+    DATA7:
+    - 24
+    - 31
+  reg: CAN_CAN_TDH2R
+-
+  fields:
+    EXID:
+    - 3
+    - 20
+    IDE:
+    - 2
+    - 2
+    RTR:
+    - 1
+    - 1
+    STID:
+    - 21
+    - 31
+  reg: CAN_CAN_RI0R
+-
+  fields:
+    DLC:
+    - 0
+    - 3
+    FMI:
+    - 8
+    - 15
+    TIME:
+    - 16
+    - 31
+  reg: CAN_CAN_RDT0R
+-
+  fields:
+    DATA0:
+    - 0
+    - 7
+    DATA1:
+    - 8
+    - 15
+    DATA2:
+    - 16
+    - 23
+    DATA3:
+    - 24
+    - 31
+  reg: CAN_CAN_RDL0R
+-
+  fields:
+    DATA4:
+    - 0
+    - 7
+    DATA5:
+    - 8
+    - 15
+    DATA6:
+    - 16
+    - 23
+    DATA7:
+    - 24
+    - 31
+  reg: CAN_CAN_RDH0R
+-
+  fields:
+    EXID:
+    - 3
+    - 20
+    IDE:
+    - 2
+    - 2
+    RTR:
+    - 1
+    - 1
+    STID:
+    - 21
+    - 31
+  reg: CAN_CAN_RI1R
+-
+  fields:
+    DLC:
+    - 0
+    - 3
+    FMI:
+    - 8
+    - 15
+    TIME:
+    - 16
+    - 31
+  reg: CAN_CAN_RDT1R
+-
+  fields:
+    DATA0:
+    - 0
+    - 7
+    DATA1:
+    - 8
+    - 15
+    DATA2:
+    - 16
+    - 23
+    DATA3:
+    - 24
+    - 31
+  reg: CAN_CAN_RDL1R
+-
+  fields:
+    DATA4:
+    - 0
+    - 7
+    DATA5:
+    - 8
+    - 15
+    DATA6:
+    - 16
+    - 23
+    DATA7:
+    - 24
+    - 31
+  reg: CAN_CAN_RDH1R
+-
+  fields:
+    CAN2SB:
+    - 8
+    - 13
+    FINIT:
+    - 0
+    - 0
+  reg: CAN_CAN_FMR
+-
+  fields:
+    FBM0:
+    - 0
+    - 0
+    FBM1:
+    - 1
+    - 1
+    FBM10:
+    - 10
+    - 10
+    FBM11:
+    - 11
+    - 11
+    FBM12:
+    - 12
+    - 12
+    FBM13:
+    - 13
+    - 13
+    FBM14:
+    - 14
+    - 14
+    FBM15:
+    - 15
+    - 15
+    FBM16:
+    - 16
+    - 16
+    FBM17:
+    - 17
+    - 17
+    FBM18:
+    - 18
+    - 18
+    FBM19:
+    - 19
+    - 19
+    FBM2:
+    - 2
+    - 2
+    FBM20:
+    - 20
+    - 20
+    FBM21:
+    - 21
+    - 21
+    FBM22:
+    - 22
+    - 22
+    FBM23:
+    - 23
+    - 23
+    FBM24:
+    - 24
+    - 24
+    FBM25:
+    - 25
+    - 25
+    FBM26:
+    - 26
+    - 26
+    FBM27:
+    - 27
+    - 27
+    FBM3:
+    - 3
+    - 3
+    FBM4:
+    - 4
+    - 4
+    FBM5:
+    - 5
+    - 5
+    FBM6:
+    - 6
+    - 6
+    FBM7:
+    - 7
+    - 7
+    FBM8:
+    - 8
+    - 8
+    FBM9:
+    - 9
+    - 9
+  reg: CAN_CAN_FM1R
+-
+  fields:
+    FSC0:
+    - 0
+    - 0
+    FSC1:
+    - 1
+    - 1
+    FSC10:
+    - 10
+    - 10
+    FSC11:
+    - 11
+    - 11
+    FSC12:
+    - 12
+    - 12
+    FSC13:
+    - 13
+    - 13
+    FSC14:
+    - 14
+    - 14
+    FSC15:
+    - 15
+    - 15
+    FSC16:
+    - 16
+    - 16
+    FSC17:
+    - 17
+    - 17
+    FSC18:
+    - 18
+    - 18
+    FSC19:
+    - 19
+    - 19
+    FSC2:
+    - 2
+    - 2
+    FSC20:
+    - 20
+    - 20
+    FSC21:
+    - 21
+    - 21
+    FSC22:
+    - 22
+    - 22
+    FSC23:
+    - 23
+    - 23
+    FSC24:
+    - 24
+    - 24
+    FSC25:
+    - 25
+    - 25
+    FSC26:
+    - 26
+    - 26
+    FSC27:
+    - 27
+    - 27
+    FSC3:
+    - 3
+    - 3
+    FSC4:
+    - 4
+    - 4
+    FSC5:
+    - 5
+    - 5
+    FSC6:
+    - 6
+    - 6
+    FSC7:
+    - 7
+    - 7
+    FSC8:
+    - 8
+    - 8
+    FSC9:
+    - 9
+    - 9
+  reg: CAN_CAN_FS1R
+-
+  fields:
+    FFA0:
+    - 0
+    - 0
+    FFA1:
+    - 1
+    - 1
+    FFA10:
+    - 10
+    - 10
+    FFA11:
+    - 11
+    - 11
+    FFA12:
+    - 12
+    - 12
+    FFA13:
+    - 13
+    - 13
+    FFA14:
+    - 14
+    - 14
+    FFA15:
+    - 15
+    - 15
+    FFA16:
+    - 16
+    - 16
+    FFA17:
+    - 17
+    - 17
+    FFA18:
+    - 18
+    - 18
+    FFA19:
+    - 19
+    - 19
+    FFA2:
+    - 2
+    - 2
+    FFA20:
+    - 20
+    - 20
+    FFA21:
+    - 21
+    - 21
+    FFA22:
+    - 22
+    - 22
+    FFA23:
+    - 23
+    - 23
+    FFA24:
+    - 24
+    - 24
+    FFA25:
+    - 25
+    - 25
+    FFA26:
+    - 26
+    - 26
+    FFA27:
+    - 27
+    - 27
+    FFA3:
+    - 3
+    - 3
+    FFA4:
+    - 4
+    - 4
+    FFA5:
+    - 5
+    - 5
+    FFA6:
+    - 6
+    - 6
+    FFA7:
+    - 7
+    - 7
+    FFA8:
+    - 8
+    - 8
+    FFA9:
+    - 9
+    - 9
+  reg: CAN_CAN_FFA1R
+-
+  fields:
+    FACT0:
+    - 0
+    - 0
+    FACT1:
+    - 1
+    - 1
+    FACT10:
+    - 10
+    - 10
+    FACT11:
+    - 11
+    - 11
+    FACT12:
+    - 12
+    - 12
+    FACT13:
+    - 13
+    - 13
+    FACT14:
+    - 14
+    - 14
+    FACT15:
+    - 15
+    - 15
+    FACT16:
+    - 16
+    - 16
+    FACT17:
+    - 17
+    - 17
+    FACT18:
+    - 18
+    - 18
+    FACT19:
+    - 19
+    - 19
+    FACT2:
+    - 2
+    - 2
+    FACT20:
+    - 20
+    - 20
+    FACT21:
+    - 21
+    - 21
+    FACT22:
+    - 22
+    - 22
+    FACT23:
+    - 23
+    - 23
+    FACT24:
+    - 24
+    - 24
+    FACT25:
+    - 25
+    - 25
+    FACT26:
+    - 26
+    - 26
+    FACT27:
+    - 27
+    - 27
+    FACT3:
+    - 3
+    - 3
+    FACT4:
+    - 4
+    - 4
+    FACT5:
+    - 5
+    - 5
+    FACT6:
+    - 6
+    - 6
+    FACT7:
+    - 7
+    - 7
+    FACT8:
+    - 8
+    - 8
+    FACT9:
+    - 9
+    - 9
+  reg: CAN_CAN_FA1R
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F0R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F0R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F1R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F1R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F2R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F2R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F3R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F3R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F4R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F4R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F5R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F5R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F6R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F6R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F7R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F7R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F8R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F8R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F9R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F9R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F10R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F10R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F11R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F11R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F12R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F12R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F13R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F13R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F14R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F14R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F15R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F15R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F16R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F16R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F17R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F17R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F18R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F18R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F19R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F19R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F20R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F20R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F21R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F21R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F22R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F22R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F23R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F23R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F24R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F24R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F25R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F25R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F26R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F26R2
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F27R1
+-
+  fields:
+    FB0:
+    - 0
+    - 0
+    FB1:
+    - 1
+    - 1
+    FB10:
+    - 10
+    - 10
+    FB11:
+    - 11
+    - 11
+    FB12:
+    - 12
+    - 12
+    FB13:
+    - 13
+    - 13
+    FB14:
+    - 14
+    - 14
+    FB15:
+    - 15
+    - 15
+    FB16:
+    - 16
+    - 16
+    FB17:
+    - 17
+    - 17
+    FB18:
+    - 18
+    - 18
+    FB19:
+    - 19
+    - 19
+    FB2:
+    - 2
+    - 2
+    FB20:
+    - 20
+    - 20
+    FB21:
+    - 21
+    - 21
+    FB22:
+    - 22
+    - 22
+    FB23:
+    - 23
+    - 23
+    FB24:
+    - 24
+    - 24
+    FB25:
+    - 25
+    - 25
+    FB26:
+    - 26
+    - 26
+    FB27:
+    - 27
+    - 27
+    FB28:
+    - 28
+    - 28
+    FB29:
+    - 29
+    - 29
+    FB3:
+    - 3
+    - 3
+    FB30:
+    - 30
+    - 30
+    FB31:
+    - 31
+    - 31
+    FB4:
+    - 4
+    - 4
+    FB5:
+    - 5
+    - 5
+    FB6:
+    - 6
+    - 6
+    FB7:
+    - 7
+    - 7
+    FB8:
+    - 8
+    - 8
+    FB9:
+    - 9
+    - 9
+  reg: CAN_F27R2
+-
+  fields:
+    BOFF1:
+    - 1
+    - 1
+    BOFF2:
+    - 17
+    - 17
+    DMAEN1:
+    - 12
+    - 12
+    DMAEN2:
+    - 28
+    - 28
+    DMAUDRIE1:
+    - 13
+    - 13
+    DMAUDRIE2:
+    - 29
+    - 29
+    EN1:
+    - 0
+    - 0
+    EN2:
+    - 16
+    - 16
+    MAMP1:
+    - 8
+    - 11
+    MAMP2:
+    - 24
+    - 27
+    TEN1:
+    - 2
+    - 2
+    TEN2:
+    - 18
+    - 18
+    TSEL1:
+    - 3
+    - 5
+    TSEL2:
+    - 19
+    - 21
+    WAVE1:
+    - 6
+    - 7
+    WAVE2:
+    - 22
+    - 23
+  reg: DAC_CR
+-
+  fields:
+    SWTRIG1:
+    - 0
+    - 0
+    SWTRIG2:
+    - 1
+    - 1
+  reg: DAC_SWTRIGR
+-
+  fields:
+    DACC1DHR:
+    - 0
+    - 11
+  reg: DAC_DHR12R1
+-
+  fields:
+    DACC1DHR:
+    - 4
+    - 15
+  reg: DAC_DHR12L1
+-
+  fields:
+    DACC1DHR:
+    - 0
+    - 7
+  reg: DAC_DHR8R1
+-
+  fields:
+    DACC1DOR:
+    - 0
+    - 11
+  reg: DAC_DOR1
+-
+  fields:
+    DMAUDR1:
+    - 13
+    - 13
+    DMAUDR2:
+    - 29
+    - 29
+  reg: DAC_SR
+-
+  fields:
+    DACC2DHR:
+    - 0
+    - 11
+  reg: DAC_DHR12R2
+-
+  fields:
+    DACC2DHR:
+    - 4
+    - 15
+  reg: DAC_DHR12L2
+-
+  fields:
+    DACC2DHR:
+    - 0
+    - 7
+  reg: DAC_DHR8R2
+-
+  fields:
+    DACC1DHR:
+    - 0
+    - 11
+    DACC2DHR:
+    - 16
+    - 27
+  reg: DAC_DHR12RD
+-
+  fields:
+    DACC1DHR:
+    - 4
+    - 15
+    DACC2DHR:
+    - 20
+    - 31
+  reg: DAC_DHR12LD
+-
+  fields:
+    DACC1DHR:
+    - 0
+    - 7
+    DACC2DHR:
+    - 8
+    - 15
+  reg: DAC_DHR8RD
+-
+  fields:
+    DACC2DOR:
+    - 0
+    - 11
+  reg: DAC_DOR2
+-
+  fields:
+    Constant:
+    - 16
+    - 19
+    Implementer:
+    - 24
+    - 31
+    PartNo:
+    - 4
+    - 15
+    Revision:
+    - 0
+    - 3
+    Variant:
+    - 20
+    - 23
+  reg: SCB_CPUID
+-
+  fields:
+    ISRPENDING:
+    - 22
+    - 22
+    NMIPENDSET:
+    - 31
+    - 31
+    PENDSTCLR:
+    - 25
+    - 25
+    PENDSTSET:
+    - 26
+    - 26
+    PENDSVCLR:
+    - 27
+    - 27
+    PENDSVSET:
+    - 28
+    - 28
+    VECTACTIVE:
+    - 0
+    - 5
+    VECTPENDING:
+    - 12
+    - 17
+  reg: SCB_ICSR
+-
+  fields:
+    ENDIANESS:
+    - 15
+    - 15
+    SYSRESETREQ:
+    - 2
+    - 2
+    VECTCLRACTIVE:
+    - 1
+    - 1
+    VECTKEYSTAT:
+    - 16
+    - 31
+  reg: SCB_AIRCR
+-
+  fields:
+    SEVEONPEND:
+    - 4
+    - 4
+    SLEEPDEEP:
+    - 2
+    - 2
+    SLEEPONEXIT:
+    - 1
+    - 1
+  reg: SCB_SCR
+-
+  fields:
+    STKALIGN:
+    - 9
+    - 9
+    UNALIGN__TRP:
+    - 3
+    - 3
+  reg: SCB_CCR
+-
+  fields:
+    PRI_11:
+    - 24
+    - 31
+  reg: SCB_SHPR2
+-
+  fields:
+    PRI_14:
+    - 16
+    - 23
+    PRI_15:
+    - 24
+    - 31
+  reg: SCB_SHPR3
+-
+  fields:
+    CLKSOURCE:
+    - 2
+    - 2
+    COUNTFLAG:
+    - 16
+    - 16
+    ENABLE:
+    - 0
+    - 0
+    TICKINT:
+    - 1
+    - 1
+  reg: STK_CSR
+-
+  fields:
+    RELOAD:
+    - 0
+    - 23
+  reg: STK_RVR
+-
+  fields:
+    CURRENT:
+    - 0
+    - 23
+  reg: STK_CVR
+-
+  fields:
+    NOREF:
+    - 31
+    - 31
+    SKEW:
+    - 30
+    - 30
+    TENMS:
+    - 0
+    - 23
+  reg: STK_CALIB
+type: u32
+version: 0.0.1
